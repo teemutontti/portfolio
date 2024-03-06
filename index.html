@@ -50,21 +50,56 @@
             <div class="projects_title">
                 <h1>PROJEKTIT</h1>
             </div>
-            <div class="projects_item1">
-                <h2>Java Contacts App projekti</h2>
-                <img src="projects_java.webp" alt="Java project">
-                <p>Tein Java ohjelmointikielellä konsolin sisäisen sovelluksen, jossa voi tallentaa, tarkastella, muokata ja poistaa yhteystietoja. Tämä oli ensimmäinen ohjelmointiprojekti jonka olen tuottanut.</p>
+            <div class="project_item">
+                <div class="title">
+                    <h2>Protein Efficiency Calculator</h2>
+                    <button onclick="openDropdown(this, 1)">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                </div>
+                <div class="content" id="dropdown-1">
+                    <p>Tein intohimoprojektina sovelluksen, joka laskee ruokien proteiinipitoisuutta sen kalorimääriin nähden.</p>
+                    <p>Sovelluksessa voi lisätä, muokata tai poistaa ruokia.</p>
+                    <p>Tällä hetkellä sovelluksen ominaisuuksiin kuuluu vain proteiinipitoisuuden laskenta, mutta tulevaisuudessa on tavoitteena lisätä sovellukseen erilaisia hyödyllisiä ominaisuuksia.</p>
+                    <div class="links">
+                        <a href="https://protein-efficiency-calculator-6baf548f6b81.herokuapp.com/" target="_blank">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                        <a href="https://github.com/teemutontti/verbose-guacamole" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="projects_item2">
-                <h2>Mobiilipeli Narvan kyläpanimolle</h2>
-                <img src="projects_pintrush.webp" alt="Mobilegame project">
-                <p>Teimme neljän hengen tiimissä mobiilipelin asiakkaallemme Narvan kyläpanimolle. Peli tuotettiin osana tietojenkäsittelyn tutkinto-ohjelmaa ja peli tullaan julkaisemaan Google Play Storessa. Tiimissä roolini oli ohjelmoija.</p>
-                <p>Pelin julkaisutapahtuma pidetään TAMK:n yhteisellä pelimessuilla 11.5.2023.</p>
+            <div class="project_item">
+                <div class="title">
+                    <h2>Java Contacts App projekti</h2>
+                    <button onclick="openDropdown(this, 2)">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                </div>
+                <div class="content" id="dropdown-2">
+                    <img src="projects_java.webp" alt="Java project">
+                    <p>Tein Java ohjelmointikielellä konsolin sisäisen sovelluksen, jossa voi tallentaa, tarkastella, muokata ja poistaa yhteystietoja. Tämä oli ensimmäinen ohjelmointiprojekti jonka olen tuottanut.</p>
+                </div>
+            </div>
+            <div class="project_item">
+                <div class="title">
+                    <h2>Mobiilipeli Narvan kyläpanimolle</h2>
+                    <button onclick="openDropdown(this, 3)">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                </div>
+                <div class="content" id="dropdown-3">
+                    <img src="projects_pintrush.webp" alt="Mobilegame project">
+                    <p>Teimme neljän hengen tiimissä mobiilipelin asiakkaallemme Narvan kyläpanimolle. Peli tuotettiin osana tietojenkäsittelyn tutkinto-ohjelmaa ja peli tullaan julkaisemaan Google Play Storessa. Tiimissä roolini oli ohjelmoija.</p>
+                    <p>Pelin julkaisutapahtuma pidetään TAMK:n yhteisellä pelimessuilla 11.5.2023.</p>
+                </div>
             </div>
         </div>
         <div class="work" id="work">
             <h1 class="work_title">TYÖKOKEMUS</h1>
-            <div class="work_item1">
+            <div class="work_item">
                 <h2>Environics Oy</h2>
                 <h3>Elo 2021 - Elo 2022</h3>
                 <p>Työtehtäväni:</p>
@@ -78,7 +113,7 @@
                     <li>Tuotantoprosessien kehittäminen</li>
                 </ul>
             </div>
-            <div class="work_item2">
+            <div class="work_item">
                 <h2>Ohjaamo Olkkari</h2>
                 <h3>Helmi 2021 - Elo 2021</h3>
                 <p>Työtehtäväni:</p>
@@ -107,16 +142,5 @@
         <p class="copyright"><br><br>&copy; 2023 Portfolio Teemu Tontti. All rights reserved.</p>
     </footer>
 </body>
-<script>
-    const hamburger = document.querySelector(".hamburger");
-    const dropdown = document.querySelector(".menu_dropdown");
-    hamburger.addEventListener("click", () => {
-        hamburger.classList.toggle("active");
-        dropdown.classList.toggle("active");
-    })
-    document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
-        hamburger.classList.remove("active");
-        dropdown.classList.remove("active");
-    }))
-</script>
+<script src="index.js"></script>
 </html>

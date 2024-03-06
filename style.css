@@ -231,14 +231,55 @@ img {
 }
 
 /* Sisältö boksien asettelu */
-.work_item1, .work_item2, .projects_item1, .projects_item2 {
+.work_item, .project_item {
+    max-width: 600px;
     padding: 10px;
     margin: 25px;
     text-align: left;
 }
 
+.project_item {
+    border: 1px solid var(--color-6);
+    border-radius: 7px;
+    padding: 13px 28px 13px 20px;
+}
+
+.project_item .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project_item .title button {
+    background: none;
+    border: none;
+    color: var(--color-2);
+}
+
+.project_item .content {
+    display: none;
+}
+
+.project_item .content a {
+    border: 1px solid var(--color-4);
+    background-color: var(--color-3);
+    width: 40px;
+    margin: 0;
+    padding: 10px;
+    color: var(--color-2);
+}
+
+.project_item .content a:hover {
+    border: 1px solid var(--color-2);
+}
+
+.project_item .content .links {
+    display: flex;
+    gap: 10px;
+}
+
 /* Työosio bokseille oma tyylittely */
-.work_item1, .work_item2 {
+.work_item {
     border-radius: 20px;
     border: solid 2px var(--color-2);
     background: var(--color-3);
@@ -323,7 +364,7 @@ footer {
         display: grid;
         grid-template-columns: 65% 35%;
         grid-template-rows: auto;
-        grid-template-areas: 
+        grid-template-areas:
             "title picture"
             "content1 content1";
         width: 100%;
@@ -334,7 +375,7 @@ footer {
     .about_intro {
         grid-area: title;
         margin-bottom: 0px;
-        
+
     }
 
     /* Area nimin asetus, absolute että pysyy nurkassa kiinni */
@@ -354,13 +395,13 @@ footer {
         margin-top: 0px;
         padding: 100px;
     }
-    
+
     /* Projekti ja työosioille oma grid */
     .work, .projects {
         display: grid;
         grid-template-columns: auto auto;
         grid-template-rows: auto;
-        grid-template-areas: 
+        grid-template-areas:
             "title title"
             "content1 content2"
             "footer footer";
@@ -368,7 +409,7 @@ footer {
         padding: 50px 100px;
         max-width: 1300px;
     }
-    
+
     /* Area nimi asetus */
     .work_title, .projects_title {
         grid-area: title;
