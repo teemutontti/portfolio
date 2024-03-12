@@ -1,70 +1,56 @@
-/* Tuodaan fontit */
-@import url('https://fonts.googleapis.com/css2?family=Abel&family=Oswald:wght@600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Oswald:wght@600&display=swap");
+@import "colors";
 
-/* Värit muuttujina, helppo muokata ja varmistaa että värit on oikein*/
-:root {
-    --color-1: #f7f7f7;
-    --color-2: #66FCF1;
-    --color-3: #151a20;
-    --color-4: #0B0C10;
-    --color-5: #C5C6C7;
-    --color-6: #52bfe75c;
-}
-
-/* Asetetaan sulava scroll behaviour */
 html {
     scroll-behavior: smooth;
 }
 
-/* Oletusväri, fontti ja tausta */
 body {
-    color: var(--color-5);
-    font-family: 'Abel', sans-serif;
-    background: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.6)), url("background.webp");
-    background-size:cover;
+    color: $color-5;
+    font-family: "Abel", sans-serif;
+    background: url("/images/background.webp");
+    background-size: cover;
     background-attachment: fixed;
     margin: 0;
 }
 
-/* Reunat otetaan mukaan */
 * {
     box-sizing: border-box;
 }
 
-/* Otsikoiden fontti */
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Oswald', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Oswald", sans-serif;
     margin: 5px;
 }
 
-/* Pääotsikoiden väli ja koko */
 h1 {
     margin-bottom: 50px;
     font-size: 10vw;
 }
 
-/* Eri fontti kuin oletus */
 h3 {
-    font-family: 'Abel', sans-serif;
+    font-family: "Abel", sans-serif;
 }
 
-/* Fontti isommaksi */
 p {
     font-size: 20px;
 }
 
-/* Main titlen väri, varjo ja koko, jotta erottuu */
 .main_title {
-    color: var(--color-2);
+    color: $color-2;
     text-shadow: -2px 2px 5px rgb(5, 5, 5);
     font-size: 12vw;
     line-height: 12vw;
 }
 
-/* Linkkien oletus asetukset */
 a {
-    background: rgba(0,0,0,0);
-    color: var(--color-1);
+    background: rgba(0, 0, 0, 0);
+    color: $color-1;
     border: solid 2px rgba(0, 0, 0, 0);
     text-decoration: none;
     border-radius: 3px;
@@ -74,23 +60,20 @@ a {
     text-align: center;
 }
 
-/* Hover tyylittely linkeille ja perustyyli contact linkeille*/
-a:hover, .contacts a {
-    border: solid 2px var(--color-2);
-    background: var(--color-3);
+a:hover,
+.contacts a {
+    border: solid 2px $color-2;
+    background: $color-3;
 }
 
-/* Image elementit oletuksena 100% */
 img {
     width: 100%;
 }
 
-/* Rako grid itemien välille */
 .grid_item {
     padding: 10px;
 }
 
-/* Navbarin asettelut */
 .menu {
     grid-area: header;
     position: fixed;
@@ -98,28 +81,25 @@ img {
     top: 0;
     width: 100%;
     height: 70px;
-    background: var(--color-4);
+    background: $color-4;
 }
 
-/* Navbarin otsikko ja kuvake asetetaan reunaan */
 .menu_title {
     position: absolute;
     left: 10px;
     top: 0px;
-    color: var(--color-2);
+    color: $color-2;
     margin: 10px;
 }
 
-/* Iconin asettelu */
 .menu_title i {
-    color: var(--color-2);
+    color: $color-2;
     width: 100px;
     position: inherit;
     top: 10px;
 }
 
-/* Navbar tekstin asettelu */
-.menu_item1{
+.menu_item1 {
     margin-top: 0px;
     margin-bottom: 0px;
     position: inherit;
@@ -127,18 +107,16 @@ img {
     left: 40px;
 }
 
-/* Oletuksena ei näytetä dropdownia */
 .menu_dropdown {
     position: absolute;
     top: 70px;
     right: -100%;
     padding: 10px;
     border-radius: 4px;
-    background: var(--color-4);
+    background: $color-4;
     z-index: 100;
 }
 
-/* Hamburgerin asettelu */
 .hamburger {
     display: block;
     position: absolute;
@@ -147,28 +125,24 @@ img {
     z-index: 101;
 }
 
-/* Tyyli muuttuu kun hoveroidaan */
-.hamburger:hover .bar{
-    background: var(--color-1);
+.hamburger:hover .bar {
+    background: $color-1;
 }
 
-/* Siirretään dropdown näkyviin */
 .menu_dropdown.active {
     right: 0;
 }
 
-/* Muutetaan hamburger -> x */
-.hamburger.active .bar:nth-child(2){
+.hamburger.active .bar:nth-child(2) {
     opacity: 0;
 }
-.hamburger.active .bar:nth-child(1){
+.hamburger.active .bar:nth-child(1) {
     transform: translateY(10px) rotate(45deg);
 }
-.hamburger.active .bar:nth-child(3){
+.hamburger.active .bar:nth-child(3) {
     transform: translateY(-10px) rotate(-45deg);
 }
 
-/* Asetetaan viivat hamburgeriin */
 .bar {
     display: block;
     width: 30px;
@@ -176,62 +150,58 @@ img {
     margin: 7px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: var(--color-2);
+    background-color: $color-2;
     z-index: 102;
 }
 
-/* Koko näytön leveyteen */
 .about {
     width: 100%;
 }
 
-/* Osion tyylittely */
 .about_intro {
     width: 100%;
     padding-left: 10vw;
     padding-top: 150px;
     padding-right: 20px;
-    background-color: var(--color-3);
+    background-color: $color-3;
 }
 
-/* Osion tyylittely */
 .about_image {
-    background-color: var(--color-4);
+    background-color: $color-4;
     width: 100%;
     padding: 10% 20vw 0 20vw;
 }
 
-/* Osion tyylittely, vw jotta skaalautuu hyvin */
 .about_text {
     padding: 10vw 20vw;
     margin-top: -20px;
-    background-color: var(--color-4);
-    box-shadow: 0px 0px 50px var(--color-6);
+    background-color: $color-4;
+    box-shadow: 0px 0px 50px $color-6;
     text-align: center;
 }
 
-/* Max-width, jotta elementit ei veny liian isoiksi  */
-.projects, .work {
+.projects,
+.work {
     max-width: 1200px;
     margin: 50px auto;
     text-align: center;
-    background-color: var(--color-4);
+    background-color: $color-4;
     padding: 100px 10vw;
-    box-shadow: 0px 0px 5px var(--color-6);
+    box-shadow: 0px 0px 5px $color-6;
 }
 
-/* Rakoa muihin elementteihin */
-.about_text, .projects, .work{
+.about_text,
+.projects,
+.work {
     margin-bottom: 250px;
 }
 
-/* Rakoa muihin elementteihin */
 .projects img {
     margin-top: 20px;
 }
 
-/* Sisältö boksien asettelu */
-.work_item, .project_item {
+.work_item,
+.project_item {
     max-width: 600px;
     padding: 10px;
     margin: 25px;
@@ -239,7 +209,7 @@ img {
 }
 
 .project_item {
-    border: 1px solid var(--color-6);
+    border: 1px solid $color-6;
     border-radius: 7px;
     padding: 13px 28px 13px 20px;
 }
@@ -253,7 +223,7 @@ img {
 .project_item .title button {
     background: none;
     border: none;
-    color: var(--color-2);
+    color: $color-2;
 }
 
 .project_item .content {
@@ -261,16 +231,16 @@ img {
 }
 
 .project_item .content a {
-    border: 1px solid var(--color-4);
-    background-color: var(--color-3);
+    border: 1px solid $color-4;
+    background-color: $color-3;
     width: 40px;
     margin: 0;
     padding: 10px;
-    color: var(--color-2);
+    color: $color-2;
 }
 
 .project_item .content a:hover {
-    border: 1px solid var(--color-2);
+    border: 1px solid $color-2;
 }
 
 .project_item .content .links {
@@ -278,58 +248,47 @@ img {
     gap: 10px;
 }
 
-/* Työosio bokseille oma tyylittely */
 .work_item {
     border-radius: 20px;
-    border: solid 2px var(--color-2);
-    background: var(--color-3);
+    border: solid 2px $color-2;
+    background: $color-3;
 }
 
-/* Osion tyylittely */
 .contacts {
-    background-color: var(--color-4);
+    background-color: $color-4;
     padding: 50px 50px;
     text-align: center;
 }
 
-/* Yhteystietolinkeille oma tyylittely */
 .contacts a {
     padding: 10px 0px;
     margin: 10px auto;
     max-width: 200px;
 }
-/* Oma hover tyyli*/
 .contacts a:hover {
-    background-color: var(--color-4);
+    background-color: $color-4;
 }
 
-/* Footer teksti lähes huomaamattomaksi, jotta ei hyppää silmään */
 .copyright {
     color: #252a30;
-    font-size:medium;
+    font-size: medium;
 }
 
-/* Footerin tyyli */
 footer {
-    background-color: var(--color-4);
+    background-color: $color-4;
     text-align: center;
     padding: 10px;
 }
 
-/* Media query 1200px ylittäville näytöille */
 @media only screen and (min-width: 1200px) {
-
-    /* Pääotsikot takaisin staattiseen kokoon, jotta ei suurene liikaa */
     h1 {
         font-size: 100px;
     }
 
-    /* Ettei menu voi jäädä minkää elementin alle */
     .menu {
         z-index: 999;
     }
 
-    /* Piilotetaan hamburger menu */
     .menu_button {
         display: none;
     }
@@ -338,7 +297,6 @@ footer {
         display: none;
     }
 
-    /* Näytetään dropdown valikko vaakasuoralla ruudun yläreunassa*/
     .menu_dropdown {
         display: flex;
         flex-direction: row;
@@ -348,18 +306,15 @@ footer {
         align-items: center;
     }
 
-    /* Valikon linkkien rako */
     .menu_dropdown a {
         margin: 10px 5px;
         padding: 10px;
     }
 
-    /* Ettei muutu takaisin dropdowniin kun linkistä painetaan */
     .menu:focus-within .menu_dropdown {
         display: none;
     }
 
-    /* Grid määrittely about osiolle */
     .about {
         display: grid;
         grid-template-columns: 65% 35%;
@@ -371,33 +326,28 @@ footer {
         position: relative;
     }
 
-    /* Area nimin asetus */
     .about_intro {
         grid-area: title;
         margin-bottom: 0px;
-
     }
 
-    /* Area nimin asetus, absolute että pysyy nurkassa kiinni */
     .about_image {
         grid-area: picture;
         position: absolute;
         left: 0px;
         bottom: 0px;
-        padding: 100px 0px 0px 0px ;
+        padding: 100px 0px 0px 0px;
         background-color: #c7c6c2;
-
     }
 
-    /* Area nimi asetus */
     .about_text {
         grid-area: content1;
         margin-top: 0px;
         padding: 100px;
     }
 
-    /* Projekti ja työosioille oma grid */
-    .work, .projects {
+    .work,
+    .projects {
         display: grid;
         grid-template-columns: auto auto;
         grid-template-rows: auto;
@@ -410,21 +360,21 @@ footer {
         max-width: 1300px;
     }
 
-    /* Area nimi asetus */
-    .work_title, .projects_title {
+    .work_title,
+    .projects_title {
         grid-area: title;
     }
 
-    /* Area nimi asetus ja rako muihin elementteihin */
-    .work_item1, .projects_item1 {
+    .work_item1,
+    .projects_item1 {
         grid-area: content1;
         margin-left: 50px;
         padding-right: 20px;
         padding-left: 20px;
     }
 
-    /* Area nimi asetus ja rako muihin elementteihin */
-    .work_item2, .projects_item2{
+    .work_item2,
+    .projects_item2 {
         grid-area: content2;
         margin-right: 50px;
         padding-right: 20px;

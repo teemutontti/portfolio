@@ -1,0 +1,107 @@
+header {
+    background-color: var(--color-3);
+    left: 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+}
+.theme-light header {
+    background-color: var(--color-6);
+}
+
+header .left {
+    height: 8%;
+    padding: 1.5rem 1rem 0.5rem 2rem;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+}
+
+header .left h1 {
+    margin: 0;
+}
+
+header .left h2 {
+    font-family: "Abel", sans-serif;
+    margin-top: 0;
+    font-size: 1.2rem;
+}
+
+header .right {
+    background-color: var(--color-7);
+    filter: opacity(99.2%);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 80vh;
+    padding: 2rem 0;
+    gap: 5rem;
+    transition: left 0.5s ease;
+}
+.theme-light header .right {
+    background-color: var(--color-8);
+}
+
+header .right.hidden {
+    left: 100vw;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 0.5rem;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+header nav ul li {
+    width: 94%;
+    margin-left: 0rem;
+}
+
+header nav ul a {
+    font-size: 2rem;
+    width: 95%;
+    height: 4rem;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-right: 3rem;
+    border: 0.15rem solid rgba(0, 0, 0, 0);
+}
+
+header nav ul a:hover {
+    border: 0.15rem solid var(--color-5);
+    background-color: var(--color-3);
+}
+
+header .toggles {
+    gap: 1rem;
+}
+
+header .toggles div {
+    justify-content: right;
+    padding-right: 3rem;
+    gap: 1rem;
+}
+
+header .hamburger {
+    background: none;
+    padding: 1rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    margin-bottom: 1rem;
+}
+
+header .hamburger .line {
+    display: block;
+    width: 2.5rem;
+    height: 0.2rem;
+    background-color: var(--color-2);
+}
