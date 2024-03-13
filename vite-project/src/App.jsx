@@ -24,18 +24,16 @@ function App() {
     }, [theme]);
 
     return (
-        <>
-            <div className={`app ${theme}`}>
-                <Header theme={theme} toggleTheme={toggleTheme} />
-                <div className="main">
-                    <Home />
-                    <Projects />
-                    <WorkExperience />
-                    <ContactMe />
-                </div>
-                <Footer />
-            </div>
-        </>
+        <div className={`app ${theme}`}>
+            <Header theme={theme} toggleTheme={toggleTheme} />
+            <main>
+                <Home />
+                <Projects />
+                <WorkExperience />
+                <ContactMe />
+            </main>
+            <Footer />
+        </div>
     );
 }
 

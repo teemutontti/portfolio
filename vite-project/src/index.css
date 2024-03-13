@@ -66,6 +66,12 @@ h1 {
     font-size: 3.2em;
     line-height: 1.1;
     letter-spacing: 0.2rem;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
 }
 
 button {
@@ -101,24 +107,45 @@ ul {
     position: relative;
     border-radius: 1rem;
     border: 0.13rem solid var(--color-2);
-    background-color: var(--color-9);
+    background-color: var(--color-1);
     color: var(--color-2);
+}
+.theme-light .toggle {
+    border-color: var(--color-1);
+    background-color: var(--color-8);
+    color: var(--color-1);
+}
+
+.toggle:hover {
+    border-color: var(--color-8);
 }
 
 .toggle .lever {
-    background-color: #539df2;
+    background-color: var(--color-2);
     padding: 0;
-    left: 0;
+    left: -0.1rem;
     width: 1.8rem;
     height: 1.8rem;
     border-radius: 50%;
     position: absolute;
     transition: transform 0.3s ease;
+    transition: background-color 0.25s;
     box-shadow: 1px 0px 3px black;
+}
+.theme-light .toggle .lever {
+    background-color: var(--color-1);
+    box-shadow: 1px 0px 3px var(--color-2);
+}
+
+.toggle:hover .lever {
+    background-color: var(--color-8);
+}
+.theme-light .toggle:hover .lever {
+    background-color: var(--color-7);
 }
 
 .toggle .lever.on {
-    transform: translateX(2.12rem);
+    transform: translateX(2.3em);
     box-shadow: -1px 0px 3px black;
 }
 
@@ -137,4 +164,36 @@ ul {
 .flex.centered {
     justify-content: center;
     align-items: center;
+}
+
+a.primary {
+    background-color: var(--color-5);
+    color: var(--color-7);
+    padding: 0.5rem 1rem;
+    border-radius: 0.2rem;
+}
+a.primary:hover {
+    background-color: var(--color-4);
+}
+
+a.secondary {
+    background: none;
+    color: var(--color-5);
+    border: 0.12rem solid var(--color-4);
+    padding: 0.5rem 1rem;
+    border-radius: 0.2rem;
+}
+a.secondary:hover {
+    background-color: var(--color-5);
+    color: var(--color-7);
+}
+
+a.off {
+    background: none;
+    color: var(--color-5);
+    padding: 0;
+    border-radius: 0.2rem;
+}
+a.off:hover {
+    color: var(--color-4);
 }

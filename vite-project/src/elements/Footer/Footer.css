@@ -4,6 +4,7 @@
     left: 0;
     position: absolute;
     width: 100%;
+    display: none;
 }
 
 .theme-light .footer {

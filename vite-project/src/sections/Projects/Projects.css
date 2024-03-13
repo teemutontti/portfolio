@@ -1,0 +1,110 @@
+#projects .projects-list {
+    display: flex;
+    justify-content:center;
+    gap: 1rem;
+    margin: 0 0.3rem;
+    flex-wrap: wrap;
+}
+
+.project-element {
+    background-color: var(--color-3);
+    max-width: 28rem;
+    min-width: 16rem;
+    padding: 1rem 1.4rem 1rem 1.4rem;
+    border: 0.12rem solid var(--color-4);
+    border-radius: 0.3rem;
+    flex-grow: 1;
+}
+
+.project-element .header {
+    position: relative;
+}
+
+.project-element .header p {
+    font-size: 0.8rem;
+    margin-bottom: 0.6rem;
+}
+
+.project-element .header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: start;
+}
+
+.project-element .technologies ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.project-element .technologies ul li {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.project-element .header .subtitle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.project-element .header p,
+.project-element .header h3 {
+    margin: 0;
+}
+
+.project-element .header button.dropdown {
+    background: none;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0.6rem;
+    right: 0;
+    width: 2rem;
+    height: 2rem;
+    color: var(--color-5);
+}
+
+.project-element .header button.dropdown .icon {
+    font-size: 1.2rem;
+}
+
+.project-element img {
+    max-width: 25rem;
+    border-radius: 0.3rem;
+    margin-top: 1.5rem;
+}
+
+.project-element .content {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0 1rem;
+}
+
+.project-element .content h5 {
+    margin-bottom: 0;
+}
+
+.project-element .content .links {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+    gap: 1.5rem;
+}
+
+.project-element .content .links a {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+

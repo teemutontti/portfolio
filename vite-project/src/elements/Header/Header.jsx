@@ -3,6 +3,18 @@ import PropTypes from "prop-types";
 import "./Header.css";
 import { useState } from "react";
 
+// FontAwesome imports
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import {
+    faMoon,
+    faSun,
+    faGlobe,
+    faUser,
+    faCode,
+    faBriefcase,
+    faAddressCard
+} from '@fortawesome/free-solid-svg-icons'
+
 function countStudentYears(language) {
     const STARTING_YEAR = 2022;
     const GRADUATION = new Date("2025-12-31");
@@ -63,38 +75,48 @@ export default function Header({ theme, toggleTheme }) {
                     <span className="line x"></span>
                 </button>
             </div>
-            <div className={`right flex column ${menuOpen ? "" : "hidden"}`}>
+            <div className={`right flex ${menuOpen ? "" : "hidden"}`}>
                 <nav>
                     <ul>
                         <li>
-                            <a href="#home">{t("home")}</a>
+                            <a href="#aboutMe">
+                                <FontAwesomeIcon icon={faUser} className="icon"/>
+                                <p>{t("aboutMe")}</p>
+                            </a>
                         </li>
                         <li>
-                            <a href="#projects">{t("projects")}</a>
+                            <a href="#projects">
+                                <FontAwesomeIcon icon={faCode} className="icon"/>
+                                <p>{t("projects")}</p>
+                            </a>
                         </li>
                         <li>
-                            <a href="#workExperience">{t("workExperience")}</a>
+                            <a href="#workExperience">
+                                <FontAwesomeIcon icon={faBriefcase} className="icon"/>
+                                <p>{t("workExperience")}</p>
+                            </a>
                         </li>
                         <li>
-                            <a href="#contactMe">{t("contactMe")}</a>
+                            <a href="#contactMe">
+                                <FontAwesomeIcon icon={faAddressCard} className="icon"/>
+                                <p>{t("contactMe")}</p>
+                            </a>
                         </li>
                     </ul>
                 </nav>
-                <section className="toggles">
-                    <div className="flex center">
-                        <p>{t("toggleLanguage")}</p>
-                        <button className="language-toggle toggle" onClick={toggleLanguage}>
-                            <h4>FI</h4>
-                            <span className={i18n.language === "fi" ? "lever off" : "lever on"}></span>
-                            <h4>EN</h4>
-                        </button>
-                    </div>
+                <section className="toggles flex column">
                     <div className="flex center">
                         <p>{t("toggleTheme")}</p>
                         <button className="theme-toggle toggle" onClick={toggleTheme}>
-                            <h4>☀️</h4>
+                            <FontAwesomeIcon icon={faMoon} />
                             <span className={theme === "light" ? "lever off" : "lever on"}></span>
-                            <h4>🌙</h4>
+                            <FontAwesomeIcon icon={faSun} />
+                        </button>
+                    </div>
+                    <div className="flex center">
+                        <button className="language-toggle" onClick={toggleLanguage}>
+                            <FontAwesomeIcon icon={faGlobe} />
+                            {t("toggleLanguage")}
                         </button>
                     </div>
                 </section>
