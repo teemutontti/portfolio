@@ -1,22 +1,27 @@
-#about-me {
-    padding: 3rem;
+#home {
     margin-top: 16vw;
     position: relative;
     max-width: 720px;
+    margin: 16vw auto;
+    margin-top: 150px;
 }
 
 .home-text {
     position: relative;
     z-index: 2;
+    text-align: center;
+}
+
+.home-text h2 {
+    font-size: 1rem;
+    font-family: "Abel", sans-serif;
+    text-transform: none;
+    width: 100%;
+    margin: 1rem auto;
 }
 
 .home-image {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    max-width: 100%;
-    max-height: 100%;
+    width: 100px;
     z-index: 1;
     filter: opacity(50%);
 }

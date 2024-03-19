@@ -42,7 +42,7 @@ body {
     padding: 0;
     display: flex;
     place-items: center;
-    min-width: 320px;
+    min-width: 300px;
     min-height: 100vh;
     background-color: var(--color-1);
     color: var(--color-2);
@@ -72,6 +72,8 @@ h1 {
 h2 {
     font-size: 2rem;
     text-transform: uppercase;
+    width: 12rem;
+    margin: 2rem auto;
 }
 
 button {
@@ -196,4 +198,9 @@ a.off {
 }
 a.off:hover {
     color: var(--color-4);
+}
+
+#home, #about-me, #projects, #work-experience, #contact-me {
+    padding: 0 2rem;
+    margin-top: 10rem;
 }

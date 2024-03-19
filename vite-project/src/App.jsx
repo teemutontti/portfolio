@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 // Component imports
 import Header from "./elements/Header/Header";
 import Home from "./sections/Home/Home";
+import AboutMe from "./sections/AboutMe/AboutMe"
 import Projects from "./sections/Projects/Projects";
 import WorkExperience from "./sections/WorkExperience/WorkExperience";
 import ContactMe from "./sections/ContactMe/ContactMe";
@@ -28,6 +29,7 @@ function App() {
             <Header theme={theme} toggleTheme={toggleTheme} />
             <main>
                 <Home />
+                <AboutMe />
                 <Projects />
                 <WorkExperience />
                 <ContactMe />

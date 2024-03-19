@@ -1,23 +1,31 @@
-#projects .projects-list {
+#projects {
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+#projects ul.projects-list {
     display: flex;
     justify-content:center;
-    gap: 1rem;
-    margin: 0 0.3rem;
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 0 auto;
+    position: relative;
 }
 
 .project-element {
     background-color: var(--color-3);
-    max-width: 28rem;
-    min-width: 16rem;
-    padding: 1rem 1.4rem 1rem 1.4rem;
+    min-width: 10rem;
+    padding: 1rem 1rem 1rem 1.4rem;
     border: 0.12rem solid var(--color-4);
     border-radius: 0.3rem;
-    flex-grow: 1;
+    text-align: left;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease;
 }
 
-.project-element .header {
-    position: relative;
+.project-element.hidden:hover {
+    transform: scale(105%);
 }
 
 .project-element .header p {
@@ -27,9 +35,18 @@
 
 .project-element .header {
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
-    align-items: start;
+    align-items: left;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+.project-element .header .titles {
+    max-width: 14rem;
+}
+
+.project-element .header .titles .title {
+    justify-content: left;
 }
 
 .project-element .technologies ul {
@@ -48,7 +65,7 @@
 .project-element .header .subtitle {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     gap: 0.5rem;
 }
@@ -59,16 +76,14 @@
 }
 
 .project-element .header button.dropdown {
-    background: none;
-    position: absolute;
     display: flex;
+    width: 100%;
     justify-content: center;
     align-items: center;
-    top: 0.6rem;
-    right: 0;
-    width: 2rem;
+    background: none;
     height: 2rem;
     color: var(--color-5);
+    margin-bottom: 0.1rem;
 }
 
 .project-element .header button.dropdown .icon {
@@ -76,9 +91,18 @@
 }
 
 .project-element img {
+    width: 95%;
     max-width: 25rem;
     border-radius: 0.3rem;
     margin-top: 1.5rem;
+    box-shadow: 0.2rem 0.2rem 0.5rem var(--color-7);
+    border: 0.3rem solid var(--color-1);
+    filter: opacity(75%);
+    transition: filter 0.3s ease;
+}
+
+.project-element:hover img {
+    filter: opacity(100%);
 }
 
 .project-element .content {
@@ -87,7 +111,19 @@
     flex-direction: column;
     flex-wrap: wrap;
     gap: 1rem;
-    padding: 0 1rem;
+    padding: 0 2rem;
+    position: absolute;
+    background-color: var(--color-3);
+    left: -0.05rem;
+    right: -0.05rem;
+    border: 0.1rem solid var(--color-4);
+    border-radius: 0.3rem;
+    border-top: none;
+    z-index: 2;
+}
+
+.project-element .content.hidden {
+    display: none;
 }
 
 .project-element .content h5 {
@@ -108,3 +144,91 @@
     gap: 0.5rem;
 }
 
+.fullscreen-project-element {
+    z-index: 5;
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    min-height: 40rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fullscreen-project-element .project-element {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.fullscreen-project-element .project-element .header {
+    flex-direction: column;
+}
+
+.fullscreen-project-element .project-element img {
+    max-width: 100%;
+}
+
+.fullscreen-project-element .project-element:hover {
+    transform: scale(100%);
+}
+
+.fullscreen-project-element button.close-fullscreen {
+    position: absolute;
+    top: 0.5rem;
+    right: 0;
+    background: none;
+    color: var(--color-4);
+    font-size: 2rem;
+    padding: 0.3rem 0.52rem;
+    border-radius: 50%;
+    margin: 0.8rem 0.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+}
+
+@media only screen and (min-width: 520px) {
+    #projects ul.projects-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .project-element {
+        width: 24rem;
+    }
+
+    .project-element .header button.dropdown {
+        width: 2rem;
+    }
+}
+
+@media only screen and (min-width: 882px) {
+    #projects {
+        margin: 0 2rem
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .fullscreen-project-element .project-element {
+        display: flex;
+    }
+
+    .fullscreen-project-element .project-element .header,
+    .fullscreen-project-element .project-element .content {
+        position: relative;
+        display: flex;
+        align-items: start;
+        justify-content: left;
+    }
+
+    .fullscreen-project-element .project-element .header {
+        width: 180%;
+    }
+
+    .fullscreen-project-element .project-element .content {
+        border: none;
+    }
+}
