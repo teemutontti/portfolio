@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="This is portfolio page of Teemu Tontti" />
+        <link rel="stylesheet" href="/style/style.css" />
+        <link rel="icon" type="image/x-icon" href="images/window_icon.webp" />
+        <script src="https://kit.fontawesome.com/371150c443.js" crossorigin="anonymous"></script>
+        <title>Teemu Tontti - Portfolio</title>
+    </head>
+    <body>
+        <header>
+            <nav class="menu">
+                <div class="menu_title">
+                    <i class="fa-solid fa-suitcase fa-2x"></i>
+                    <h2 class="menu_item1">PORTFOLIO</h2>
+                </div>
+                <div class="menu_dropdown">
+                    <a href="#about" class="nav-link">MINUSTA</a>
+                    <a href="#projects" class="nav-link">PROJEKTIT</a>
+                    <a href="#work" class="nav-link">TYÖT</a>
+                    <a href="#contacts" class="nav-link">YHTEYSTIEDOT</a>
+                </div>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="about">
+                <div class="about_intro">
+                    <h1 class="main_title">TEEMU TONTTI</h1>
+                    <h2>Tietojenkäsittelyn opiskelija</h2>
+                    <p>
+                        Olen tietojenkäsittelyn tradenomiopiskelija, joka on innokas ja nopea oppimaan uutta. Tänne olen kerännyt
+                        hieman omia projekteja, mitä olen kouluni ohella ehtinyt tekemään.
+                    </p>
+                    <br /><br /><br />
+                </div>
+                <img class="about_image" src="images/animation.gif" alt="Profile picture" />
+            </div>
+            <div class="projects" id="projects">
+                <div class="projects_title">
+                    <h1>PROJEKTIT</h1>
+                </div>
+                <div class="project_item">
+                    <div class="title">
+                        <div class="left">
+                            <h2>Protein Efficiency Calculator</h2>
+                            <h5>Tammikuu 2024</h5>
+                        </div>
+                        <button onclick="openDropdown(this, 1)">
+                            <i class="fa-solid fa-chevron-down fa-xl"></i>
+                        </button>
+                    </div>
+                    <div class="content" id="dropdown-1">
+                        <p>
+                            Tein intohimoprojektina sovelluksen, joka laskee ruokien proteiinipitoisuutta sen kalorimääriin
+                            nähden.
+                        </p>
+                        <p>Sovelluksessa voi lisätä, muokata tai poistaa ruokia.</p>
+                        <p>
+                            Tällä hetkellä sovelluksen ominaisuuksiin kuuluu vain proteiinipitoisuuden laskenta, mutta
+                            tulevaisuudessa on tavoitteena lisätä sovellukseen erilaisia hyödyllisiä ominaisuuksia.
+                        </p>
+                        <div class="links">
+                            <a href="https://protein-efficiency-calculator-6baf548f6b81.herokuapp.com/" target="_blank">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                            <a href="https://github.com/teemutontti/verbose-guacamole" target="_blank">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project_item">
+                    <div class="title">
+                        <div class="left">
+                            <h2>Java Contacts App projekti</h2>
+                            <h5>Joulukuu 2022</h5>
+                        </div>
+                        <button onclick="openDropdown(this, 2)">
+                            <i class="fa-solid fa-chevron-down fa-xl"></i>
+                        </button>
+                    </div>
+                    <div class="content" id="dropdown-2">
+                        <img src="/images/projects_java.webp" alt="Java project" />
+                        <p>
+                            Tein Java ohjelmointikielellä konsolin sisäisen sovelluksen, jossa voi tallentaa, tarkastella, muokata
+                            ja poistaa yhteystietoja. Tämä oli ensimmäinen ohjelmointiprojekti jonka olen tuottanut.
+                        </p>
+                    </div>
+                </div>
+                <div class="project_item">
+                    <div class="title">
+                        <div class="left">
+                            <h2>Mobiilipeli Narvan kyläpanimolle</h2>
+                            <h5>Toukokuu 2023</h5>
+                        </div>
+                        <button onclick="openDropdown(this, 3)">
+                            <i class="fa-solid fa-chevron-down fa-xl"></i>
+                        </button>
+                    </div>
+                    <div class="content" id="dropdown-3">
+                        <img src="images/projects_pintrush.webp" alt="Mobilegame project" />
+                        <p>
+                            Teimme neljän hengen tiimissä mobiilipelin asiakkaallemme Narvan kyläpanimolle. Peli tuotettiin osana
+                            tietojenkäsittelyn tutkinto-ohjelmaa ja peli tullaan julkaisemaan Google Play Storessa. Tiimissä
+                            roolini oli ohjelmoija.
+                        </p>
+                        <p>Pelin julkaisutapahtuma pidettiin TAMK:n yhteisellä pelimessuilla 11.5.2023.</p>
+                    </div>
+                </div>
+                <div class="project_item template">
+                    <div class="title">
+                        <div class="left">
+                            <h2>Insert Title Here</h2>
+                            <h5>Joulukuu 2000</h5>
+                        </div>
+                        <button onclick="openDropdown(this, 99)">
+                            <i class="fa-solid fa-chevron-down fa-xl"></i>
+                        </button>
+                    </div>
+                    <div class="content" id="dropdown-99">
+                        <img src="images/background.webp" alt="" />
+                        <p>Insert Content Text Here</p>
+                        <div class="links">
+                            <a href="#" target="_blank">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                            <a href="#" target="_blank">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="work" id="work">
+                <h1 class="work_title">TYÖKOKEMUS</h1>
+                <div class="work_item">
+                    <h2>Environics Oy</h2>
+                    <h3>Elo 2021 - Elo 2022</h3>
+                    <p>Työtehtäväni:</p>
+                    <ul>
+                        <li>Elektroniikkalaitteiden kokoonpano ja testaus</li>
+                        <li>Vikatilanteiden ratkominen</li>
+                    </ul>
+                    <p>Missä kehityin:</p>
+                    <ul>
+                        <li>Omatoimisuus ja tarkkuus</li>
+                        <li>Tuotantoprosessien kehittäminen</li>
+                    </ul>
+                </div>
+                <div class="work_item">
+                    <h2>Ohjaamo Olkkari</h2>
+                    <h3>Helmi 2021 - Elo 2021</h3>
+                    <p>Työtehtäväni:</p>
+                    <ul>
+                        <li>Suuren verkoston ja asiakkaiden tiedottaminen</li>
+                        <li>Some tiedotteiden tekeminen ja julkaisu</li>
+                        <li>Yleiset toimistotyöt</li>
+                    </ul>
+                    <p>Missä kehityin:</p>
+                    <ul>
+                        <li>Työskentely suuressa verkostossa</li>
+                        <li>Omatoimisuus ja priorisointikyky</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="contacts" id="contacts">
+                <h1 class="contacts_title">YHTEYSTIEDOT</h1>
+                <a href="https://fi.linkedin.com/in/teemu-tontti-76612721a" target="_blank">LinkedIn</a>
+                <a href="https://www.github.com/teemutontti" target="_blank">GitHub</a>
+                <a href="cv_Teemu_Tontti.pdf" target="_blank">CV (Download)</a>
+                <p>Voit myös laittaa minulle sähköpostia osoitteeseen:</p>
+                <p><strong>teemu.tontti.tt@gmail.com</strong></p>
+            </div>
+        </main>
+        <footer>
+            <p class="copyright"><br /><br />&copy; 2023 Portfolio Teemu Tontti. All rights reserved.</p>
+        </footer>
+    </body>
+    <script src="index.js"></script>
+</html>
