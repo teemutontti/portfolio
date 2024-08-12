@@ -1,0 +1,62 @@
+:root {
+    --text-primary: #FFFFFF;
+    --text-secondary: #D9D9D9;
+    --background: #00171F;
+    --paper: #00212D;
+    --primary: #0E93E5;
+    --primary-1: #44b6fd;
+    --primary-2: #076097;
+    --secondary: #ADEBFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--text-primary);
+}
+
+html, body {
+    background-color: var(--background);
+}
+
+h1 {
+    font-family: "Martel Sans", sans-serif;
+    font-weight: 900;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+}
+
+h2 {
+    font-family: "Martel Sans", sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2.3rem;
+}
+
+p {
+    font-family: "Inder", sans-serif;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+}
+
+button {
+    background-color: var(--primary);
+    border-radius: 0.25rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    font-family: "Inder", sans-serif;
+    cursor: pointer;
+}
+
+button.text {
+    color: var(--secondary);
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+button.text span {
+    color: var(--secondary);
+}
