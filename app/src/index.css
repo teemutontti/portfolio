@@ -34,7 +34,14 @@ h2 {
     line-height: 2.3rem;
 }
 
-p {
+h3 {
+    font-family: "Martel Sans", sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    line-height: 2.3rem;
+}
+
+p, span {
     font-family: "Inder", sans-serif;
     font-size: 0.875rem;
     font-weight: 400;
