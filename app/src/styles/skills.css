@@ -1,0 +1,10 @@
+section.skills {
+    padding: 3rem;
+}
+
+div.logo-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 2rem 0;
+}
