@@ -5,3 +5,7 @@ export interface LogoType {
 export interface TagType {
     children: string
 }
+
+export interface PercentageWheelType {
+    percentage: number
+}
