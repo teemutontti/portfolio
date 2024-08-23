@@ -1,0 +1,32 @@
+div.menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+div.menu button {
+    background: none;
+}
+
+div.menu div.menu-content {
+    position: absolute;
+    right: 0;
+    width: 70%;
+    height: 100%;
+    background-color: var(--paper);
+}
+
+div.menu div.menu-content button.close {
+    position: absolute;
+    top: 0rem;
+    right: 0rem;
+    background: none;
+}
+
+div.menu div.menu-content button.close span {
+    font-size: 2.4rem;
+}

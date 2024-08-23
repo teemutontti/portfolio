@@ -1,0 +1,59 @@
+.project-view {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.project-view .panel {
+    position: relative;
+    margin: 2rem auto;
+    background-color: var(--paper);
+    width: 80%;
+    height: 90%;
+    border-radius: 0.3rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.project-view .panel .close {
+    position: absolute;
+    top: 0.3rem;
+    right: 0;
+    background: none;
+}
+
+.project-view .panel h3 {
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+}
+
+.project-view .panel p.subtitle {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.project-view .panel .project-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.2rem;
+}
+
+.project-view .panel .description {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.project-view .panel .logos {
+    display: flex;
+    gap: 0.5rem;
+}

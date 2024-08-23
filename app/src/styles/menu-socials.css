@@ -1,0 +1,19 @@
+ul.menu-socials {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    list-style: none;
+    display: flex;
+    gap: 0.5rem;
+    padding: 0.8rem 1.2rem;
+}
+
+ul.menu-socials li img, ul.menu-socials li span {
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 1.5rem;
+}
+
+ul.menu-socials button {
+    padding: 0;
+}

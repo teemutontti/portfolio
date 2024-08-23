@@ -3,8 +3,9 @@ span.tag {
     padding: 0.5rem 0.8rem;
     border-radius: 0.4rem;
     cursor: default;
+    transition: transform 0.2s;
 }
 
 span.tag:hover {
-    background-color: var(--primary);
+    transform: scale(1.05);
 }

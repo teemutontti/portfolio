@@ -1,4 +1,5 @@
 div.top-bar {
+    z-index: 1000;
     position: fixed;
     display: flex;
     justify-content: space-between;
@@ -34,7 +35,7 @@ svg.logo:hover #left-t {
     transform: translateX(-0.2rem);
 }
 
-div.menu-icon {
+button.menu-icon {
     position: relative;
     width: 2.5rem;
     height: 2rem;
@@ -44,19 +45,21 @@ div.menu-icon {
     justify-content: space-between;
     padding: 0.32rem;
     cursor: pointer;
+    background: none;
 }
 
-div.menu-icon span {
+button.menu-icon span {
     display: block;
+    width: 100%;
     height: 0.2rem;
     background-color: var(--text-primary);
     transition: transform 0.2s;
 }
 
-div.menu-icon:hover span:nth-child(1) {
+button.menu-icon:hover span:nth-child(1) {
     transform: translateY(-0.06rem);
 }
 
-div.menu-icon:hover span:nth-child(3) {
+button.menu-icon:hover span:nth-child(3) {
     transform: translateY(0.06rem);
 }
