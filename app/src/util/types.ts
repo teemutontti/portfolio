@@ -39,6 +39,6 @@ export interface MenuType {
 
 export interface SectionType {
     name: string;
-    title: string;
+    title?: string;
     children?: React.ReactNode
 }
