@@ -3,7 +3,6 @@ section.projects {
 }
 
 section.projects .project-list {
-    margin-top: 1.5rem;
     display: flex;
     flex-direction: column;
     gap: 4rem;
