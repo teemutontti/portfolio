@@ -1,3 +1,4 @@
+import Section from "../features/Section";
 import "../styles/about.css";
 import { useState } from "react";
 
@@ -14,7 +15,7 @@ export default function About() {
     ];
 
     return (
-        <section className="about" id="about">
+        <Section name="about" title="About">
             <div className={showMore ? `text-field open` : "text-field"}>
                 <div className="shadow"></div>
                 {text.map((paragraph, index) => (
@@ -24,6 +25,6 @@ export default function About() {
             <button className="text" onClick={() => setShowMore(!showMore)}>
                 {showMore ? <span className="material-symbols-outlined">arrow_drop_up</span> : "Learn More"}
             </button>
-        </section>
+        </Section>
     );
 }

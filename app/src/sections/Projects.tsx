@@ -4,6 +4,7 @@ import "../styles/projects.css";
 import projectObjArray from "../util/projects";
 import { ProjectType } from "../util/types";
 import ProjectView from "../features/ProjectView";
+import Section from "../features/Section";
 
 export default function Projects() {
     const [projectToView, setProjectToView] = useState<ProjectType | null>(null);
@@ -13,8 +14,7 @@ export default function Projects() {
     };
 
     return (
-        <section className="projects" id="projects">
-            <h2>Recent Projects</h2>
+        <Section name="projects" title="Recent Projects">
             {projectToView &&
                 <ProjectView
                     project={projectToView}
@@ -30,6 +30,6 @@ export default function Projects() {
                     />
                 ))}
             </div>
-        </section>
+        </Section>
     );
 }

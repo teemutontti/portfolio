@@ -2,11 +2,12 @@
 import LogoDumb from "../components/LogoDumb";
 //import PercentageWheel from "../components/PercentageWheel";
 import Tag from "../components/Tag";
+import Section from "../features/Section";
 import "../styles/skills.css"
 
 export default function Skills() {
     return (
-        <section className="skills" id="skills">
+        <Section name="skills">
             <p>
                 Here's a snapshot of the technologies and methodologies I'm proficient in, with a focus on full-stack development
                 and mobile applications.
@@ -45,6 +46,6 @@ export default function Skills() {
                 <Tag>Databases</Tag>
                 <Tag>Internship Experience</Tag>
             </div>
-        </section>
+        </Section>
     );
 }
