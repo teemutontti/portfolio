@@ -8,6 +8,7 @@
 .logo-dumb-2 a {
     position: absolute;
     filter: grayscale(100%) opacity(50%);
+    transition: filter 0.15s;
 }
 
 .logo-dumb-2 a img {
@@ -16,6 +17,10 @@
 }
 
 .logo-dumb-2 a:hover {
+    filter: none;
+}
+
+.logo-dumb-2 a.light-up {
     filter: none;
 }
 
