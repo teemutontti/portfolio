@@ -2,7 +2,7 @@ import "../styles/introduction.css";
 
 export default function Introduction() {
     return (
-        <section className="introduction" id="introduction">
+        <section className="introduction" id="home">
             <div className="content">
                 <div className="heading">
                     <p>Hello, my name is</p>
