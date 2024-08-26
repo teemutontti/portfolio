@@ -8,10 +8,6 @@ import "../styles/skills.css"
 export default function Skills() {
     return (
         <Section name="skills">
-            <p>
-                Here's a snapshot of the technologies and methodologies I'm proficient in, with a focus on full-stack development
-                and mobile applications.
-            </p>
             <LogoDumb version={2} />
             {/*
             <div className="logo-list">
@@ -29,22 +25,26 @@ export default function Skills() {
                 </div>
             </div>
             */}
-            <p>Hover over the tags to show where I have used each skill</p>
-            <div className="logo-list">
-                <Tag>Frontend</Tag>
-                <Tag>Backend</Tag>
-                <Tag>API</Tag>
-                <Tag>Problem Solving</Tag>
-                <Tag>Self-Initiative</Tag>
-                <Tag>Teamwork</Tag>
-                {/* Not sure if worth noting
-                <Tag>TDD</Tag>
-                */}
-                <Tag>Critical Thinking</Tag>
-                <Tag>Industrial Protocols</Tag>
-                <Tag>Game Development</Tag>
-                <Tag>Databases</Tag>
-                <Tag>Internship Experience</Tag>
+            <div className="logo-list-container">
+                <p className="hint-text">
+                    Hover over the tags to show where I have used each skill
+                </p>
+                <div className="logo-list">
+                    <Tag>Frontend</Tag>
+                    <Tag>Backend</Tag>
+                    <Tag>API</Tag>
+                    <Tag>Problem Solving</Tag>
+                    <Tag>Self-Initiative</Tag>
+                    <Tag>Teamwork</Tag>
+                    {/* Not sure if worth noting
+                    <Tag>TDD</Tag>
+                    */}
+                    <Tag>Critical Thinking</Tag>
+                    <Tag>Industrial Protocols</Tag>
+                    <Tag>Game Development</Tag>
+                    <Tag>Databases</Tag>
+                    <Tag>Internship Experience</Tag>
+                </div>
             </div>
         </Section>
     );

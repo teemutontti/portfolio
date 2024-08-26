@@ -6,9 +6,18 @@ section.skills {
     margin-left: 1rem;
 }
 
-div.logo-list {
+.logo-list-container {
+    margin-left: 1rem;
+}
+
+.logo-list {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
-    margin: 1rem;
+    margin-top: 0.5rem;
+}
+
+.hint-text {
+    color: var(--text-secondary);
+    filter: opacity(0.25);
 }
