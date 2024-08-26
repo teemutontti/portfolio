@@ -9,8 +9,8 @@ export default function ProjectCard({ project, onClick }: ProjectCardType) {
             <img src={project.image || placeholderImage} className="project-image" alt="Project image" />
             <div className="project-info">
                 <div className="left">
-                    <h4>{project.name}</h4>
-                    <p>{project.date}</p>
+                    <h4 className="project-title">{project.name}</h4>
+                    <p className="project-date">{project.date}</p>
                 </div>
                 <div className="right">
                     {project.logos.map((logo, index) => (

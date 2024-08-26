@@ -1,4 +1,4 @@
-button.project-card {
+.project-card {
     width: 100%;
     background: none;
     border: none;
@@ -6,38 +6,48 @@ button.project-card {
     margin: 0;
 }
 
-.project-card img.project-image {
+.project-image {
     width: 100%;
     height: 100%;
     border-radius: 0.2rem;
 }
 
-.project-card .project-info {
+.project-info {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: -0.1rem;
+    position: relative;
 }
 
-.project-card .project-info h4 {
-    height: 1.4rem;
-    padding: 0;
-    margin: 0;
-}
-
-.project-card .project-info p {
-    color: var(--text-secondary);
-    font-size: 0.75rem;
+.project-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-right: 1rem;
     text-align: start;
 }
 
-.project-card .project-info .right {
+.project-date {
+    color: var(--text-secondary);
+    font-size: 0.75rem;
+    text-align: start;
+    position: absolute;
+    top: 1.5rem;
+}
+
+.left {
+    flex: 1;
+    min-width: 0; /* This is important to allow text to overflow */
+}
+
+.right {
     display: flex;
     align-items: center;
     gap: 0.2rem;
 }
 
-.project-card .project-info .right img {
+.right img {
     height: 1.2rem;
     width: 1.2rem;
 }
