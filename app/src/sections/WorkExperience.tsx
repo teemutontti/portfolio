@@ -1,5 +1,4 @@
 import Section from "../features/Section";
-import "../styles/work-experience.css";
 
 export default function WorkExperience() {
     return (

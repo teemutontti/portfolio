@@ -1,5 +1,4 @@
 import Section from "../features/Section";
-import "../styles/contact.css";
 
 export default function Contact() {
     return (
