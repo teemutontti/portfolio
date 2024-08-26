@@ -1,10 +1,7 @@
 import Section from "../features/Section";
 import "../styles/about.css";
-import { useState } from "react";
 
 export default function About() {
-    const [showMore, setShowMore] = useState(false);
-
     const text = [
         "Welcome to my portfolio page! Let me tell you a bit about myself.",
         "I’m a third year programming student with  a strong passion for coding and problem solving.",
@@ -16,15 +13,11 @@ export default function About() {
 
     return (
         <Section name="about" title="About">
-            <div className={showMore ? `text-field open` : "text-field"}>
-                <div className="shadow"></div>
+            <div className="text-field">
                 {text.map((paragraph, index) => (
                     <p key={index}>{paragraph}</p>
                 ))}
             </div>
-            <button className="text" onClick={() => setShowMore(!showMore)}>
-                {showMore ? <span className="material-symbols-outlined">arrow_drop_up</span> : "Learn More"}
-            </button>
         </Section>
     );
 }
