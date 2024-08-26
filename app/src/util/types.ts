@@ -3,7 +3,8 @@ export interface LogoType {
 }
 
 export interface TagType {
-    children: string
+    children: string,
+    className?: string
 }
 
 export interface PercentageWheelType {
@@ -34,4 +35,10 @@ export interface ProjectViewType {
 
 export interface MenuType {
     closeMenu: () => void;
+}
+
+export interface SectionType {
+    name: string;
+    title: string;
+    children?: React.ReactNode
 }
