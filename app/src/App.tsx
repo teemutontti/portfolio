@@ -1,6 +1,6 @@
 
 import './App.css'
-import TopBar from './components/TopBar'
+import TopBar from './features/TopBar'
 import About from './sections/About';
 import Contact from './sections/Contact';
 import Introduction from './sections/Introduction';
@@ -13,10 +13,10 @@ function App() {
         <>
             <TopBar />
             <Introduction />
-            <About />
             <Skills />
             <Projects />
             <WorkExperience />
+            <About />
             <Contact />
         </>
     );
