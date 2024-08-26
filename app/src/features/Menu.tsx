@@ -1,5 +1,5 @@
 import MenuLinks from "../components/MenuLinks";
-import MenuSocials from "../components/MenuSocials";
+import Socials from "../components/Socials";
 import "../styles/Menu.css";
 import { MenuType } from "../util/types";
 
@@ -11,7 +11,7 @@ export default function Menu({ closeMenu }: MenuType) {
                     <span className="material-symbols-outlined">close</span>
                 </button>
                 <MenuLinks />
-                <MenuSocials />
+                <Socials inMenu={true} />
             </div>
         </div>
     );

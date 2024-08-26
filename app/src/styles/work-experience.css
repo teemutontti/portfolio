@@ -1,4 +1,4 @@
-section.projects .project-list {
+.work-list {
     display: flex;
     flex-direction: column;
     gap: 3rem;

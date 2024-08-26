@@ -24,6 +24,10 @@ section.introduction div.content div.sub-heading {
     gap: 1rem;
 }
 
+.sub-heading p a.know-me-link {
+    color: var(--secondary);
+}
+
 button {
     background: linear-gradient(
         45deg,

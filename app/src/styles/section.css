@@ -1,6 +1,7 @@
 section.styled-section {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 2rem;
     padding: 3rem;
+    margin: 5rem 0;
 }

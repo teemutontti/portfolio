@@ -1,8 +1,9 @@
 import linkedIn from "../assets/linkedin-app-white-icon.webp";
 import github from "../assets/github-logo.webp";
 import "../styles/menu-socials.css";
+import { SocialsType } from "../util/types";
 
-export default function MenuSocials() {
+export default function Socials({ inMenu = false }: SocialsType) {
 
     const sendEmail = () => {
         const subject = encodeURIComponent("Contact Request");
@@ -12,7 +13,7 @@ export default function MenuSocials() {
     }
 
     return (
-        <ul className="menu-socials">
+        <ul className={inMenu ? `socials menu` : "socials"}>
             <li>
                 <a href="https://www.linkedin.com/in/tonttiteemu" target="_blank">
                     <img src={linkedIn} />

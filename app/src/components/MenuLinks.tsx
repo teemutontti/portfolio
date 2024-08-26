@@ -7,9 +7,6 @@ export default function MenuLinks() {
                 <a href="#home">Home</a>
             </li>
             <li>
-                <a href="#about">About</a>
-            </li>
-            <li>
                 <a href="#skills">Skills</a>
             </li>
             <li>
@@ -17,6 +14,9 @@ export default function MenuLinks() {
             </li>
             <li>
                 <a href="#work-experience">Work Experience</a>
+            </li>
+            <li>
+                <a href="#about">About</a>
             </li>
             <li>
                 <a href="#contact">Contact</a>

@@ -28,6 +28,16 @@ export interface ProjectCardType {
     onClick: () => void
 }
 
+export interface WorkExperienceType {
+    title: string;
+    subtitle: string;
+    text: string[];
+}
+
+export interface WorkExperienceCardType {
+    work: WorkExperienceType
+}
+
 export interface ProjectViewType {
     project: ProjectType,
     onClose: () => void
@@ -41,4 +51,8 @@ export interface SectionType {
     name: string;
     title?: string;
     children?: React.ReactNode
+}
+
+export interface SocialsType {
+    inMenu?: boolean;
 }
