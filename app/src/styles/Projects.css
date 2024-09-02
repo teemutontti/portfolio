@@ -1,0 +1,36 @@
+section.projects .project-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem 3rem;
+}
+
+section.projects .content {
+    position: relative;
+}
+
+.projects .sort, .projects .sort .sort-type, .projects .sort .sort-order {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.projects .sort {
+    align-items: center;
+    margin-bottom: 1rem;
+    gap: 2rem;
+}
+
+.projects .sort p {
+    font-size: 0.6rem;
+}
+
+.sort-type-button, .sort-order-button {
+    padding: 0;
+    background: none;
+    border: 0.1rem solid transparent;
+    filter: opacity(0.4);
+}
+
+.sort-type-button.selected, .sort-order-button.selected {
+    filter: opacity(1);
+}

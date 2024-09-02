@@ -1,0 +1,38 @@
+.loading-effect {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.loading-spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    background: conic-gradient(
+        var(--background) 0% 25%,
+        var(--primary) 45% 55%,
+        var(--background) 75% 100%
+    );
+    animation: spin 1s linear infinite;
+}
+
+.loading-cover {
+    height: 80%;
+    width: 80%;
+    border-radius: 50%;
+    background-color: var(--background);
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

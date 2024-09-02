@@ -1,0 +1,144 @@
+.logo-dumb-2 {
+    width: 16rem;
+    height: 18rem;
+    position: relative;
+    margin: 1rem 0;
+}
+
+.logo-dumb-2 a {
+    position: absolute;
+    filter: grayscale(100%) opacity(50%);
+    transition: filter 0.15s;
+}
+
+.logo-dumb-2 a img {
+    height: 1.6rem;
+    width: 100%;
+}
+
+.logo-dumb-2 a:hover {
+    filter: none;
+}
+
+.logo-dumb-2 a.light-up {
+    filter: none;
+}
+
+/* Large logo styling */
+.logo-dumb-2 .react-full img, .logo-dumb-2 .java-full img {
+    height: 6rem;
+}
+
+
+.logo-dumb-2 .html img,
+.logo-dumb-2 .css img,
+.logo-dumb-2 .javascript-web img {
+    height: 2.3rem;
+}
+
+.logo-dumb-2 .python img,
+.logo-dumb-2 .node-full img {
+    height: 3rem;
+}
+
+.logo-dumb-2 .docker {
+    top: 0;
+    left: 10%;
+}
+.logo-dumb-2 .react-full {
+    top: 0.5rem;
+    left: 16%;
+}
+.logo-dumb-2 .react-full img {
+    height: 5.8rem;
+}
+.logo-dumb-2 .modbus-full {
+    top: 0.4rem;
+    right: 22%;
+}
+.logo-dumb-2 .kotlin {
+    top: 2rem;
+    right: 5%;
+}
+.logo-dumb-2 .node-full {
+    top: 2.7rem;
+    right: 20%;
+}
+.logo-dumb-2 .css {
+    top: 3.3rem;
+    left: 0;
+}
+.logo-dumb-2 .mapbox-full {
+    top: 6.6rem;
+    right: 16%;
+}
+.logo-dumb-2 .mapbox-full img {
+    height: 1.3rem;
+}
+.logo-dumb-2 .javascript-web {
+    top: 5rem;
+    right: 0;
+}
+.logo-dumb-2 .unity-full {
+    top: 7rem;
+    left: 5%;
+}
+.logo-dumb-2 .html {
+    top: 8.8rem;
+    left: 38%;
+}
+.logo-dumb-2 .express-full {
+    top: 8.8rem;
+    right: 4%;
+}
+.logo-dumb-2 .express-full img {
+    height: 1rem;
+}
+.logo-dumb-2 .python {
+    top: 9.5rem;
+    left: 14%;
+}
+.logo-dumb-2 .python img {
+    height: 3.5rem;
+}
+.logo-dumb-2 .git {
+    top: 9.6rem;
+    left: 1%;
+}
+.logo-dumb-2 .javascript {
+    top: 12rem;
+    left: 40%;
+    z-index: 10;
+}
+.logo-dumb-2 .java-full {
+    top: 8.2rem;
+    right: 22%;
+    z-index: 10;
+}
+.logo-dumb-2 .java-full img {
+    height: 6.8rem;
+}
+.logo-dumb-2 .typescript {
+    top: 10.8rem;
+    right: 7%;
+}
+.logo-dumb-2 .github {
+    top: 12.5rem;
+    left: 5%;
+}
+.logo-dumb-2 .android-full {
+    top: 16.5rem;
+    left: 22%;
+    z-index: 10;
+}
+.logo-dumb-2 .springboot-full {
+    top: 14.6rem;
+    left: 18%;
+}
+.logo-dumb-2 .mysql-full {
+    top: 13.8rem;
+    right: 5%;
+}
+.logo-dumb-2 .mysql-full img {
+    height: 3rem;
+}

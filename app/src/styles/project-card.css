@@ -1,0 +1,71 @@
+.project-card {
+    width: 100%;
+    height: 100%;
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0.5rem 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover {
+    transform: scale(1.02);
+}
+
+.project-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.2rem;
+}
+
+.project-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -0.1rem;
+    position: relative;
+}
+
+.project-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-right: 1rem;
+    text-align: start;
+}
+
+.project-date {
+    color: var(--text-secondary);
+    font-size: 0.75rem;
+    text-align: start;
+    position: absolute;
+    top: 1.5rem;
+}
+
+.left {
+    flex: 1;
+    min-width: 0; /* This is important to allow text to overflow */
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.right img {
+    height: 1.2rem;
+    width: 1.2rem;
+}
+
+@media screen and (min-width: 650px) {
+    .project-card {
+        width: 45%;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .project-card {
+        width: 28%;
+    }
+}

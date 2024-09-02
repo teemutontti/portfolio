@@ -1,0 +1,22 @@
+section.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 0;
+    padding: 2.5rem;
+}
+
+section.footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+section.footer p {
+    color: var(--text-tetriary);
+    font-size: 0.8rem;
+}

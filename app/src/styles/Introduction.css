@@ -1,0 +1,220 @@
+section.introduction {
+    height: 100%;
+    background-image: url("../assets/background-image.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+section.introduction div.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 6rem 2.5rem 4rem 2.5rem;
+    width: 65%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.8),
+        rgba(0, 0, 0, 0)
+    );
+}
+
+section.introduction div.content div.sub-heading {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.sub-heading p a.know-me-link {
+    color: var(--secondary);
+}
+
+button.contact-button {
+    background: linear-gradient(
+        45deg,
+        var(--primary) 0%,
+        var(--primary) 35%,
+        var(--primary-1) 50%,
+        var(--primary) 65%,
+        var(--primary) 100%
+    );
+    background-size: 400%;
+    transition: all 0.5s ease;
+    animation: gradient 10s ease infinite;
+}
+
+a.contact {
+    text-decoration: none;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 100% 0%;
+    }
+    80% {
+        background-position: 100% 0%;
+        transform: scale(1);
+    }
+    90% {
+        background-position: 0% 0%;
+        transform: scale(1.03);
+    }
+    100% {
+        background-position: 0% 0%;
+        transform: scale(1);
+    }
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+@media screen and (min-width: 400px) {
+    section.introduction {
+        height: 30rem
+    }
+}
+
+@media screen and (min-width: 600px) {
+    section.introduction {
+        height: 35rem;
+    }
+
+    .sub-heading {
+        width: 15rem;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    section.introduction {
+        background: none;
+    }
+
+    section.introduction div.content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: inherit;
+        background: none;
+        gap: 8vw;
+    }
+
+    .profile-container {
+        margin-left: 1.5rem;
+        position: relative;
+    }
+
+    .profile-image {
+        grid-column-start: 1;
+        grid-row-start: 1;
+        height: 20rem;
+        width: 20rem;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50% 0.1rem;
+        background-image: url("../assets/background-image.jpg");
+        background-position: 100% 58%;
+        background-size: 110%;
+        background-repeat: space repeat;
+        z-index: 100;
+        position: relative;
+        box-shadow: 0.1rem 0.1rem 0.6rem rgba(0, 0, 0, 0.5);
+    }
+
+    @keyframes headspin {
+        0% {
+            border-radius: 50% 0.1rem;
+            transform: scale(1);
+        }
+        100% {
+            border-radius: 48% 2%;
+            transform: scale(1.02);
+        }
+    }
+
+    @keyframes shift {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(1deg);
+        }
+    }
+
+    .profile-image:hover, .profile-image:hover ~ .profile-background {
+        animation: headspin 0.3s ease-in-out;
+        border-radius: 48% 2%;
+        transform: scale(1.02);
+    }
+
+    .profile-image:hover ~ .profile-background {
+        animation: shift 0.3s ease-in-out;
+        transform: rotate(1deg);
+    }
+
+    .profile-background {
+        width: 100%;
+        height: 100%;
+        border-radius: 50% 0.1rem;
+        position: absolute;
+        top: 0.8rem;
+        left: 0.8rem;
+        z-index: 0;
+        background-color: var(--primary);
+        box-shadow: 0.1rem 0.1rem 0.6rem rgba(0, 0, 0, 0.5);
+    }
+
+    div.text {
+        grid-column-start: 2;
+        grid-row-start: 1;
+        display: flex;
+        justify-content: center;
+        padding-left: 1rem;
+    }
+
+    div.text div.heading p {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .heading h1 {
+        font-size: 3rem;
+        width: 12rem;
+    }
+
+    div.text div.sub-heading p, div.text div.sub-heading a.know-me-link {
+        font-size: 1rem;
+    }
+
+    div.text div.sub-heading a.contact {
+        text-decoration: none;
+    }
+
+    div.text div.sub-heading a.contact button {
+        font-size: 0.9rem;
+        width: 8rem;
+        height: 2.5rem;
+        text-decoration: none;
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    div.text {
+        margin-top: 2rem;
+    }
+
+    .heading h1 {
+        width: inherit;
+        max-width: 25rem;
+        font-size: 6rem;
+        line-height: 6rem;
+    }
+
+    .sub-heading {
+        width: 20rem;
+    }
+}

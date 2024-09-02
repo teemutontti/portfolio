@@ -1,0 +1,25 @@
+div.percentage-wheel {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--paper);
+}
+
+div.percentage-wheel div.fill {
+    width: 5.2rem;
+    height: 5.2rem;
+    border-radius: inherit;
+    background-color: var(--paper);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.percentage-wheel div.fill span.percentage {
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 0.05rem;
+}

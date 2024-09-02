@@ -1,0 +1,13 @@
+span.tag {
+    background-color: var(--paper);
+    padding: 0.5rem 0.8rem;
+    border-radius: 0.4rem;
+    cursor: default;
+    transition: transform 0.2s;
+    border: 0.1rem solid var(--paper);
+}
+
+span.tag:hover {
+    transform: scale(1.05);
+    border: 0.1rem solid var(--primary);
+}

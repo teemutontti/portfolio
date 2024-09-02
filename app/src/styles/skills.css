@@ -1,0 +1,55 @@
+section.skills {
+    padding: 2rem;
+    margin-top: 0;
+}
+
+.skills h2 {
+    margin-left: 1rem;
+}
+
+.logo-list-container {
+    margin-left: 1rem;
+}
+
+.logo-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.hint-text {
+    color: var(--text-secondary);
+    filter: opacity(0.25);
+}
+
+@media screen and (min-width: 650px) {
+    section.skills .content {
+        display: grid;
+        gap: 2rem;
+        padding: 1rem;
+    }
+
+    .logo-dumd-2 {
+        grid-column-start: 1;
+    }
+
+    .logo-list-container {
+        display: flex;
+        flex-direction: column;
+        grid-column-start: 2;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 950px) {
+    section.skills .content {
+        padding: 3rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    section.skills .content {
+        padding: 0 5rem 3rem 5rem;
+    }
+}

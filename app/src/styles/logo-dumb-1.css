@@ -1,0 +1,134 @@
+.logo-dumb-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 16rem;
+}
+
+.top, .middle, .bottom {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.top a, .middle a, .bottom a {
+    position: absolute;
+}
+
+/* TOP LOGO'S STYLING */
+.top {
+    height: 7rem;
+}
+.logo-dumb-1 .html img, .logo-dumb-1 .react img {
+    width: 5rem;
+    height: 5rem;
+}
+.logo-dumb-1 .css img, .logo-dumb-1 .javascript-web img {
+    width: 3.5rem;
+    height: 3.5rem;
+}
+.logo-dumb-1 .html {
+    top: 3rem;
+    margin: 0 auto;
+    z-index: 10;
+}
+.logo-dumb-1 .css {
+    right: 55%;
+    top: 3.5rem;
+    z-index: 1;
+}
+.logo-dumb-1 .javascript-web {
+    left: 55%;
+    top: 3.5rem;
+    z-index: 1;
+}
+.logo-dumb-1 .react {
+    top: 0;
+}
+
+/* MIDDLE LOGO'S STYLING */
+.logo-dumb-1 .middle {
+    height: 4.2rem;
+}
+.logo-dumb-1 .mapbox {
+    left: 12%;
+    top: 0;
+}
+.logo-dumb-1 .express {
+    top: 1.2rem;
+    left: 27%;
+}
+.logo-dumb-1 .javascript {
+    top: 1rem;
+    left: 43%;
+}
+.logo-dumb-1 .github {
+    top: 0.8rem;
+    right: 26%;
+}
+.logo-dumb-1 .modbus {
+    top: 0;
+    right: 10%;
+}
+.logo-dumb-1 .springboot {
+    top: 3rem;
+    left: 0;
+}
+.logo-dumb-1 .git {
+    top: 4rem;
+    left: 13%
+}
+.logo-dumb-1 .typescript {
+    top: 4rem;
+    left: 28%;
+}
+.logo-dumb-1 .android {
+    top: 4rem;
+    right: 28%;
+}
+.logo-dumb-1 .docker {
+    top: 3.2rem;
+    right: 13%
+}
+.logo-dumb-1 .unity {
+    top: 2rem;
+    right: 0;
+}
+
+/* BOTTOM LOGO'S STYLING */
+.logo-dumb-1 .bottom {
+    height: 6rem;
+}
+.logo-dumb-1 .java img {
+    height: 6rem;
+    width: 6rem;
+}
+.logo-dumb-1 .node img, .python img {
+    height: 3rem;
+    width: 3rem;
+}
+.logo-dumb-1 .mysql {
+    top: 1.5rem;
+    left: 0;
+}
+.logo-dumb-1 .mysql img {
+    height: 2.8rem;
+    width: 2.8rem;
+}
+.logo-dumb-1 .node {
+    top: 1.8rem;
+    left: 18%;
+}
+.logo-dumb-1 .java {
+    top: 0;
+    margin: 0 auto;
+}
+.logo-dumb-1 .python {
+    top: 2rem;
+    right: 15%
+}
+.logo-dumb-1 .kotlin {
+    top: 2rem;
+    right: 0;
+}
