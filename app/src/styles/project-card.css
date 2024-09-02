@@ -32,6 +32,7 @@
     text-overflow: ellipsis;
     margin-right: 1rem;
     text-align: start;
+    font-size: 1rem;
 }
 
 .project-date {

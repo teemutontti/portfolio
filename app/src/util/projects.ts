@@ -1,14 +1,14 @@
-import recipeImage1 from "../assets/project-images/recipe-tn.png";
-import recipeImage2 from "../assets/project-images/recipe-1.png";
-import recipeImage3 from "../assets/project-images/recipe-2.png";
-import recipeImage4 from "../assets/project-images/recipe-3.png";
-import vectorImage1 from "../assets/project-images/vector-1.png";
-import vectorImage2 from "../assets/project-images/vector-2.png";
-import staffImage1 from "../assets/project-images/staffapp-tn.png";
-import staffImage2 from "../assets/project-images/staffapp-1.png";
-import staffImage3 from "../assets/project-images/staffapp-2.png";
-import staffImage4 from "../assets/project-images/staffapp-3.png";
-import modbusImage1 from "../assets/project-images/modbus-tn.png";
+import recipeImage1 from "../assets/project-images/recipe-tn.webp";
+import recipeImage2 from "../assets/project-images/recipe-1.webp";
+import recipeImage3 from "../assets/project-images/recipe-2.webp";
+import recipeImage4 from "../assets/project-images/recipe-3.webp";
+import vectorImage1 from "../assets/project-images/vector-1.webp";
+import vectorImage2 from "../assets/project-images/vector-2.webp";
+import staffImage1 from "../assets/project-images/staffapp-tn.webp";
+import staffImage2 from "../assets/project-images/staffapp-1.webp";
+import staffImage3 from "../assets/project-images/staffapp-2.webp";
+import staffImage4 from "../assets/project-images/staffapp-3.webp";
+import modbusImage1 from "../assets/project-images/modbus-tn.webp";
 import { ProjectType } from "./types";
 
 const vectorMappingTool: ProjectType = {
