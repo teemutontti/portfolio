@@ -23,7 +23,7 @@ export default function WorkExperienceCard({ work }: WorkExperienceCardType) {
 
     return (
         <button className={open ? `work-experience-card open` : `work-experience-card`} onClick={handleClick}>
-            <h4 className="work-subtitle">{work.subtitle}</h4>
+            <p className="work-subtitle">{work.subtitle}</p>
             {width > 950 && <span className="title-separator" />}
             <h3 className="work-title">{work.title}</h3>
             {open && (

@@ -1,5 +1,6 @@
 export type LogoType = {
     name: string;
+    clickable?: boolean
 }
 
 export type TagType = {

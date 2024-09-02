@@ -147,7 +147,7 @@ button.menu-icon:hover span:nth-child(3) {
     transform: translateY(0.06rem);
 }
 
-.logo-button {
+.back-to-top-button {
     background: none;
     border: none;
     cursor: pointer;

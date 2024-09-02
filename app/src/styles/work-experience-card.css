@@ -25,6 +25,8 @@
     font-weight: 400;
     height: 1.5rem;
     filter: opacity(0.5);
+    height: auto;
+    margin-top:0.21rem;
 }
 
 .text {

@@ -15,13 +15,13 @@ export default function Socials({ inMenu = false }: SocialsType) {
         <ul className={inMenu ? `socials menu` : "socials"} id={inMenu ? "socials-menu" : "socials-main"}>
             <li>
                 <a href="https://www.linkedin.com/in/tonttiteemu" target="_blank">
-                    <img src={linkedinLogo} />
+                    <img src={linkedinLogo} alt="Linked-In logo" />
                     {!inMenu && <p>Linked in</p>}
                 </a>
             </li>
             <li>
                 <a href="https://github.com/teemutontti" target="_blank">
-                    <img src={githubLogo} />
+                    <img src={githubLogo} alt="GitHub logo"/>
                     {!inMenu && <p>GitHub</p>}
                 </a>
             </li>
