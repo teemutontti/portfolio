@@ -3,7 +3,7 @@
   "private": true,
   "version": "2.0.0",
   "type": "module",
-  "homepage": "https://teemutontti.github.io/portfolio",
+  "homepage": "https://teemutontti.fi",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
