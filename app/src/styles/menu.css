@@ -26,7 +26,7 @@ div.menu div.menu-background {
 
 div.menu.open div.menu-background {
     animation: fade-in 0.5s forwards;
-    left: -20rem;
+    left: -20%;
 }
 
 div.menu button {
