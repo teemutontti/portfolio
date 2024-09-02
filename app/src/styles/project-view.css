@@ -24,11 +24,22 @@
     overflow-x: hidden;
 }
 
+.project-view .panel .content-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
 .project-view .panel .close {
     position: absolute;
     top: 0.3rem;
     right: 0;
     background: none;
+}
+
+.project-view .panel .close span {
+    font-size: 2rem;
+    color: var(--text-primary);
 }
 
 .project-view .panel h3 {
@@ -56,4 +67,82 @@
 .project-view .panel .logos {
     display: flex;
     gap: 0.5rem;
+}
+
+.project-view .panel .text {
+    margin: 0;
+    padding: 0;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.image-gallery {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.image-gallery .img-button {
+    background: none;
+    padding: 0;
+    border: 0.15rem solid transparent;
+    filter: grayscale(50%) brightness(0.5);
+    transition: all 0.3s ease-in-out;
+}
+
+.image-gallery .img-button img {
+    border-radius: 7%;
+    object-fit: cover;
+    object-position: 0;
+}
+
+.image-gallery .img-button.selected {
+    border: 0.15rem solid var(--primary);
+    filter: none;
+}
+
+@media screen and (min-width: 650px) {
+    .project-view .panel {
+        width: 85%;
+        height: 93%;
+        margin-top: 2rem;
+        padding: 2.5rem 3rem;
+    }
+}
+
+@media screen and (min-width: 950px) {
+    .project-view .panel {
+        width: 75%;
+        height: 90%;
+        margin-top: 2.5rem;
+    }
+
+    .project-view .panel .close {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .project-view .panel .content-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 1rem 2rem;
+    }
+
+    .project-view .panel .content-container img.project-image {
+        height: auto;
+    }
+
+    .project-view .panel .text {
+        grid-row-start: 1;
+        grid-row-end: 3;
+        text-align: start;
+        display: block;
+    }
 }

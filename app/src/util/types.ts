@@ -1,58 +1,72 @@
-export interface LogoType {
+export type LogoType = {
     name: string;
 }
 
-export interface TagType {
+export type TagType = {
     children: string,
     className?: string
 }
 
-export interface PercentageWheelType {
+export type PercentageWheelType = {
     percentage: number
 }
 
-export interface LogoDumbType {
+export type LogoDumbType = {
     version?: 1 | 2
 }
 
-export interface ProjectType {
+export type ProjectType = {
     name: string;
-    date: string;
-    image: string;
+    date: Date;
+    thumbnail: string;
+    images: string[];
     logos: string[];
     description: string[];
+    rank?: number;
+    mainLink?: string;
+    secondaryLink?: string;
 }
 
-export interface ProjectCardType {
-    project: ProjectType,
-    onClick: () => void
-}
+export type ProjectCardType = {
+    project: ProjectType;
+    onClick: () => void;
+};
 
-export interface WorkExperienceType {
+export type WorkExperienceType = {
     title: string;
     subtitle: string;
     text: string[];
 }
 
-export interface WorkExperienceCardType {
+export type WorkExperienceCardType = {
     work: WorkExperienceType
 }
 
-export interface ProjectViewType {
+export type ProjectViewType = {
     project: ProjectType,
     onClose: () => void
 }
 
-export interface MenuType {
+export type MenuType = {
+    open: boolean;
     closeMenu: () => void;
 }
 
-export interface SectionType {
+export type SectionType = {
     name: string;
     title?: string;
     children?: React.ReactNode
 }
 
-export interface SocialsType {
+export type SocialsType = {
     inMenu?: boolean;
+}
+
+export type ArrowType = {
+    onClick?: () => void;
+}
+
+export type ProjectCarouselType = {
+    projects: ProjectType[];
+    onProjectClick: (project: ProjectType) => void;
 }

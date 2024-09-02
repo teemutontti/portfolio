@@ -2,7 +2,7 @@
 import './App.css'
 import TopBar from './features/TopBar'
 import About from './sections/About';
-import Contact from './sections/Contact';
+import Footer from './sections/Footer';
 import Introduction from './sections/Introduction';
 import Projects from './sections/Projects';
 import Skills from './sections/Skills';
@@ -16,8 +16,8 @@ function App() {
             <Skills />
             <Projects />
             <WorkExperience />
-            <About />
-            <Contact />
+            <About/>
+            <Footer />
         </>
     );
 }

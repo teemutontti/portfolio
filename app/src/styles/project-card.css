@@ -1,9 +1,15 @@
 .project-card {
     width: 100%;
+    height: 100%;
     background: none;
     border: none;
     padding: 0;
-    margin: 0;
+    margin: 0.5rem 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover {
+    transform: scale(1.02);
 }
 
 .project-image {
@@ -50,4 +56,16 @@
 .right img {
     height: 1.2rem;
     width: 1.2rem;
+}
+
+@media screen and (min-width: 650px) {
+    .project-card {
+        width: 45%;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .project-card {
+        width: 28%;
+    }
 }

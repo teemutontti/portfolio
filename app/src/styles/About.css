@@ -1,5 +1,46 @@
+section.about {
+    margin-bottom: 0;
+}
+
+section.about .content {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
 div.text-field {
     display: flex;
     flex-direction: column;
     gap: 0.8rem;
+}
+
+@media screen and (min-width: 650px) {
+    .contact {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+}
+
+@media screen and (min-width: 950px) {
+    section.about .content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+    }
+
+    .text-field {
+        grid-column-start: 1;
+    }
+
+    .contact {
+        display: block;
+        grid-column-start: 2;
+        margin-top: -0.8rem;
+    }
+
+    .contact ul.socials {
+        display: flex;
+        padding-left: 1rem;
+    }
 }

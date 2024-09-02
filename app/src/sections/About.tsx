@@ -1,3 +1,4 @@
+import Socials from "../components/Socials";
 import Section from "../features/Section";
 import "../styles/about.css";
 
@@ -17,6 +18,14 @@ export default function About() {
                 {text.map((paragraph, index) => (
                     <p key={index}>{paragraph}</p>
                 ))}
+            </div>
+            <div className="contact" id="contact">
+                <div className="text">
+                    <p>If you'd like to connect or have any questions about my work, feel free to reach out!</p>
+                    <p>I'm always open to discuss new opportunities, collaborations, or simply sharing ideas.</p>
+                    <p>Looking forward to hearing from you!</p>
+                </div>
+                <Socials />
             </div>
         </Section>
     );

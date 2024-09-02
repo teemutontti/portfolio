@@ -1,0 +1,15 @@
+.slick-slide {
+    padding: 0 0.5rem;
+}
+
+.slick-list {
+    margin: 0 -0.5rem;
+}
+
+.slick-dots li button::before{
+    color: var(--primary);
+}
+
+.slick-dots li.slick-active button::before{
+    color: var(--primary);
+}

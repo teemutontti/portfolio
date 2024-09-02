@@ -1,40 +1,47 @@
-import androidLogo from "../assets/android-logo.webp";
-import androidFullLogo from "../assets/android-full-logo.webp";
-import cssLogo from "../assets/css-logo.webp";
-import javaLogo from "../assets/java-logo.webp";
-import javaFullLogo from "../assets/java-full-logo.webp";
-import javascriptLogo from "../assets/javascript-logo.webp";
-import kotlinLogo from "../assets/kotlin-logo.webp";
-import kotlinFullLogo from "../assets/kotlin-full-logo.webp";
-import mapboxLogo from "../assets/mapbox-logo.webp";
-import mapboxFullLogo from "../assets/mapbox-full-logo.webp";
-import modbusLogo from "../assets/modbus-logo.webp";
-import modbusFullLogo from "../assets/modbus-full-logo.webp";
-import mysqlLogo from "../assets/mysql-logo.webp";
-import mysqlFullLogo from "../assets/mysql-full-logo.webp";
-import nodeLogo from "../assets/node-logo.webp";
-import nodeFullLogo from "../assets/node-full-logo.webp";
-import pythonLogo from "../assets/python-logo.webp";
-import reactLogo from "../assets/react-logo.webp";
-import reactFullLogo from "../assets/react-full-logo.webp";
-import typescriptLogo from "../assets/typescript-logo.webp";
-import htmlLogo from "../assets/html-logo.webp";
-import expressLogo from "../assets/express-logo.webp";
-import expressFullLogo from "../assets/express-full-logo.webp";
-import springLogo from "../assets/spring-logo.webp";
-import springFullLogo from "../assets/springboot-full-logo.webp";
-import dockerLogo from "../assets/docker-logo.webp";
-import gitLogo from "../assets/git-logo.webp";
-import githubLogo from "../assets/github-logo.webp";
-import javascriptWebLogo from "../assets/javascript-web-logo.webp";
-import unityLogo from "../assets/unity-logo.webp";
-import unityFullLogo from "../assets/unity-full-logo.webp";
+import androidLogo from "../assets/logos/android-logo.webp";
+import androidFullLogo from "../assets/logos/android-full-logo.webp";
+import cssLogo from "../assets/logos/css-logo.webp";
+import javaLogo from "../assets/logos/java-logo.webp";
+import javaFullLogo from "../assets/logos/java-full-logo.webp";
+import javascriptLogo from "../assets/logos/javascript-logo.webp";
+import kotlinLogo from "../assets/logos/kotlin-logo.webp";
+import kotlinFullLogo from "../assets/logos/kotlin-full-logo.webp";
+import mapboxLogo from "../assets/logos/mapbox-logo.webp";
+import mapboxFullLogo from "../assets/logos/mapbox-full-logo.webp";
+import modbusLogo from "../assets/logos/modbus-logo.webp";
+import modbusFullLogo from "../assets/logos/modbus-full-logo.webp";
+import mysqlLogo from "../assets/logos/mysql-logo.webp";
+import mysqlFullLogo from "../assets/logos/mysql-full-logo.webp";
+import nodeLogo from "../assets/logos/node-logo.webp";
+import nodeFullLogo from "../assets/logos/node-full-logo.webp";
+import pythonLogo from "../assets/logos/python-logo.webp";
+import reactLogo from "../assets/logos/react-logo.webp";
+import reactFullLogo from "../assets/logos/react-full-logo.webp";
+import typescriptLogo from "../assets/logos/typescript-logo.webp";
+import htmlLogo from "../assets/logos/html-logo.webp";
+import expressLogo from "../assets/logos/express-logo.webp";
+import expressFullLogo from "../assets/logos/express-full-logo.webp";
+import springLogo from "../assets/logos/spring-logo.webp";
+import springFullLogo from "../assets/logos/springboot-full-logo.webp";
+import dockerLogo from "../assets/logos/docker-logo.webp";
+import gitLogo from "../assets/logos/git-logo.webp";
+import githubLogo from "../assets/logos/github-logo.webp";
+import javascriptWebLogo from "../assets/logos/javascript-web-logo.webp";
+import unityLogo from "../assets/logos/unity-logo.webp";
+import unityFullLogo from "../assets/logos/unity-full-logo.webp";
+import linkedInLogo from "../assets/logos/linkedin-app-white-icon.webp";
 import { LogoType } from "../util/types";
 import "../styles/logo.css";
 import "../styles/tag.css";
 
 export default function Logo({ name }: LogoType) {
     switch (name) {
+        case "my-linked-in":
+            return (
+                <a href="https://www.linkedin.com/in/tonttiteemu" className="logo linked-in" target="_blank" title="LinkedIn">
+                    <img src={linkedInLogo} alt="LinkedIn logo" />
+                </a>
+            );
         case "android":
             return (
                 <a href="https://developer.android.com/" className="logo android" target="_blank" title="Android">
@@ -221,6 +228,12 @@ export default function Logo({ name }: LogoType) {
         case "github":
             return (
                 <a href="https://github.com/" className="logo github" target="_blank" title="GitHub">
+                    <img src={githubLogo} alt="GitHub logo" />
+                </a>
+            );
+        case "my-github":
+            return (
+                <a href="https://github.com/teemutontti" className="logo github" target="_blank" title="GitHub">
                     <img src={githubLogo} alt="GitHub logo" />
                 </a>
             );

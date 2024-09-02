@@ -1,11 +1,12 @@
 import MenuLinks from "../components/MenuLinks";
 import Socials from "../components/Socials";
-import "../styles/Menu.css";
+import "../styles/menu.css";
 import { MenuType } from "../util/types";
 
-export default function Menu({ closeMenu }: MenuType) {
+export default function Menu({ open, closeMenu }: MenuType) {
     return (
-        <div className="menu">
+        <div className={open ? "menu open" : "menu"}>
+            <div className="menu-background"/>
             <div className="menu-content">
                 <button onClick={closeMenu} className="close">
                     <span className="material-symbols-outlined">close</span>

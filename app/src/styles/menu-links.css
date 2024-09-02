@@ -24,3 +24,22 @@ ul.menu-links li a {
 ul.menu-links li a:hover {
     transform: translateX(-0.3rem);
 }
+
+@media screen and (min-width: 950px) {
+    ul.menu-links {
+        flex-direction: row;
+        gap: 1rem;
+        padding: 0;
+        align-items: center;
+        justify-content: end;
+        color: white;
+    }
+
+    ul.menu-links li {
+        width: auto;
+    }
+
+    ul.menu-links li a:hover {
+        transform: translateY(-0.3rem);
+    }
+}
