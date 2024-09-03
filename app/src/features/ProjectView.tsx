@@ -50,6 +50,7 @@ export default function ProjectView({ project, onClose }: ProjectViewType) {
                                 src={project.images[selectedImage] || placeholderImage}
                                 alt="Project image"
                                 className="project-image"
+                                loading="lazy"
                             />
                             <div className="image-gallery">
                                 {project.images.map((image, index) => (
@@ -58,7 +59,7 @@ export default function ProjectView({ project, onClose }: ProjectViewType) {
                                         className={selectedImage === index ? "img-button selected" : "img-button"}
                                         key={index}
                                     >
-                                        <img src={image} alt="Project image" />
+                                        <img src={image} alt="Project image" loading="lazy" />
                                     </button>
                                 ))}
                             </div>

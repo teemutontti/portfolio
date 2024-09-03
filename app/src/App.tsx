@@ -1,16 +1,17 @@
-
+import { lazy, Suspense } from 'react';
 import './App.css'
-import TopBar from './features/TopBar'
-import About from './sections/About';
-import Footer from './sections/Footer';
-import Introduction from './sections/Introduction';
-import Projects from './sections/Projects';
-import Skills from './sections/Skills';
-import WorkExperience from './sections/WorkExperience';
+
+const TopBar = lazy(() => import("./features/TopBar"));
+const About = lazy(() => import("./sections/About"));
+const Footer = lazy(() => import("./sections/Footer"));
+const Introduction = lazy(() => import("./sections/Introduction"));
+const Projects = lazy(() => import("./sections/Projects"));
+const Skills = lazy(() => import("./sections/Skills"));
+const WorkExperience = lazy(() => import("./sections/WorkExperience"));
 
 function App() {
     return (
-        <>
+        <Suspense fallback={<div>Loading...</div>}>
             <TopBar />
             <Introduction />
             <Skills />
@@ -18,7 +19,7 @@ function App() {
             <WorkExperience />
             <About/>
             <Footer />
-        </>
+        </Suspense>
     );
 }
 
