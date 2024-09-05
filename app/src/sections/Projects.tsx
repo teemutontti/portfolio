@@ -7,6 +7,7 @@ import ProjectView from "../features/ProjectView";
 import Section from "../features/Section";
 import ProjectCarousel from "../features/ProjectCarousel";
 import useWindowSize from "../util/useWindowSize";
+import Icon from "../components/Icon";
 
 export default function Projects() {
     const [projectToView, setProjectToView] = useState<ProjectType | null>(null);
@@ -84,13 +85,13 @@ export default function Projects() {
                         className={sortOrder === "asc" ? "sort-order-button selected" : "sort-order-button"}
                         onClick={() => setSortOrder("asc")}
                         >
-                        <span className="material-symbols-outlined">arrow_upward</span>
+                        <Icon name="arrow-up"/>
                     </button>
                     <button
                         className={sortOrder === "desc" ? "sort-order-button selected" : "sort-order-button"}
                         onClick={() => setSortOrder("desc")}
                         >
-                        <span className="material-symbols-outlined">arrow_downward</span>
+                        <Icon name="arrow-down"/>
                     </button>
                 </div>
             </div>

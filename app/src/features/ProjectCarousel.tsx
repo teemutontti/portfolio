@@ -1,20 +1,22 @@
 import ProjectCard from "../components/ProjectCard";
-import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../styles/project-carousel.css";
 import { ArrowType, ProjectCarouselType } from "../util/types";
+import { lazy, Suspense } from "react";
+import LoadingEffect from "../components/LoadingEffect";
+import Icon from "../components/Icon";
+const Slider = lazy(() => import("react-slick"));
 
 export default function ProjectCarousel({ projects, onProjectClick }: ProjectCarouselType) {
     const PrevArrow = (props: ArrowType) => {
         const { onClick } = props;
         return (
             <span
-                className="material-symbols-outlined"
                 style={{ display: "block", position: "absolute", left: "-2rem", top: "40%" }}
                 onClick={onClick}
             >
-                chevron_left
+                <Icon name="chevron-left"/>
             </span>
         );
     }
@@ -22,12 +24,8 @@ export default function ProjectCarousel({ projects, onProjectClick }: ProjectCar
     const NextArrow = (props: ArrowType) => {
         const { onClick } = props;
         return (
-            <span
-                className="material-symbols-outlined"
-                style={{ display: "block", position: "absolute", right: "-2rem", top: "40%" }}
-                onClick={onClick}
-            >
-                chevron_right
+            <span style={{ display: "block", position: "absolute", right: "-2rem", top: "40%" }} onClick={onClick}>
+                <Icon name="chevron-right" />
             </span>
         );
     }
@@ -45,14 +43,16 @@ export default function ProjectCarousel({ projects, onProjectClick }: ProjectCar
     };
 
     return <div className="project-carousel">
-        <Slider {...settings}>
-            {projects.map((project, index) => (
-                <ProjectCard
+        <Suspense fallback={<LoadingEffect />}>
+            <Slider {...settings}>
+                {projects.map((project, index) => (
+                    <ProjectCard
                     key={index}
                     project={project}
                     onClick={() => onProjectClick(project)}
-                />
-            ))}
-        </Slider>
+                    />
+                ))}
+            </Slider>
+        </Suspense>
     </div>;
 }

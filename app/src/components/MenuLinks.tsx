@@ -1,9 +1,6 @@
 import "../styles/menu-links.css";
-import useWindowSize from "../util/useWindowSize";
 
 export default function MenuLinks() {
-    const { width } = useWindowSize();
-
     const handleContactClick = () => {
         const socials = document.getElementById("socials-main");
         socials?.classList.toggle("visible");
@@ -24,7 +21,7 @@ export default function MenuLinks() {
             <li>
                 <a href="#projects">Projects</a>
             </li>
-            <li>{width >= 950
+            <li>{window.innerWidth >= 950
                 ? <a href="#work-experience">Work</a>
                 : <a href="#work-experience">Work Experience</a>
             }</li>

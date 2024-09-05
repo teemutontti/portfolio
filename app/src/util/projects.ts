@@ -16,7 +16,7 @@ const vectorMappingTool: ProjectType = {
     date: new Date("2024-07-01"),
     thumbnail: vectorImage1,
     images: [vectorImage1, vectorImage2],
-    logos: ["java", "mapbxox", "js-web"],
+    logos: ["java", "mapbox", "js-web"],
     description: [
         "Vector Mapping Tool was a project I made for a company as a software developer trainee. The company was Bertin Environics Oy and the project was met with great reviews.",
         "The project was a tool for mapping vector data from osm (OpenStreetMap) files. The project included three different parts: tiling, hosting, and rendering. My job was to figure out how to conversion process would work most efficiently and how the data could be used by the company.",

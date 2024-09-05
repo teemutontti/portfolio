@@ -75,7 +75,7 @@
 .logo-dumb-2 .mapbox-full img {
     height: 1.3rem;
 }
-.logo-dumb-2 .javascript-web {
+.logo-dumb-2 .js-web {
     top: 5rem;
     right: 0;
 }
@@ -105,7 +105,7 @@
     top: 9.6rem;
     left: 1%;
 }
-.logo-dumb-2 .javascript {
+.logo-dumb-2 .js {
     top: 12rem;
     left: 40%;
     z-index: 10;
@@ -118,7 +118,7 @@
 .logo-dumb-2 .java-full img {
     height: 6.8rem;
 }
-.logo-dumb-2 .typescript {
+.logo-dumb-2 .ts {
     top: 10.8rem;
     right: 7%;
 }
@@ -131,7 +131,7 @@
     left: 22%;
     z-index: 10;
 }
-.logo-dumb-2 .springboot-full {
+.logo-dumb-2 .spring-full {
     top: 14.6rem;
     left: 18%;
 }

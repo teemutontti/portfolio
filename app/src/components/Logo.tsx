@@ -35,286 +35,54 @@ import "../styles/logo.css";
 import "../styles/tag.css";
 import LazyImage from "./LaxyImage";
 
+type LogoMapType = {
+    [key: string]: { src: string; href: string; alt: string };
+};
+
+const logoMap: LogoMapType = {
+    "android": { src: androidLogo, href: "https://developer.android.com/", alt: "Android logo" },
+    "android-full": { src: androidFullLogo, href: "https://developer.android.com/", alt: "Android logo" },
+    "css": { src: cssLogo, href: "https://en.wikipedia.org/wiki/CSS", alt: "CSS logo" },
+    "java": { src: javaLogo, href: "https://dev.java/", alt: "Java logo" },
+    "java-full": { src: javaFullLogo, href: "https://dev.java/", alt: "Java logo" },
+    "js": { src: javascriptLogo, href: "https://developer.mozilla.org/en-US/docs/Web/JavaScript", alt: "JavaScript logo" },
+    "js-web": { src: javascriptWebLogo, href: "https://developer.mozilla.org/en-US/docs/Web/JavaScript", alt: "JavaScript logo" },
+    "kotlin": { src: kotlinLogo, href: "https://kotlinlang.org/", alt: "Kotlin logo" },
+    "kotlin-full": { src: kotlinFullLogo, href: "https://kotlinlang.org/", alt: "Kotlin logo" },
+    "mapbox": { src: mapboxLogo, href: "https://www.mapbox.com/", alt: "Mapbox logo" },
+    "mapbox-full": { src: mapboxFullLogo, href: "https://www.mapbox.com/", alt: "Mapbox logo" },
+    "modbus": { src: modbusLogo, href: "https://en.wikipedia.org/wiki/Modbus", alt: "Modbus logo" },
+    "modbus-full": { src: modbusFullLogo, href: "https://en.wikipedia.org/wiki/Modbus", alt: "Modbus logo" },
+    "mysql": { src: mysqlLogo, href: "https://www.mysql.com/", alt: "MySQL logo" },
+    "mysql-full": { src: mysqlFullLogo, href: "https://www.mysql.com/", alt: "MySQL logo" },
+    "node": { src: nodeLogo, href: "https://nodejs.org/en", alt: "NodeJS logo" },
+    "node-full": { src: nodeFullLogo, href: "https://nodejs.org/en", alt: "NodeJS logo" },
+    "python": { src: pythonLogo, href: "https://www.python.org/", alt: "Python logo" },
+    "react": { src: reactLogo, href: "https://react.dev/", alt: "React logo" },
+    "react-full": { src: reactFullLogo, href: "https://react.dev/", alt: "React logo" },
+    "ts": { src: typescriptLogo, href: "https://www.typescriptlang.org/", alt: "TypeScript logo" },
+    "express": { src: expressLogo, href: "https://expressjs.com/", alt: "ExpressJS logo" },
+    "express-full": { src: expressFullLogo, href: "https://expressjs.com/", alt: "ExpressJS logo" },
+    "spring": { src: springLogo, href: "https://spring.io/projects/spring-boot", alt: "SpringBoot logo" },
+    "spring-full": { src: springFullLogo, href: "https://spring.io/projects/spring-boot", alt: "SpringBoot logo" },
+    "unity": { src: unityLogo, href: "https://unity.com/", alt: "Unity logo" },
+    "unity-full": { src: unityFullLogo, href: "https://unity.com/", alt: "Unity logo" },
+    "git": { src: gitLogo, href: "https://git-scm.com/", alt: "Git logo" },
+    "github": { src: githubLogo, href: "https://github.com/", alt: "GitHub logo" },
+    "docker": { src: dockerLogo, href: "https://www.docker.com/", alt: "Docker logo" },
+    "html": { src: htmlLogo, href: "https://en.wikipedia.org/wiki/HTML", alt: "HTML logo" },
+    "my-linked-in": { src: linkedInLogo, href: "https://www.linkedin.com/in/tonttiteemu", alt: "LinkedIn logo" },
+    "my-github": { src: githubLogo, href: "https://github.com/teemutontti", alt: "GitHub logo" },
+};
+
 export default function Logo({ name, clickable = true }: LogoType) {
-    switch (name) {
-        case "my-linked-in":
-            return clickable ? (
-                <a href="https://www.linkedin.com/in/tonttiteemu" className="logo linked-in" target="_blank" title="LinkedIn">
-                    <LazyImage src={linkedInLogo} alt="LinkedIn logo" />
-                </a>
-            ) : (
-                <LazyImage src={linkedInLogo} alt="LinkedIn logo" />
-            );
-        case "android":
-            return clickable ? (
-                <a href="https://developer.android.com/" className="logo android" target="_blank" title="Android">
-                    <LazyImage src={androidLogo} alt="Android logo" />
-                </a>
-            ) : (
-                <LazyImage src={androidLogo} alt="Android logo" />
-            );
-        case "android-full":
-            return clickable ? (
-                <a href="https://developer.android.com/" className="logo android-full" target="_blank" title="Android">
-                    <LazyImage src={androidFullLogo} alt="Android logo" />
-                </a>
-            ) : (
-                <LazyImage src={androidFullLogo} alt="Android logo" />
-            );
-        case "css":
-            return clickable ? (
-                <a href="https://en.wikipedia.org/wiki/CSS" className="logo css" target="_blank" title="CSS">
-                    <LazyImage src={cssLogo} alt="CSS logo" />
-                </a>
-            ) : (
-                <LazyImage src={cssLogo} alt="CSS logo" />
-            );
-        case "java":
-            return clickable ? (
-                <a href="https://dev.java/" className="logo java" target="_blank" title="Java">
-                    <LazyImage src={javaLogo} alt="Java logo" />
-                </a>
-            ) : (
-                <LazyImage src={javaLogo} alt="Java logo" />
-            );
-        case "java-full":
-            return clickable ? (
-                <a href="https://dev.java/" className="logo java-full" target="_blank" title="Java">
-                    <LazyImage src={javaFullLogo} alt="Java logo" />
-                </a>
-            ) : (
-                <LazyImage src={javaFullLogo} alt="Java logo" />
-            );
-        case "js":
-            return clickable ? (
-                <a
-                    href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-                    className="logo javascript"
-                    target="_blank"
-                    title="JavaScript"
-                >
-                    <LazyImage src={javascriptLogo} alt="JavaScript logo" />
-                </a>
-            ) : (
-                <LazyImage src={javascriptLogo} alt="JavaScript logo" />
-            );
-        case "js-web":
-            return clickable ? (
-                <a
-                    href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-                    className="logo javascript-web"
-                    target="_blank"
-                    title="JavaScript"
-                >
-                    <LazyImage src={javascriptWebLogo} alt="JavaScript logo" />
-                </a>
-            ) : (
-                <LazyImage src={javascriptWebLogo} alt="JavaScript logo" />
-            );
-        case "kotlin":
-            return clickable ? (
-                <a href="https://kotlinlang.org/" className="logo kotlin" target="_blank" title="Kotlin">
-                    <LazyImage src={kotlinLogo} alt="Kotlin logo" />
-                </a>
-            ) : (
-                <LazyImage src={kotlinLogo} alt="Kotlin logo" />
-            );
-        case "kotlin-full":
-            return clickable ? (
-                <a href="https://kotlinlang.org/" className="logo kotlin-full" target="_blank" title="Kotlin">
-                    <LazyImage src={kotlinFullLogo} alt="Kotlin logo" />
-                </a>
-            ) : (
-                <LazyImage src={kotlinFullLogo} alt="Kotlin logo" />
-            );
-        case "mapbox":
-            return clickable ? (
-                <a href="https://www.mapbox.com/" className="logo mapbox" target="_blank" title="Mapbox">
-                    <LazyImage src={mapboxLogo} alt="Mapbox logo" />
-                </a>
-            ) : (
-                <LazyImage src={mapboxLogo} alt="Mapbox logo" />
-            );
-        case "mapbox-full":
-            return clickable ? (
-                <a href="https://www.mapbox.com/" className="logo mapbox-full" target="_blank" title="Mapbox">
-                    <LazyImage src={mapboxFullLogo} alt="Mapbox logo" />
-                </a>
-            ) : (
-                <LazyImage src={mapboxFullLogo} alt="Mapbox logo" />
-            );
-        case "modbus":
-            return clickable ? (
-                <a href="https://en.wikipedia.org/wiki/Modbus" className="logo modbus" target="_blank" title="Modbus">
-                    <LazyImage src={modbusLogo} alt="Modbus logo" />
-                </a>
-            ) : (
-                <LazyImage src={modbusLogo} alt="Modbus logo" />
-            );
-        case "modbus-full":
-            return clickable ? (
-                <a href="https://en.wikipedia.org/wiki/Modbus" className="logo modbus-full" target="_blank" title="Modbus">
-                    <LazyImage src={modbusFullLogo} alt="Modbus logo" />
-                </a>
-            ) : (
-                <LazyImage src={modbusFullLogo} alt="Modbus logo" />
-            );
-        case "mysql":
-            return clickable ? (
-                <a href="https://www.mysql.com/" className="logo mysql" target="_blank" title="MySQL">
-                    <LazyImage src={mysqlLogo} alt="MySQL logo" />
-                </a>
-            ) : (
-                <LazyImage src={mysqlLogo} alt="MySQL logo" />
-            );
-        case "mysql-full":
-            return clickable ? (
-                <a href="https://www.mysql.com/" className="logo mysql-full" target="_blank" title="MySQL">
-                    <LazyImage src={mysqlFullLogo} alt="MySQL logo" />
-                </a>
-            ) : (
-                <LazyImage src={mysqlFullLogo} alt="MySQL logo" />
-            );
-        case "node":
-            return clickable ? (
-                <a href="https://nodejs.org/en" className="logo node" target="_blank" title="NodeJS">
-                    <LazyImage src={nodeLogo} alt="NodeJS logo" />
-                </a>
-            ) : (
-                <LazyImage src={nodeLogo} alt="NodeJS logo" />
-            );
-        case "node-full":
-            return clickable ? (
-                <a href="https://nodejs.org/en" className="logo node-full" target="_blank" title="NodeJS">
-                    <LazyImage src={nodeFullLogo} alt="NodeJS logo" />
-                </a>
-            ) : (
-                <LazyImage src={nodeFullLogo} alt="NodeJS logo" />
-            );
-        case "python":
-            return clickable ? (
-                <a href="https://www.python.org/" className="logo python" target="_blank" title="Python">
-                    <LazyImage src={pythonLogo} alt="Python logo" />
-                </a>
-            ) : (
-                <LazyImage src={pythonLogo} alt="Python logo" />
-            );
-        case "react":
-            return clickable ? (
-                <a href="https://react.dev/" className="logo react" target="_blank" title="React">
-                    <LazyImage src={reactLogo} alt="React logo" />
-                </a>
-            ) : (
-                <LazyImage src={reactLogo} alt="React logo" />
-            );
-        case "react-full":
-            return clickable ? (
-                <a href="https://react.dev/" className="logo react-full" target="_blank" title="React">
-                    <LazyImage src={reactFullLogo} alt="React logo" />
-                </a>
-            ) : (
-                <LazyImage src={reactFullLogo} alt="React logo" />
-            );
-        case "ts":
-            return clickable ? (
-                <a href="https://www.typescriptlang.org/" className="logo typescript" target="_blank" title="TypeScript">
-                    <LazyImage src={typescriptLogo} alt="TypeScript logo" />
-                </a>
-            ) : (
-                <LazyImage src={typescriptLogo} alt="TypeScript logo" />
-            );
-        case "express":
-            return clickable ? (
-                <a href="https://expressjs.com/" className="logo express" target="_blank" title="ExpressJS">
-                    <LazyImage src={expressLogo} alt="ExpressJS logo" />
-                </a>
-            ) : (
-                <LazyImage src={expressLogo} alt="ExpressJS logo" />
-            );
-        case "express-full":
-            return clickable ? (
-                <a href="https://expressjs.com/" className="logo express-full" target="_blank" title="ExpressJS">
-                    <LazyImage src={expressFullLogo} alt="ExpressJS logo" />
-                </a>
-            ) : (
-                <LazyImage src={expressFullLogo} alt="ExpressJS logo" />
-            );
-        case "spring":
-            return clickable ? (
-                <a href="https://spring.io/projects/spring-boot" className="logo springboot" target="_blank" title="SpringBoot">
-                    <LazyImage src={springLogo} alt="SpringBoot logo" />
-                </a>
-            ) : (
-                <LazyImage src={springLogo} alt="SpringBoot logo" />
-            );
-        case "spring-full":
-            return clickable ? (
-                <a
-                    href="https://spring.io/projects/spring-boot"
-                    className="logo springboot-full"
-                    target="_blank"
-                    title="SpringBoot"
-                >
-                    <LazyImage src={springFullLogo} alt="SpringBoot logo" />
-                </a>
-            ) : (
-                <LazyImage src={springFullLogo} alt="SpringBoot logo" />
-            );
-        case "unity":
-            return clickable ? (
-                <a href="https://unity.com/" className="logo unity" target="_blank" title="Unity">
-                    <LazyImage src={unityLogo} alt="Unity logo" />
-                </a>
-            ) : (
-                <LazyImage src={unityLogo} alt="Unity logo" />
-            );
-        case "unity-full":
-            return clickable ? (
-                <a href="https://unity.com/" className="logo unity-full" target="_blank" title="Unity">
-                    <LazyImage src={unityFullLogo} alt="Unity logo" />
-                </a>
-            ) : (
-                <LazyImage src={unityFullLogo} alt="Unity logo" />
-            );
-        case "git":
-            return clickable ? (
-                <a href="https://git-scm.com/" className="logo git" target="_blank" title="Git">
-                    <LazyImage src={gitLogo} alt="Git logo" />
-                </a>
-            ) : (
-                <LazyImage src={gitLogo} alt="Git logo" />
-            );
-        case "github":
-            return clickable ? (
-                <a href="https://github.com/" className="logo github" target="_blank" title="GitHub">
-                    <LazyImage src={githubLogo} alt="GitHub logo" />
-                </a>
-            ) : (
-                <LazyImage src={githubLogo} alt="GitHub logo" />
-            );
-        case "my-github":
-            return clickable ? (
-                <a href="https://github.com/teemutontti" className="logo github" target="_blank" title="GitHub">
-                    <LazyImage src={githubLogo} alt="GitHub logo" />
-                </a>
-            ) : (
-                <LazyImage src={githubLogo} alt="GitHub logo" />
-            );
-        case "docker":
-            return clickable ? (
-                <a href="https://www.docker.com/" className="logo docker" target="_blank" title="Docker">
-                    <LazyImage src={dockerLogo} alt="Docker logo" />
-                </a>
-            ) : (
-                <LazyImage src={dockerLogo} alt="Docker logo" />
-            );
-        default:
-            return clickable ? (
-                <a href="https://en.wikipedia.org/wiki/HTML" className="logo html" target="_blank" title="HTML">
-                    <LazyImage src={htmlLogo} alt="HTML logo" />
-                </a>
-            ) : (
-                <LazyImage src={htmlLogo} alt="HTML logo" />
-            );
-    }
+    const logo = logoMap[name];
+
+    return clickable ? (
+        <a href={logo.href} className={`logo ${name}`} target="_blank">
+            <LazyImage src={logo.src} alt={logo.alt} />
+        </a>
+    ) : (
+        <LazyImage src={logo.src} alt={logo.alt} />
+    );
 }

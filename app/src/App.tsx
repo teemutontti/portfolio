@@ -1,5 +1,6 @@
 import { lazy, Suspense } from 'react';
 import './App.css'
+import LoadingEffect from './components/LoadingEffect';
 
 const TopBar = lazy(() => import("./features/TopBar"));
 const About = lazy(() => import("./sections/About"));
@@ -11,7 +12,7 @@ const WorkExperience = lazy(() => import("./sections/WorkExperience"));
 
 function App() {
     return (
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<LoadingEffect />}>
             <TopBar />
             <Introduction />
             <Skills />

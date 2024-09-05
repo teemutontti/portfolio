@@ -1,3 +1,5 @@
+@import "./styles/fonts.css";
+
 :root {
     --text-primary: #FFFFFF;
     --text-secondary: #D9D9D9;
@@ -52,9 +54,9 @@ h4 {
 
 p, span, a {
     font-family: "Montserrat", sans-serif;
-    font-size: 0.875rem;
+    font-size: 1rem;
     font-weight: 400;
-    line-height: 1.25rem;
+    line-height: 1.5rem;
     font-optical-sizing: auto;
 }
 

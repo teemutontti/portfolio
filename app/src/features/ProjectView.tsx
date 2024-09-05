@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import LoadingEffect from "../components/LoadingEffect";
 import convertDate from "../util/convertDate";
 import renderCustomText from "../util/renderCustomText";
+import Icon from "../components/Icon";
 
 export default function ProjectView({ project, onClose }: ProjectViewType) {
     const [loading, setLoading] = useState<boolean>(true);
@@ -35,7 +36,7 @@ export default function ProjectView({ project, onClose }: ProjectViewType) {
         <div className="project-view">
             <div className="panel">
                 <button className="close" onClick={onClose}>
-                    <span className="material-symbols-outlined">close</span>
+                    <Icon name="close" width="2rem"/>
                 </button>
                 <div>
                     <h3>{project.name}</h3>

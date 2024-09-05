@@ -2,6 +2,7 @@ import "../styles/menu-socials.css";
 import linkedinLogo from "../assets/logos/linkedin-app-white-icon.webp";
 import githubLogo from "../assets/logos/github-mark-white.png";
 import { SocialsType } from "../util/types";
+import Icon from "./Icon";
 
 export default function Socials({ inMenu = false }: SocialsType) {
     const sendEmail = () => {
@@ -27,7 +28,7 @@ export default function Socials({ inMenu = false }: SocialsType) {
             </li>
             <li>
                 <a onClick={sendEmail}>
-                    <span className="material-symbols-outlined">mail</span>
+                    <Icon name="mail" width="1.5rem" />
                     {!inMenu && <p>Email</p>}
                 </a>
             </li>
