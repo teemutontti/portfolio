@@ -1,27 +1,15 @@
-import { lazy, Suspense } from 'react';
 import './App.css'
-import LoadingEffect from './components/LoadingEffect';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Home from './pages/Home';
+import NotFound from './pages/NotFound';
 
-const TopBar = lazy(() => import("./features/TopBar"));
-const About = lazy(() => import("./sections/About"));
-const Footer = lazy(() => import("./sections/Footer"));
-const Introduction = lazy(() => import("./sections/Introduction"));
-const Projects = lazy(() => import("./sections/Projects"));
-const Skills = lazy(() => import("./sections/Skills"));
-const WorkExperience = lazy(() => import("./sections/WorkExperience"));
-
-function App() {
+export default function App() {
     return (
-        <Suspense fallback={<LoadingEffect />}>
-            <TopBar />
-            <Introduction />
-            <Skills />
-            <Projects />
-            <WorkExperience />
-            <About/>
-            <Footer />
-        </Suspense>
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="*" element={<NotFound />} />
+            </Routes>
+        </BrowserRouter>
     );
 }
-
-export default App

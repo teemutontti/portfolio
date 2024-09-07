@@ -1,0 +1,45 @@
+div.not-found {
+    text-align: center;
+}
+
+div.not-found img {
+    width: 100%;
+    max-width: 300px;
+}
+
+div.not-found h1 {
+    margin: 1.6rem 0 0.6rem 0;
+}
+
+div.not-found p {
+    max-width: 28rem;
+}
+
+div.not-found div.attribution {
+    position: absolute;
+    bottom: 0.5rem;
+    left: 1rem;
+}
+
+div.not-found div.attribution a {
+    color: var(--text-tetriary);
+    font-size: 0.8rem;
+}
+
+div.not-found .back-button {
+    margin-top: 1rem;
+    background-color: var(--primary);
+    border-radius: 0.25rem;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+}
+
+div.not-found .centered {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 0 1rem;
+}
