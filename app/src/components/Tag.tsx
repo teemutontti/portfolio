@@ -6,45 +6,42 @@ export default function Tag({ children, className }: TagType) {
     const [logosToLightUp, setLogosToLightUp] = useState<string[]>([]);
 
     useEffect(() => {
-        switch (children) {
-            case "Frontend":
+        switch (className) {
+            case "frontend":
                 setLogosToLightUp(["react-full", "html", "css", "javascript-web", "typescript", "mapbox-full"]);
                 break;
-            case "Backend":
+            case "backend":
                 setLogosToLightUp(["node-full", "express-full", "java-full", "springboot-full", "python", "modbus-full"]);
                 break;
-            case "API":
+            case "api":
                 setLogosToLightUp(["node-full", "express-full", "springboot-full", "java-full"]);
                 break;
-            case "Problem Solving":
+            case "problem":
                 setLogosToLightUp(["python", "java-full", "unity-full", "javascript", "kotlin"]);
                 break;
-            case "Self-Initiative":
+            case "initiative":
                 setLogosToLightUp(["git", "github", "docker", "mysql-full", "android-full", "react-full", "modbus-full", "mapbox-full", "java-full", "springboot-full", "html", "css", "javascript-web", "node-full", "express-full", "typescript", "javascript"]);
                 break;
-            case "Teamwork":
+            case "team":
                 setLogosToLightUp(["git", "unity-full", "github", "react-full", "html", "css", "docker", "javascript-web", "mysql-full", "node-full"]);
                 break;
-            case "TDD":
-                setLogosToLightUp(["java-full"]);
-                break;
-            case "Critical Thinking":
+            case "critical":
                 setLogosToLightUp(["java-full", "python", "unity-full", "javascript", "kotlin"]);
                 break;
-            case "Industrial Protocols":
+            case "industrial":
                 setLogosToLightUp(["modbus-full", "mapbox-full", "java-full", "python"]);
                 break;
-            case "Game Development":
+            case "game":
                 setLogosToLightUp(["unity-full"]);
                 break;
-            case "Databases":
+            case "database":
                 setLogosToLightUp(["mysql-full"]);
                 break;
-            case "Internship Experience":
+            case "internship":
                 setLogosToLightUp(["java-full", "modbus-full", "python", "node-full", "express-full", "html", "css", "javascript-web", "mapbox-full", "git", "javascript"]);
                 break;
         }
-    }, [children])
+    }, [className])
 
     const handleLightUp = (lightUp: boolean) => {
         logosToLightUp.forEach(logo => {

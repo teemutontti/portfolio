@@ -1,0 +1,26 @@
+div.language-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    padding: 0.8rem 1.2rem;
+}
+
+div.language-buttons.menu {
+    position: relative;
+    flex-direction: row;
+    justify-content: start;
+    left: 0;
+    height: inherit;
+    padding: 0;
+}
+
+div.language-buttons button {
+    padding: 0.4rem 0.6rem;
+    background: none;
+    border: 0.1rem solid var(--text-tetriary);
+    color: var(--text-secondary);
+    font-weight: 400;
+    white-space: nowrap;
+    min-width: 5rem;
+}

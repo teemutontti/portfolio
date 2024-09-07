@@ -1,8 +1,8 @@
+import { useTranslation } from "react-i18next";
 import "../styles/menu-links.css";
-import useWindowSize from "../util/useWindowSize";
 
 export default function MenuLinks() {
-    const { width } = useWindowSize();
+    const { t } = useTranslation();
 
     const handleContactClick = () => {
         const socials = document.getElementById("socials-main");
@@ -10,29 +10,33 @@ export default function MenuLinks() {
         setTimeout(() => {
             socials?.classList.toggle("visible");
         }, 3000);
-        console.log(socials);
     }
 
     return (
         <ul className="menu-links">
             <li>
-                <a href="#home">Home</a>
+                <a href="/#home">{t("menu.home")}</a>
             </li>
             <li>
-                <a href="#skills">Skills</a>
+                <a href="/#skills">{t("menu.skills")}</a>
             </li>
             <li>
-                <a href="#projects">Projects</a>
-            </li>
-            <li>{width >= 950
-                ? <a href="#work-experience">Work</a>
-                : <a href="#work-experience">Work Experience</a>
-            }</li>
-            <li>
-                <a href="#about">About</a>
+                <a href="/#projects">{t("menu.projects")}</a>
             </li>
             <li>
-                <a href="#contact" onClick={handleContactClick}>Contact</a>
+                {window.innerWidth >= 950 ? (
+                    <a href="/#work-experience">{t("menu.workShort")}</a>
+                ) : (
+                    <a href="/#work-experience">{t("menu.workLong")}</a>
+                )}
+            </li>
+            <li>
+                <a href="/#about">{t("menu.about")}</a>
+            </li>
+            <li>
+                <a href="/#contact" onClick={handleContactClick}>
+                    {t("menu.contact")}
+                </a>
             </li>
         </ul>
     );

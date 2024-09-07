@@ -1,25 +1,15 @@
-
 import './App.css'
-import TopBar from './features/TopBar'
-import About from './sections/About';
-import Footer from './sections/Footer';
-import Introduction from './sections/Introduction';
-import Projects from './sections/Projects';
-import Skills from './sections/Skills';
-import WorkExperience from './sections/WorkExperience';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Home from './pages/Home';
+import NotFound from './pages/NotFound';
 
-function App() {
+export default function App() {
     return (
-        <>
-            <TopBar />
-            <Introduction />
-            <Skills />
-            <Projects />
-            <WorkExperience />
-            <About/>
-            <Footer />
-        </>
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="*" element={<NotFound />} />
+            </Routes>
+        </BrowserRouter>
     );
 }
-
-export default App

@@ -1,11 +1,22 @@
-import { WorkExperienceCardType } from "../util/types";
+import { WorkExperienceCardType, WorkExperienceSimpleType } from "../util/types";
 import "../styles/work-experience-card.css";
 import { useEffect, useState } from "react";
 import useWindowSize from "../util/useWindowSize";
+import { useTranslation } from "react-i18next";
 
 export default function WorkExperienceCard({ work }: WorkExperienceCardType) {
     const [open, setOpen] = useState<boolean>(false);
+    const [workObj, setWorkObj] = useState<WorkExperienceSimpleType | null>(null);
     const { width } = useWindowSize();
+    const { i18n } = useTranslation();
+
+    useEffect(() => {
+        if (i18n.language === "en") {
+            setWorkObj(work.en);
+        } else {
+            setWorkObj(work.fi);
+        }
+    }, [i18n.language, work]);
 
     useEffect(() => {
         if (width > 950) {
@@ -23,12 +34,12 @@ export default function WorkExperienceCard({ work }: WorkExperienceCardType) {
 
     return (
         <button className={open ? `work-experience-card open` : `work-experience-card`} onClick={handleClick}>
-            <h4 className="work-subtitle">{work.subtitle}</h4>
+            <p className="work-subtitle">{workObj?.date}</p>
             {width > 950 && <span className="title-separator" />}
-            <h3 className="work-title">{work.title}</h3>
+            <h3 className="work-title">{workObj?.title}</h3>
             {open && (
                 <div className="text">
-                    {work.text.map((text, index) => (
+                    {workObj?.text.map((text, index) => (
                         <p key={index} className="work-text">
                             {text}
                         </p>

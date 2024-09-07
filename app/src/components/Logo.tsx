@@ -33,221 +33,56 @@ import linkedInLogo from "../assets/logos/linkedin-app-white-icon.webp";
 import { LogoType } from "../util/types";
 import "../styles/logo.css";
 import "../styles/tag.css";
+import LazyImage from "./LaxyImage";
 
-export default function Logo({ name }: LogoType) {
-    switch (name) {
-        case "my-linked-in":
-            return (
-                <a href="https://www.linkedin.com/in/tonttiteemu" className="logo linked-in" target="_blank" title="LinkedIn">
-                    <img src={linkedInLogo} alt="LinkedIn logo" />
-                </a>
-            );
-        case "android":
-            return (
-                <a href="https://developer.android.com/" className="logo android" target="_blank" title="Android">
-                    <img src={androidLogo} alt="Android logo" />
-                </a>
-            );
-        case "android-full":
-            return (
-                <a href="https://developer.android.com/" className="logo android-full" target="_blank" title="Android">
-                    <img src={androidFullLogo} alt="Android logo" />
-                </a>
-            );
-        case "css":
-            return (
-                <a href="https://en.wikipedia.org/wiki/CSS" className="logo css" target="_blank" title="CSS">
-                    <img src={cssLogo} alt="CSS logo" />
-                </a>
-            );
-        case "java":
-            return (
-                <a href="https://dev.java/" className="logo java" target="_blank" title="Java">
-                    <img src={javaLogo} alt="Java logo" />
-                </a>
-            );
-        case "java-full":
-            return (
-                <a href="https://dev.java/" className="logo java-full" target="_blank" title="Java">
-                    <img src={javaFullLogo} alt="Java logo" />
-                </a>
-            );
-        case "js":
-            return (
-                <a
-                    href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-                    className="logo javascript"
-                    target="_blank"
-                    title="JavaScript"
-                >
-                    <img src={javascriptLogo} alt="JavaScript logo" />
-                </a>
-            );
-        case "js-web":
-            return (
-                <a
-                    href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-                    className="logo javascript-web"
-                    target="_blank"
-                    title="JavaScript"
-                >
-                    <img src={javascriptWebLogo} alt="JavaScript logo" />
-                </a>
-            );
-        case "kotlin":
-            return (
-                <a href="https://kotlinlang.org/" className="logo kotlin" target="_blank" title="Kotlin">
-                    <img src={kotlinLogo} alt="Kotlin logo" />
-                </a>
-            );
-        case "kotlin-full":
-            return (
-                <a href="https://kotlinlang.org/" className="logo kotlin-full" target="_blank" title="Kotlin">
-                    <img src={kotlinFullLogo} alt="Kotlin logo" />
-                </a>
-            );
-        case "mapbox":
-            return (
-                <a href="https://www.mapbox.com/" className="logo mapbox" target="_blank" title="Mapbox">
-                    <img src={mapboxLogo} alt="Mapbox logo" />
-                </a>
-            );
-        case "mapbox-full":
-            return (
-                <a href="https://www.mapbox.com/" className="logo mapbox-full" target="_blank" title="Mapbox">
-                    <img src={mapboxFullLogo} alt="Mapbox logo" />
-                </a>
-            );
-        case "modbus":
-            return (
-                <a href="https://en.wikipedia.org/wiki/Modbus" className="logo modbus" target="_blank" title="Modbus">
-                    <img src={modbusLogo} alt="Modbus logo" />
-                </a>
-            );
-        case "modbus-full":
-            return (
-                <a href="https://en.wikipedia.org/wiki/Modbus" className="logo modbus-full" target="_blank" title="Modbus">
-                    <img src={modbusFullLogo} alt="Modbus logo" />
-                </a>
-            );
-        case "mysql":
-            return (
-                <a href="https://www.mysql.com/" className="logo mysql" target="_blank" title="MySQL">
-                    <img src={mysqlLogo} alt="MySQL logo" />
-                </a>
-            );
-        case "mysql-full":
-            return (
-                <a href="https://www.mysql.com/" className="logo mysql-full" target="_blank" title="MySQL">
-                    <img src={mysqlFullLogo} alt="MySQL logo" />
-                </a>
-            );
-        case "node":
-            return (
-                <a href="https://nodejs.org/en" className="logo node" target="_blank" title="NodeJS">
-                    <img src={nodeLogo} alt="NodeJS logo" />
-                </a>
-            );
-        case "node-full":
-            return (
-                <a href="https://nodejs.org/en" className="logo node-full" target="_blank" title="NodeJS">
-                    <img src={nodeFullLogo} alt="NodeJS logo" />
-                </a>
-            );
-        case "python":
-            return (
-                <a href="https://www.python.org/" className="logo python" target="_blank" title="Python">
-                    <img src={pythonLogo} alt="Python logo" />
-                </a>
-            );
-        case "react":
-            return (
-                <a href="https://react.dev/" className="logo react" target="_blank" title="React">
-                    <img src={reactLogo} alt="React logo" />
-                </a>
-            );
-        case "react-full":
-            return (
-                <a href="https://react.dev/" className="logo react-full" target="_blank" title="React">
-                    <img src={reactFullLogo} alt="React logo" />
-                </a>
-            );
-        case "ts":
-            return (
-                <a href="https://www.typescriptlang.org/" className="logo typescript" target="_blank" title="TypeScript">
-                    <img src={typescriptLogo} alt="TypeScript logo" />
-                </a>
-            );
-        case "express":
-            return (
-                <a href="https://expressjs.com/" className="logo express" target="_blank" title="ExpressJS">
-                    <img src={expressLogo} alt="ExpressJS logo" />
-                </a>
-            );
-        case "express-full":
-            return (
-                <a href="https://expressjs.com/" className="logo express-full" target="_blank" title="ExpressJS">
-                    <img src={expressFullLogo} alt="ExpressJS logo" />
-                </a>
-            );
-        case "spring":
-            return (
-                <a href="https://spring.io/projects/spring-boot" className="logo springboot" target="_blank" title="SpringBoot">
-                    <img src={springLogo} alt="SpringBoot logo" />
-                </a>
-            );
-        case "spring-full":
-            return (
-                <a
-                    href="https://spring.io/projects/spring-boot"
-                    className="logo springboot-full"
-                    target="_blank"
-                    title="SpringBoot"
-                >
-                    <img src={springFullLogo} alt="SpringBoot logo" />
-                </a>
-            );
-        case "unity":
-            return (
-                <a href="https://unity.com/" className="logo unity" target="_blank" title="Unity">
-                    <img src={unityLogo} alt="Unity logo" />
-                </a>
-            );
-        case "unity-full":
-            return (
-                <a href="https://unity.com/" className="logo unity-full" target="_blank" title="Unity">
-                    <img src={unityFullLogo} alt="Unity logo" />
-                </a>
-            );
-        case "git":
-            return (
-                <a href="https://git-scm.com/" className="logo git" target="_blank" title="Git">
-                    <img src={gitLogo} alt="Git logo" />
-                </a>
-            );
-        case "github":
-            return (
-                <a href="https://github.com/" className="logo github" target="_blank" title="GitHub">
-                    <img src={githubLogo} alt="GitHub logo" />
-                </a>
-            );
-        case "my-github":
-            return (
-                <a href="https://github.com/teemutontti" className="logo github" target="_blank" title="GitHub">
-                    <img src={githubLogo} alt="GitHub logo" />
-                </a>
-            );
-        case "docker":
-            return (
-                <a href="https://www.docker.com/" className="logo docker" target="_blank" title="Docker">
-                    <img src={dockerLogo} alt="Docker logo" />
-                </a>
-            );
-        default:
-            return (
-                <a href="https://en.wikipedia.org/wiki/HTML" className="logo html" target="_blank" title="HTML">
-                    <img src={htmlLogo} alt="HTML logo" />
-                </a>
-            );
-    }
+type LogoMapType = {
+    [key: string]: { src: string; href: string; alt: string };
+};
+
+const logoMap: LogoMapType = {
+    "android": { src: androidLogo, href: "https://developer.android.com/", alt: "Android logo" },
+    "android-full": { src: androidFullLogo, href: "https://developer.android.com/", alt: "Android logo" },
+    "css": { src: cssLogo, href: "https://en.wikipedia.org/wiki/CSS", alt: "CSS logo" },
+    "java": { src: javaLogo, href: "https://dev.java/", alt: "Java logo" },
+    "java-full": { src: javaFullLogo, href: "https://dev.java/", alt: "Java logo" },
+    "js": { src: javascriptLogo, href: "https://developer.mozilla.org/en-US/docs/Web/JavaScript", alt: "JavaScript logo" },
+    "js-web": { src: javascriptWebLogo, href: "https://developer.mozilla.org/en-US/docs/Web/JavaScript", alt: "JavaScript logo" },
+    "kotlin": { src: kotlinLogo, href: "https://kotlinlang.org/", alt: "Kotlin logo" },
+    "kotlin-full": { src: kotlinFullLogo, href: "https://kotlinlang.org/", alt: "Kotlin logo" },
+    "mapbox": { src: mapboxLogo, href: "https://www.mapbox.com/", alt: "Mapbox logo" },
+    "mapbox-full": { src: mapboxFullLogo, href: "https://www.mapbox.com/", alt: "Mapbox logo" },
+    "modbus": { src: modbusLogo, href: "https://en.wikipedia.org/wiki/Modbus", alt: "Modbus logo" },
+    "modbus-full": { src: modbusFullLogo, href: "https://en.wikipedia.org/wiki/Modbus", alt: "Modbus logo" },
+    "mysql": { src: mysqlLogo, href: "https://www.mysql.com/", alt: "MySQL logo" },
+    "mysql-full": { src: mysqlFullLogo, href: "https://www.mysql.com/", alt: "MySQL logo" },
+    "node": { src: nodeLogo, href: "https://nodejs.org/en", alt: "NodeJS logo" },
+    "node-full": { src: nodeFullLogo, href: "https://nodejs.org/en", alt: "NodeJS logo" },
+    "python": { src: pythonLogo, href: "https://www.python.org/", alt: "Python logo" },
+    "react": { src: reactLogo, href: "https://react.dev/", alt: "React logo" },
+    "react-full": { src: reactFullLogo, href: "https://react.dev/", alt: "React logo" },
+    "ts": { src: typescriptLogo, href: "https://www.typescriptlang.org/", alt: "TypeScript logo" },
+    "express": { src: expressLogo, href: "https://expressjs.com/", alt: "ExpressJS logo" },
+    "express-full": { src: expressFullLogo, href: "https://expressjs.com/", alt: "ExpressJS logo" },
+    "spring": { src: springLogo, href: "https://spring.io/projects/spring-boot", alt: "SpringBoot logo" },
+    "spring-full": { src: springFullLogo, href: "https://spring.io/projects/spring-boot", alt: "SpringBoot logo" },
+    "unity": { src: unityLogo, href: "https://unity.com/", alt: "Unity logo" },
+    "unity-full": { src: unityFullLogo, href: "https://unity.com/", alt: "Unity logo" },
+    "git": { src: gitLogo, href: "https://git-scm.com/", alt: "Git logo" },
+    "github": { src: githubLogo, href: "https://github.com/", alt: "GitHub logo" },
+    "docker": { src: dockerLogo, href: "https://www.docker.com/", alt: "Docker logo" },
+    "html": { src: htmlLogo, href: "https://en.wikipedia.org/wiki/HTML", alt: "HTML logo" },
+    "my-linked-in": { src: linkedInLogo, href: "https://www.linkedin.com/in/tonttiteemu", alt: "LinkedIn logo" },
+    "my-github": { src: githubLogo, href: "https://github.com/teemutontti", alt: "GitHub logo" },
+};
+
+export default function Logo({ name, clickable = true }: LogoType) {
+    const logo = logoMap[name];
+
+    return clickable ? (
+        <a href={logo.href} className={`logo ${name}`} target="_blank">
+            <LazyImage src={logo.src} alt={logo.alt} />
+        </a>
+    ) : (
+        <LazyImage src={logo.src} alt={logo.alt} />
+    );
 }

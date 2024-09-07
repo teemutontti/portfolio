@@ -1,0 +1,16 @@
+div.page {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+div.page .top-bar, div.page .footer {
+    flex: 0 1 auto;
+}
+
+div.page .children-container {
+    flex: 1;
+    position: relative;
+}

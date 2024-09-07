@@ -1,6 +1,6 @@
 section.introduction {
     height: 100%;
-    background-image: url("../assets/background-image.jpg");
+    background-image: url("../assets/background-image.webp");
     background-position: center;
     background-size: cover;
 }
@@ -42,6 +42,7 @@ button.contact-button {
     background-size: 400%;
     transition: all 0.5s ease;
     animation: gradient 10s ease infinite;
+    width: 8rem;
 }
 
 a.contact {
@@ -115,7 +116,7 @@ button:hover {
         justify-content: center;
         align-items: center;
         border-radius: 50% 0.1rem;
-        background-image: url("../assets/background-image.jpg");
+        background-image: url("../assets/background-image.webp");
         background-position: 100% 58%;
         background-size: 110%;
         background-repeat: space repeat;

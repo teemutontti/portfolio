@@ -1,5 +1,6 @@
 export type LogoType = {
     name: string;
+    clickable?: boolean
 }
 
 export type TagType = {
@@ -21,7 +22,10 @@ export type ProjectType = {
     thumbnail: string;
     images: string[];
     logos: string[];
-    description: string[];
+    description: {
+        en: string[];
+        fi: string[];
+    };
     rank?: number;
     mainLink?: string;
     secondaryLink?: string;
@@ -33,8 +37,21 @@ export type ProjectCardType = {
 };
 
 export type WorkExperienceType = {
+    en: {
+        title: string;
+        date: string;
+        text: string[];
+    },
+    fi: {
+        title: string;
+        date: string;
+        text: string[];
+    }
+}
+
+export type WorkExperienceSimpleType = {
     title: string;
-    subtitle: string;
+    date: string;
     text: string[];
 }
 
