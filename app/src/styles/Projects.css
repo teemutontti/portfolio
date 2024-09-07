@@ -34,3 +34,18 @@ section.projects .content {
 .sort-type-button.selected, .sort-order-button.selected {
     filter: opacity(1);
 }
+
+.project-carousel, .project-list {
+    margin-bottom: 2.7rem;
+}
+
+a.view-all {
+    background-color: var(--background);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.2rem;
+    border: 0.1rem solid var(--primary);
+    color: var(--primary);
+    font-weight: 600;
+    margin-top: 5rem;
+}

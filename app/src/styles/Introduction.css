@@ -42,6 +42,7 @@ button.contact-button {
     background-size: 400%;
     transition: all 0.5s ease;
     animation: gradient 10s ease infinite;
+    width: 8rem;
 }
 
 a.contact {
