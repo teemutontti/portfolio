@@ -7,10 +7,12 @@ import LoadingEffect from "../components/LoadingEffect";
 import convertDate from "../util/convertDate";
 import renderCustomText from "../util/renderCustomText";
 import Icon from "../components/Icon";
+import { useTranslation } from "react-i18next";
 
 export default function ProjectView({ project, onClose }: ProjectViewType) {
     const [loading, setLoading] = useState<boolean>(true);
     const [selectedImage, setSelectedImage] = useState<number>(0);
+    const { i18n } = useTranslation();
 
     useEffect(() => {
         const img = new Image();
@@ -68,7 +70,12 @@ export default function ProjectView({ project, onClose }: ProjectViewType) {
                     )}
                     <div className="text">
                         <h4>Description</h4>
-                        <div className="description">{renderCustomText(project.description)}</div>
+                        <div className="description">
+                            {i18n.language === "fi"
+                                ? renderCustomText(project.description.fi)
+                                : renderCustomText(project.description.en)
+                            }
+                        </div>
                     </div>
                     <div>
                         <h4>Technologies used</h4>

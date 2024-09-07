@@ -1,8 +1,18 @@
+import { useTranslation } from "react-i18next";
 import "../styles/introduction.css";
 import useWindowSize from "../util/useWindowSize";
 
 export default function Introduction() {
     const { width } = useWindowSize();
+    const { t } = useTranslation();
+
+    const handleContactClick = () => {
+        const socials = document.getElementById("socials-main");
+        socials?.classList.toggle("visible");
+        setTimeout(() => {
+            socials?.classList.toggle("visible");
+        }, 3000);
+    };
 
     return (
         <section className="introduction" id="home">
@@ -15,13 +25,13 @@ export default function Introduction() {
                 }
                 <div className="text">
                     <div className="heading">
-                        <p>Hello, my name is</p>
+                        <p>{t("introduction.start")}</p>
                         <h1>Teemu Tontti</h1>
                     </div>
                     <div className="sub-heading">
-                        <p>Aspiring software developer student ready for new challenges. <br/><a href="#about" className="know-me-link">Get to know me!</a></p>
-                        <a href="#contact" className="contact">
-                            <button className="contact-button">Contact Me</button>
+                        <p>{t("introduction.text")}<br/><a href="#about" className="know-me-link">{t("introduction.about")}</a></p>
+                        <a href="#contact" className="contact" onClick={handleContactClick}>
+                            <button className="contact-button">{t("introduction.contact")}</button>
                         </a>
                     </div>
                 </div>

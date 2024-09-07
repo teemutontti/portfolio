@@ -8,7 +8,7 @@ export default defineConfig({
   build: {
     minify: "esbuild"
   },
-  base: '/app/dist/',
+  base: '/',
   plugins: [
     react(),
     visualizer({ open: true }),

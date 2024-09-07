@@ -47,7 +47,7 @@ h3 {
 
 h4 {
     font-family: "Martel Sans", sans-serif;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 1rem;
     line-height: 2.3rem;
 }
@@ -81,15 +81,9 @@ button.text span {
     color: var(--secondary);
 }
 
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 850px) {
     html {
         font-size: 18px;
-    }
-}
-
-@media screen and (min-width: 950px) {
-    html {
-        font-size: 20px;
     }
 }
 

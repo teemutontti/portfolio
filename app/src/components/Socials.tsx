@@ -3,8 +3,11 @@ import linkedinLogo from "../assets/logos/linkedin-app-white-icon.webp";
 import githubLogo from "../assets/logos/github-mark-white.png";
 import { SocialsType } from "../util/types";
 import Icon from "./Icon";
+import { useTranslation } from "react-i18next";
 
 export default function Socials({ inMenu = false }: SocialsType) {
+    const { t } = useTranslation();
+
     const sendEmail = () => {
         const subject = encodeURIComponent("Contact Request");
         const body = encodeURIComponent("Hello,\n\nI would like to get in touch with you.");
@@ -29,7 +32,7 @@ export default function Socials({ inMenu = false }: SocialsType) {
             <li>
                 <a onClick={sendEmail}>
                     <Icon name="mail" width="1.5rem" />
-                    {!inMenu && <p>Email</p>}
+                    {!inMenu && <p>{t("email")}</p>}
                 </a>
             </li>
         </ul>

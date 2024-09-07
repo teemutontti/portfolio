@@ -8,6 +8,7 @@ import Section from "../features/Section";
 import ProjectCarousel from "../features/ProjectCarousel";
 import useWindowSize from "../util/useWindowSize";
 import Icon from "../components/Icon";
+import { useTranslation } from "react-i18next";
 
 export default function Projects() {
     const [projectToView, setProjectToView] = useState<ProjectType | null>(null);
@@ -15,6 +16,7 @@ export default function Projects() {
     const [sortOrder, setSortOrder] = useState<"asc" | "desc">("desc");
     const [projects, setProjects] = useState<ProjectType[]>(projectObjArray);
     const { width } = useWindowSize();
+    const { t } = useTranslation();
 
     useEffect(() => {
         const tempProjects = [...projects];
@@ -46,7 +48,7 @@ export default function Projects() {
 
     const renderContent = () => {
         switch (true) {
-            case (width < 650):
+            case (width < 850):
                 return <ProjectCarousel projects={projects} onProjectClick={handleProjectClick} />;
             default:
                 return <div className="project-list">
@@ -62,36 +64,36 @@ export default function Projects() {
     }
 
     return (
-        <Section name="projects" title="Recent Projects">
+        <Section name="projects" title={t("projects.title")}>
             <div className="sort">
                 <div className="sort-type">
-                    <p>Sort by:</p>
+                    <p>{t("projects.sort")}</p>
                     <button
                         className={sortType === "rank" ? "sort-type-button selected" : "sort-type-button"}
                         onClick={() => setSortType("rank")}
-                        >
-                        Rank
+                    >
+                        {t("projects.rank")}
                     </button>
                     <button
                         className={sortType === "date" ? "sort-type-button selected" : "sort-type-button"}
                         onClick={() => setSortType("date")}
-                        >
-                        Date
+                    >
+                        {t("projects.date")}
                     </button>
                 </div>
                 <div className="sort-order">
-                    <p>Order:</p>
+                    <p>{t("projects.order")}</p>
                     <button
                         className={sortOrder === "asc" ? "sort-order-button selected" : "sort-order-button"}
                         onClick={() => setSortOrder("asc")}
-                        >
-                        <Icon name="arrow-up"/>
+                    >
+                        <Icon name="arrow-up" />
                     </button>
                     <button
                         className={sortOrder === "desc" ? "sort-order-button selected" : "sort-order-button"}
                         onClick={() => setSortOrder("desc")}
-                        >
-                        <Icon name="arrow-down"/>
+                    >
+                        <Icon name="arrow-down" />
                     </button>
                 </div>
             </div>
