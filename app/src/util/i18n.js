@@ -6,12 +6,12 @@ i18n.use(LanguageDetector)
     .use(initReactI18next)
     .init({
         debug: true,
-        fallbackLng: "fi",
+        fallbackLng: "fi-FI",
         interpolation: {
             escapeValue: false,
         },
         resources: {
-            en: {
+            "en-EN": {
                 translation: {
                     about: {
                         title: "About",
@@ -56,6 +56,8 @@ i18n.use(LanguageDetector)
                         date: "Date",
                         order: "Order:",
                         viewAll: "View All",
+                        description: "Description",
+                        technologies: "Technologies Used",
                     },
                     menu: {
                         home: "Home",
@@ -79,17 +81,17 @@ i18n.use(LanguageDetector)
                     },
                 },
             },
-            fi: {
+            "fi-FI": {
                 translation: {
                     about: {
                         title: "Minusta",
                         text:
                             "Hieman minusta...\n" +
-                            "Olen kolmannen vuoden tietojenkäsittelyn opiskelu, jolla on vahva intohimo koodaukseen ja ongelmanratkaisuun.\n" +
+                            "Olen kolmannen vuoden tietojenkäsittelyn opiskelija, jolla on vahva intohimo koodaukseen ja ongelmanratkaisuun.\n" +
                             "Opintojeni aikana olen päässyt työstämään monenlaisia projekteja, jotka tuovat hyvin esiin taitoni ohjelmistokehityksessä ja web-suunnittelussa. Tänne olen koonnut osan noista projekteista.\n" +
                             "Jokainen projekti on ollut arvokas oppimiskokemus, joka on vain vahvistanut kiinnostustani alaa kohtaan.\n" +
                             "Olen aina innokas oppimaan uusia teknologioita sekä front- että backend-kehityksessä.\n" +
-                            "Kiitos mielenkiinnostani ja toivon, että löydät työni yhtä yhtä mielenkiintoisiksi kuin minä itse!",
+                            "Kiitos mielenkiinnostansi. Toivon, että löydät työni yhtä mielenkiintoisiksi kuin minä itse!",
                     },
                     contact:
                         "Jos sinulta löytyy jotain lisäkysymyksiä, ota rohkeasti yhteyttä!\n" +
@@ -124,6 +126,8 @@ i18n.use(LanguageDetector)
                         date: "Päiväys",
                         order: "Järjestys:",
                         viewAll: "Näytä kaikki",
+                        description: "Kuvaus",
+                        technologies: "Käytetyt teknologiat",
                     },
                     menu: {
                         home: "Aloitus",
