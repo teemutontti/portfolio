@@ -1,0 +1,76 @@
+div.dropdown-container {
+    position: relative;
+    background-color: var(--paper);
+    border-radius: 0.2rem;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    height: 2.3rem;
+    border: 0.1rem solid var(--text-tetriary);
+}
+
+.dropdown-container button {
+    background: none;
+    padding: 0.1rem;
+    font-weight: 400;
+}
+
+.dropdown-container .dropdown-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    border-radius: 0.3rem;
+    padding: 0.3rem;
+    border: none;
+}
+
+.dropdown-container p {
+    padding: 0.3rem 0.3rem 0.3rem 0.7rem;
+    font-weight: 400;
+    font-size: 0.8rem;
+    max-width: 8rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+.dropdown-container .dropdown-button.open {
+    transform: rotateX(180deg);
+}
+
+.dropdown-container .dropdown-button svg.arrow {
+    width: 1.5rem;
+    fill: white;
+}
+
+.dropdown-container .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--paper);
+    border-radius: 0 0 0.3rem 0.3rem;
+    padding: 0.5rem;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: start;
+    padding: 0.8rem 0.8rem 0.8rem 0.8rem;
+    box-shadow: 0 -0.1rem 0.3rem var(--shadow);
+    border: 0.1rem solid var(--text-tetriary);
+    border-top: none;
+}
+
+.dropdown-container .dropdown-menu button {
+    color: var(--text-secondary);
+    text-align: start;
+}
+
+.dropdown-container .dropdown-menu button.selected {
+    color: var(--text-primary);
+    font-weight: 500;
+}
