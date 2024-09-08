@@ -17,11 +17,11 @@ export default function LanguageSelector({ inMenu = false }: { inMenu?: boolean 
 
     return (
         <div className={inMenu ? "language-buttons menu" : "language-buttons"}>
-            {language !== "fi" && (
-                <button onClick={() => changeLanguage("fi")}>{loading ? <LoadingEffect size="xs" /> : "Suomeksi"}</button>
+            {language !== "fi-FI" && (
+                <button onClick={() => changeLanguage("fi-FI")}>{loading ? <LoadingEffect size="xs" /> : "Suomeksi"}</button>
             )}
-            {language !== "en" && (
-                <button onClick={() => changeLanguage("en")}>{loading ? <LoadingEffect size="xs" /> : "In English"}</button>
+            {language !== "en-EN" && (
+                <button onClick={() => changeLanguage("en-EN")}>{loading ? <LoadingEffect size="xs" /> : "In English"}</button>
             )}
         </div>
     );
