@@ -16,7 +16,6 @@ i18n.use(LanguageDetector)
                     about: {
                         title: "About",
                         text:
-                            "Let me tell you a little bit about myself...\n" +
                             "I’m a third year programming student with a strong passion for coding and problem solving.\n" +
                             "During my studies, I have worked on several projects that greatly showcases my skills in software development and web design. Here I have gathered some of those projects.\n" +
                             "Each project has been a valuable learning experience only fueling my passion for this industry.\n" +
@@ -86,16 +85,15 @@ i18n.use(LanguageDetector)
                     about: {
                         title: "Minusta",
                         text:
-                            "Hieman minusta...\n" +
-                            "Olen kolmannen vuoden tietojenkäsittelyn opiskelija, jolla on vahva intohimo koodaukseen ja ongelmanratkaisuun.\n" +
-                            "Opintojeni aikana olen päässyt työstämään monenlaisia projekteja, jotka tuovat hyvin esiin taitoni ohjelmistokehityksessä ja web-suunnittelussa. Tänne olen koonnut osan noista projekteista.\n" +
-                            "Jokainen projekti on ollut arvokas oppimiskokemus, joka on vain vahvistanut kiinnostustani alaa kohtaan.\n" +
-                            "Olen aina innokas oppimaan uusia teknologioita sekä front- että backend-kehityksessä.\n" +
-                            "Kiitos mielenkiinnostansi. Toivon, että löydät työni yhtä mielenkiintoisiksi kuin minä itse!",
+                            "Olen kolmannen vuoden tietojenkäsittelyn opiskelija, jolla on aito intohimo koodaukseen ja ongelmanratkaisuun.\n" +
+                            "Opintojeni aikana olen päässyt työstämään monenlaisia projekteja, joissa olen päässyt tuomaan esiin taitojani ohjelmistokehityksessä ja web-suunnittelussa. Tänne olen koonnut osan noista projekteista.\n" +
+                            "Jokainen projekti on ollut arvokas oppimiskokemus, joka on vain vahvistanut innostustani tätä alaa kohtaan.\n" +
+                            "Olen aina innokas oppimaan uutta sekä front- että backend-kehityksessä.\n" +
+                            "Kiitos mielenkiinnostasi. Toivon, että löydät työni yhtä mielenkiintoisiksi kuin minä itse!",
                     },
                     contact:
-                        "Jos sinulta löytyy jotain lisäkysymyksiä, ota rohkeasti yhteyttä!\n" +
-                        "Olen aina avoin keskustelemaan uusista mahdollisuuksista, yhteistyöstä tai vain uusista ideoista.\n" +
+                        "Ota rohkeasti yhteyttä, jos sinulta löytyy lisäkysymyksiä!\n" +
+                        "Olen aina avoin keskustelemaan töistäni, uusista mahdollisuuksista ja yhteistöistä.\n" +
                         "Odotan innolla yhteydenottoasi!",
                     email: "Sähköposti",
                     copyright: "Kaikki oikeudet pidätetään.",
