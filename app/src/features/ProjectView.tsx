@@ -12,7 +12,7 @@ import { useTranslation } from "react-i18next";
 export default function ProjectView({ project, onClose }: ProjectViewType) {
     const [loading, setLoading] = useState<boolean>(true);
     const [selectedImage, setSelectedImage] = useState<number>(0);
-    const { i18n } = useTranslation();
+    const { t, i18n } = useTranslation();
 
     useEffect(() => {
         const img = new Image();
@@ -23,9 +23,7 @@ export default function ProjectView({ project, onClose }: ProjectViewType) {
 
         img.src = project.thumbnail;
         img.onload = () => {
-            setTimeout(() => {
-                setLoading(false);
-            }, 500);
+            setLoading(false);
         };
 
     }, [project.thumbnail]);
@@ -38,11 +36,11 @@ export default function ProjectView({ project, onClose }: ProjectViewType) {
         <div className="project-view">
             <div className="panel">
                 <button className="close" onClick={onClose}>
-                    <Icon name="close" width="2rem"/>
+                    <Icon name="close" width="2rem" />
                 </button>
                 <div>
                     <h3>{project.name}</h3>
-                    <p className="subtitle">{convertDate(project.date)}</p>
+                    <p className="subtitle">{convertDate(project.date, i18n.language)}</p>
                 </div>
                 <div className="content-container">
                     {loading ? (
@@ -69,16 +67,15 @@ export default function ProjectView({ project, onClose }: ProjectViewType) {
                         </div>
                     )}
                     <div className="text">
-                        <h4>Description</h4>
+                        <h4>{t("projects.description")}</h4>
                         <div className="description">
-                            {i18n.language === "fi"
+                            {i18n.language === "fi-FI"
                                 ? renderCustomText(project.description.fi)
-                                : renderCustomText(project.description.en)
-                            }
+                                : renderCustomText(project.description.en)}
                         </div>
                     </div>
                     <div>
-                        <h4>Technologies used</h4>
+                        <h4>{t("projects.technologies")}</h4>
                         <div className="logos">
                             {project.logos.map((logo, index) => (
                                 <Logo name={logo} key={index} />

@@ -9,11 +9,12 @@ import ProjectCarousel from "../features/ProjectCarousel";
 import useWindowSize from "../util/useWindowSize";
 import Icon from "../components/Icon";
 import { useTranslation } from "react-i18next";
+import Dropdown from "../components/Dropdown";
 
 export default function Projects() {
     const [projectToView, setProjectToView] = useState<ProjectType | null>(null);
-    const [sortType, setSortType] = useState<"rank" | "date">("rank");
-    const [sortOrder, setSortOrder] = useState<"asc" | "desc">("desc");
+    const [sortType, setSortType] = useState<string>("rank");
+    const [sortOrder, setSortOrder] = useState<string>("desc");
     const [projects, setProjects] = useState<ProjectType[]>(projectObjArray);
     const { width } = useWindowSize();
     const { t } = useTranslation();
@@ -21,7 +22,7 @@ export default function Projects() {
     useEffect(() => {
         const tempProjects = [...projects];
         const sortedProjects = tempProjects.sort((a, b) => {
-            if (sortType === "date") {
+            if (sortType === t("projects.date")) {
                 if (sortOrder === "asc") {
                     return new Date(a.date).getTime() - new Date(b.date).getTime();
                 } else {
@@ -48,7 +49,7 @@ export default function Projects() {
 
     const renderContent = () => {
         switch (true) {
-            case (width < 850):
+            case (width < 950):
                 return <ProjectCarousel projects={projects} onProjectClick={handleProjectClick} />;
             default:
                 return <div className="project-list">
@@ -63,38 +64,24 @@ export default function Projects() {
         }
     }
 
+    const sortTypes = [t("projects.rank"), t("projects.date")];
+
     return (
         <Section name="projects" title={t("projects.title")}>
             <div className="sort">
-                <div className="sort-type">
-                    <p>{t("projects.sort")}</p>
-                    <button
-                        className={sortType === "rank" ? "sort-type-button selected" : "sort-type-button"}
-                        onClick={() => setSortType("rank")}
-                    >
-                        {t("projects.rank")}
-                    </button>
-                    <button
-                        className={sortType === "date" ? "sort-type-button selected" : "sort-type-button"}
-                        onClick={() => setSortType("date")}
-                    >
-                        {t("projects.date")}
-                    </button>
-                </div>
-                <div className="sort-order">
-                    <p>{t("projects.order")}</p>
-                    <button
-                        className={sortOrder === "asc" ? "sort-order-button selected" : "sort-order-button"}
-                        onClick={() => setSortOrder("asc")}
-                    >
-                        <Icon name="arrow-up" />
-                    </button>
-                    <button
-                        className={sortOrder === "desc" ? "sort-order-button selected" : "sort-order-button"}
-                        onClick={() => setSortOrder("desc")}
-                    >
-                        <Icon name="arrow-down" />
-                    </button>
+                <p className="hint-text">{t("projects.sort")}</p>
+                <div className="sort-actions">
+                    <Dropdown className="sort-type" list={sortTypes} onClick={(type) => setSortType(type)} />
+                    {sortOrder === "desc" && (
+                        <button onClick={() => setSortOrder("asc")} className="sort-order-button">
+                            <Icon name="arrow-down" />
+                        </button>
+                    )}
+                    {sortOrder === "asc" && (
+                        <button onClick={() => setSortOrder("desc")} className="sort-order-button">
+                            <Icon name="arrow-up" />
+                        </button>
+                    )}
                 </div>
             </div>
             {projectToView && <ProjectView project={projectToView} onClose={() => setProjectToView(null)} />}

@@ -13,11 +13,11 @@ export default function Skills() {
 
     return (
         <Section name="skills">
-            {width >= 550 && <p className="hint-text">{t("skills.hint")}</p>}
+            {(width >= 550 && width < 1200) && <p className="hint-text">{t("skills.hint")}</p>}
             <div className="logo-list-container">
                 <LogoDumb />
                 <div className="logo-list">
-                    {width < 550 && <p className="hint-text">{t("skills.hint")}</p>}
+                    {width < 550 || width >= 1200 && <p className="hint-text">{t("skills.hint")}</p>}
                     <Tag className="frontend">{t("skills.frontend")}</Tag>
                     <Tag className="backend">{t("skills.backend")}</Tag>
                     <Tag className="api">{t("skills.api")}</Tag>

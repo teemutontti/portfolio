@@ -11,7 +11,7 @@ export default function Home() {
     const WorkExperience = lazy(() => import("../sections/WorkExperience"));
 
     return (
-        <Suspense fallback={<LoadingEffect />}>
+        <Suspense fallback={<LoadingEffect size="lg" />}>
             <TopBar />
             <Introduction />
             <Skills />

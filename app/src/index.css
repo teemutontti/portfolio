@@ -2,7 +2,7 @@
 
 :root {
     --text-primary: #FFFFFF;
-    --text-secondary: #D9D9D9;
+    --text-secondary: #cfcfcf;
     --text-tetriary: #d9d9d940;
     --background: #00171F;
     --paper: #00212D;
@@ -10,6 +10,7 @@
     --primary-1: #44b6fd;
     --primary-2: #076097;
     --secondary: #ADEBFF;
+    --shadow: #010c0f77;
 }
 
 * {

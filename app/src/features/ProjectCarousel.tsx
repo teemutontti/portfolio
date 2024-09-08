@@ -57,6 +57,12 @@ export default function ProjectCarousel({ projects, onProjectClick }: ProjectCar
 
     const wideSettings = {
         ...narrowSettings,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+    };
+
+    const extraWideSettings = {
+        ...narrowSettings,
         slidesToShow: 3,
         slidesToScroll: 1,
     };
@@ -65,7 +71,9 @@ export default function ProjectCarousel({ projects, onProjectClick }: ProjectCar
     const [sliderSettings, setSliderSettings] = useState<SliderSettingsType>(narrowSettings);
 
     useEffect(() => {
-        if (width > 650) {
+        if (width > 750) {
+            setSliderSettings(extraWideSettings);
+        } else if (width > 550) {
             setSliderSettings(wideSettings);
         } else {
             setSliderSettings(narrowSettings);
