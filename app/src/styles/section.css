@@ -14,6 +14,12 @@ section.styled-section {
 
 @media screen and (min-width: 1200px) {
     section.styled-section {
-        padding: 3rem 10rem;
+        padding: 3rem 12rem;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    section.styled-section {
+        padding: 3rem 18rem;
     }
 }

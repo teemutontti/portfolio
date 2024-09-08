@@ -1,9 +1,9 @@
 .logo-dumb {
     position: relative;
-    margin: 1rem 0;
-    width: 16rem;
-    height: 16rem;
-    min-width: 16rem;
+    margin: 16px 0;
+    width: 256px;
+    height: 300px;
+    min-width: 256px;
     transition: all 0.3s;
 }
 
@@ -23,35 +23,33 @@
 
 /* Logo sizing */
 .logo-dumb a img {
-    height: 1.6rem;
+    height: 26px;
     width: 100%;
+}
+.logo-dumb .java-full img {
+    height: 109px;
+}
+.logo-dumb .react-full img {
+    height: 93px;
+}
+.logo-dumb .python img {
+    height: 56px;
+}
+.logo-dumb .python img,
+.logo-dumb .node-full img,
+.logo-dumb .mysql-full img {
+    height: 48px;
 }
 .logo-dumb .html img,
 .logo-dumb .css img,
 .logo-dumb .javascript-web img {
-    height: 2.3rem;
-}
-.logo-dumb .python img,
-.logo-dumb .node-full img {
-    height: 3rem;
-}
-.logo-dumb .mysql-full img {
-    height: 3rem;
+    height: 37px;
 }
 .logo-dumb .mapbox-full img {
-    height: 1.3rem;
-}
-.logo-dumb .react-full img {
-    height: 5.8rem;
+    height: 20px;
 }
 .logo-dumb .express-full img {
-    height: 1rem;
-}
-.logo-dumb .python img {
-    height: 3.5rem;
-}
-.logo-dumb .java-full img {
-    height: 6.8rem;
+    height: 16px;
 }
 
 /* Logo positioning */
@@ -64,169 +62,167 @@
     left: 19%;
 }
 .logo-dumb .modbus-full {
-    top: 0.4rem;
+    top: 6px;
     right: 22%;
 }
 .logo-dumb .kotlin {
-    top: 2rem;
+    top: 32px;
     right: 5%;
 }
 .logo-dumb .node-full {
-    top: 2.7rem;
+    top: 43px;
     right: 20%;
 }
 .logo-dumb .css {
-    top: 3.3rem;
+    top: 53px;
     left: 0;
 }
 .logo-dumb .mapbox-full {
-    top: 6.6rem;
+    top: 106px;
     right: 16%;
 }
 .logo-dumb .js-web {
-    top: 5rem;
+    top: 80px;
     right: 0;
 }
 .logo-dumb .unity-full {
-    top: 7rem;
+    top: 112px;
     left: 5%;
 }
 .logo-dumb .html {
-    top: 8.8rem;
+    top: 141px;
     left: 38%;
 }
 .logo-dumb .express-full {
-    top: 8.8rem;
+    top: 141px;
     right: 4%;
 }
 .logo-dumb .python {
-    top: 9.5rem;
+    top: 152px;
     left: 14%;
 }
 .logo-dumb .git {
-    top: 9.6rem;
+    top: 154px;
     left: 1%;
 }
 .logo-dumb .js {
-    top: 12rem;
+    top: 192px;
     left: 40%;
     z-index: 10;
 }
 .logo-dumb .java-full {
-    top: 8.2rem;
+    top: 131px;
     right: 22%;
     z-index: 10;
 }
 .logo-dumb .ts {
-    top: 10.8rem;
+    top: 173px;
     right: 7%;
 }
 .logo-dumb .github {
-    top: 12.5rem;
+    top: 200px;
     left: 5%;
 }
 .logo-dumb .android-full {
-    top: 16.5rem;
+    top: 264px;
     left: 22%;
     z-index: 10;
 }
 .logo-dumb .spring-full {
-    top: 14.6rem;
+    top: 234px;
     left: 18%;
 }
 .logo-dumb .mysql-full {
-    top: 13.8rem;
+    top: 221px;
     right: 5%;
 }
 
 
 .logo-dumb.large {
-    width: 20rem;
-    height: 20rem;
-    min-width: 20rem;
+    width: 320px;
+    height: 320px;
+    min-width: 320px;
 }
 
 /* Logo sizing */
 .logo-dumb.large a img {
-    height: 2rem;
+    height: 32px;
 }
 .logo-dumb.large .html img,
 .logo-dumb.large .css img,
 .logo-dumb.large .javascript-web img {
-    height: 2.8rem;
+    height: 45px;
 }
-.logo-dumb.large .node-full img {
-    height: 3.5rem;
-}
+.logo-dumb.large .node-full img,
 .logo-dumb.large .mysql-full img {
-    height: 3.5rem;
+    height: 56px;
 }
 .logo-dumb.large .mapbox-full img {
-    height: 1.8rem;
+    height: 24px;
 }
 .logo-dumb.large .react-full img {
-    height: 6.4rem;
+    height: 102px;
 }
 .logo-dumb.large .express-full img {
-    height: 1.3rem;
+    height: 21px;
 }
 .logo-dumb.large .python img {
-    height: 4.2rem;
+    height: 67px;
 }
 .logo-dumb.large .java-full img {
-    height: 7.4rem;
+    height: 118px;
 }
 
 /* Logo positioning */
 .logo-dumb.large .react-full {
-    top: 4%;
+    top: 10px;
     left: 20%;
 }
 .logo-dumb.large .node-full {
-    top: 2.5rem;
+    top: 40px;
 }
 .logo-dumb.large .css {
-    top: 3rem;
+    top: 48px;
 }
 .logo-dumb.large .ts {
-    top: 11.3rem;
+    top: 181px;
 }
 .logo-dumb.large .mapbox-full {
-    top: 6.5rem;
-    right: 13%;
+    top: 104px;
+    right: 15%;
 }
 .logo-dumb.large .unity-full {
-    top: 7.5rem;
+    top: 120px;
 }
 .logo-dumb.large .html {
-    top: 9rem;
+    top: 140px;
 }
 .logo-dumb.large .express-full {
     right: 0%;
 }
 .logo-dumb.large .python {
-    top: 10rem;
+    top: 160px;
 }
 .logo-dumb.large .git {
-    top: 10.2rem;
+    top: 165px;
 }
 .logo-dumb.large .js {
-    top: 12.7rem;
+    top: 203px;
 }
 .logo-dumb.large .java-full {
-    top: 8.6rem;
+    top: 138px;
     right: 23%;
 }
 .logo-dumb.large .github {
-    top: 13.5rem;
+    top: 216px;
 }
 .logo-dumb.large .android-full {
-    top: 17.5rem;
+    top: 280px;
 }
 .logo-dumb.large .spring-full {
-    top: 15.4rem;
+    top: 246px;
 }
 .logo-dumb.large .mysql-full {
-    top: 14.5rem;
+    top: 232px;
     right: 5%;
 }

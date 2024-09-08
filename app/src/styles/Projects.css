@@ -8,31 +8,36 @@ section.projects .content {
     position: relative;
 }
 
-.projects .sort, .projects .sort .sort-type, .projects .sort .sort-order {
+.projects .sort {
     display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.projects .sort p.hint-text {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: var(--text-secondary);
+    filter: none;
+}
+
+.projects .sort .sort-actions {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     gap: 0.5rem;
 }
 
-.projects .sort {
-    align-items: center;
-    margin-bottom: 1rem;
-    gap: 2rem;
-}
-
-.projects .sort p {
-    font-size: 0.6rem;
-}
-
-.sort-type-button, .sort-order-button {
+.projects .sort .sort-actions .sort-order-button {
     padding: 0;
-    background: none;
-    border: 0.1rem solid transparent;
-    filter: opacity(0.4);
-}
-
-.sort-type-button.selected, .sort-order-button.selected {
-    filter: opacity(1);
+    background-color: var(--paper);
+    border: 0.1rem solid var(--text-tetriary);
+    height: 2.3rem;
+    width: 2.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .project-carousel, .project-list {

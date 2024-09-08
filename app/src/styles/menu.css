@@ -80,6 +80,7 @@ div.menu div.menu-content div.bottom-section {
         position: unset;
         background: none;
         width: auto;
+        justify-content: end;
     }
 
     div.menu div.menu-background {

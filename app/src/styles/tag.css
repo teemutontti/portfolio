@@ -6,6 +6,7 @@ span.tag {
     transition: transform 0.2s;
     border: 0.1rem solid var(--paper);
     white-space: nowrap;
+    box-shadow: 0.1rem 0.1rem 0.2rem var(--shadow);
 }
 
 span.tag:hover {

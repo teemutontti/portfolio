@@ -8,6 +8,8 @@
     max-height: 4.5rem;
     transition: max-height 0.8s ease-in-out;
     overflow: hidden;
+    position: relative;
+    box-shadow: 0.1rem 0.1rem 0.5rem var(--shadow);
 }
 
 .work-experience-card:hover {
@@ -15,7 +17,28 @@
 }
 
 .work-experience-card.open {
-    max-height: 30rem;
+    max-height: 50rem;
+}
+
+.work-experience-card svg.arrow {
+    position: absolute;
+    right: 0.8rem;
+    top: 1.2rem;
+    width: 2rem;
+    fill: var(--primary);
+    transition: transform 0.4s ease-in-out;
+}
+
+.work-experience-card.open svg.arrow {
+    transform: rotateX(180deg);
+}
+
+.work-title {
+    width: 85%;
+    text-align: start;
+    text-overflow: ellipsis;
+    overflow-x: hidden;
+    white-space: nowrap;
 }
 
 .work-subtitle {
@@ -36,7 +59,7 @@
     text-align: start;
 }
 
-@media screen and (min-width: 950px) {
+@media screen and (min-width: 850px) {
     .work-experience-card {
         border: none;
         display: grid;
@@ -44,6 +67,7 @@
         grid-template-columns: 0.25fr 0.08fr 0.85fr;
         padding-left: 0;
         align-items: center;
+        box-shadow: none;
     }
 
     .work-experience-card:hover {

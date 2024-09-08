@@ -32,7 +32,7 @@ section.skills {
     padding: 0 1rem;
 }
 
-.hint-text {
+.skills .hint-text {
     color: var(--text-secondary);
     filter: opacity(0.25);
 }
@@ -48,7 +48,7 @@ section.skills {
         align-items: start;
     }
 
-    .hint-text {
+    .skills .hint-text {
         margin-left: 1rem;
     }
 }
@@ -61,6 +61,25 @@ section.skills {
 
 @media screen and (min-width: 1200px) {
     section.skills .content {
-        padding: 0 5rem 3rem 5rem;
+        padding: 0 8rem 3rem 7rem;
+    }
+
+    .logo-list-container {
+        align-items: center;
+    }
+
+    .logo-list {
+        margin: 0;
+    }
+
+    .skills .hint-text {
+        margin: 0;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    section.skills .content {
+        padding: 0 15rem;
     }
 }

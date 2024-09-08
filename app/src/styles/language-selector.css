@@ -23,4 +23,6 @@ div.language-buttons button {
     font-weight: 400;
     white-space: nowrap;
     min-width: 5rem;
+    min-height: 2rem;
+    position: relative;
 }

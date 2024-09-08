@@ -1,9 +1,13 @@
+div.project-carousel {
+    padding: 0 1rem;
+}
+
 .slick-slide {
-    padding: 0 0.5rem;
+    padding: 0 0.8rem;
 }
 
 .slick-list {
-    margin: 0 -0.5rem;
+    margin: 0 -0.8rem;
 }
 
 .slick-dots li button::before{

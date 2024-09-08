@@ -59,13 +59,13 @@
     width: 1.2rem;
 }
 
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 950px) {
     .project-card {
         width: 45%;
     }
 }
 
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1200px) {
     .project-card {
         width: 28%;
     }
