@@ -78,13 +78,36 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 1rem;
+    position: relative;
+    gap: 1.5rem;
+}
+
+.image-container .image-change-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+.image-container .image-change-buttons button {
+    background: none;
+    padding: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.image-container .image-change-buttons .image-number {
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    width: 2rem;
 }
 
 .image-gallery {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    width: 100%;
 }
 
 .image-gallery .img-button {
@@ -104,6 +127,61 @@
 .image-gallery .img-button.selected {
     border: 0.15rem solid var(--primary);
     filter: none;
+}
+
+.project-view .outer-links {
+    display: flex;
+    gap: 0.3rem 0.5rem;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    bottom: 2.8rem;
+    right: -0.3rem;
+}
+
+.project-view .outer-links a {
+    text-decoration: none;
+    border-radius: 1.5rem;
+    display: flex;
+    align-items: center;
+    padding: 0.4rem 0.6rem;
+    white-space: nowrap;
+}
+
+.project-view .outer-links a.secondary-link {
+    gap: 0.4rem;
+    color: var(--primary);
+    background-color: var(--paper);
+    padding: 0.3rem;
+    border-radius: 50%;
+    border: 0.1rem solid var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-view .outer-links a.secondary-link img {
+    filter: invert(52%) sepia(150%) saturate(1000%) hue-rotate(177deg) brightness(86%) contrast(110%);
+    width: 1.8rem;
+    height: 1.8rem;
+}
+
+.project-view .outer-links a.main-link {
+    background-color: var(--primary);
+    color: var(--paper);
+    font-weight: 500;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding-right: 0.9rem;
+}
+
+.project-view .outer-links a.main-link svg {
+    width: 1.7rem;
+    fill: var(--paper);
 }
 
 @media screen and (min-width: 650px) {
