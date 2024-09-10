@@ -17,21 +17,21 @@ const bertinEnvironics2024 = {
     },
 };
 
-const bertinEnvironics = {
+const environics = {
     en: {
-        title: "Bertin Environics Oy",
+        title: "Environics Oy",
         date: "2021 - 2022",
         text: [
-            "I worked at Bertin Environics Oy as a device assembler for a year after graduating from vocational school. My tasks were to assemble and test devices.",
+            "I worked at Environics Oy as a device assembler for a year after graduating from vocational school. My tasks were to assemble and test devices.",
             "This job was very independent and required a lot of precision and care. I gained a lot of experience about how devices work and how to assemble them.",
             "My good work ethic and precision were noticed because I was given a lot of responsibility in my work.",
         ],
     },
     fi: {
-        title: "Bertin Environics Oy",
+        title: "Environics Oy",
         date: "2021 - 2022",
         text: [
-            "Toimin Bertin Environics Oy:llä laiteasentajana ammattikoulusta valmistuttuani vuoden ajan. Tehtäviäni olivat laitteiden asennus- ja testaustyöt.",
+            "Toimin Environics Oy:llä laiteasentajana ammattikoulusta valmistuttuani vuoden ajan. Tehtäviäni olivat laitteiden asennus- ja testaustyöt.",
             "Tämä työ oli hyvin itsenäistä työskentelyä ja vaati paljon tarkkuutta ja huolellisuutta. Sain paljon kokemusta laitteiden toiminnasta ja laitteiden asennuksesta.",
             "Tehtävässä hyvä työmoraalini ja tarkkuuteni huomattiin, sillä sain paljon vastuuta työtehtävissäni."
         ],
@@ -59,4 +59,4 @@ const ohjaamoOlkkari = {
     }
 };
 
-export default [bertinEnvironics2024, bertinEnvironics, ohjaamoOlkkari];
+export default [bertinEnvironics2024, environics, ohjaamoOlkkari];

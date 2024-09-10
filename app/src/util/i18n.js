@@ -49,7 +49,7 @@ i18n.use(LanguageDetector)
                         internship: "Internship Experience",
                     },
                     projects: {
-                        title: "Recent Projects",
+                        title: "Projects",
                         sort: "Sort by:",
                         rank: "Rank",
                         date: "Date",
@@ -57,6 +57,8 @@ i18n.use(LanguageDetector)
                         viewAll: "View All",
                         description: "Description",
                         technologies: "Technologies Used",
+                        checkCode: "Code",
+                        livePreview: "Preview",
                     },
                     menu: {
                         home: "Home",
@@ -118,7 +120,7 @@ i18n.use(LanguageDetector)
                         internship: "Harjoittelukokemus",
                     },
                     projects: {
-                        title: "Viimeisimmät Projektit",
+                        title: "Projektit",
                         sort: "Järjestä:",
                         rank: "Tärkeys",
                         date: "Päiväys",
@@ -126,6 +128,8 @@ i18n.use(LanguageDetector)
                         viewAll: "Näytä kaikki",
                         description: "Kuvaus",
                         technologies: "Käytetyt teknologiat",
+                        checkCode: "Tarkastele koodia",
+                        livePreview: "Live-esikatselu",
                     },
                     menu: {
                         home: "Aloitus",
