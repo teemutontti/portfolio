@@ -30,6 +30,7 @@ import javascriptWebLogo from "../assets/logos/javascript-web-logo.webp";
 import unityLogo from "../assets/logos/unity-logo.webp";
 import unityFullLogo from "../assets/logos/unity-full-logo.webp";
 import linkedInLogo from "../assets/logos/linkedin-app-white-icon.webp";
+import cSharpLogo from "../assets/logos/c-sharp-logo.webp";
 import { LogoType } from "../util/types";
 import "../styles/logo.css";
 import "../styles/tag.css";
@@ -43,6 +44,7 @@ const logoMap: LogoMapType = {
     "android": { src: androidLogo, href: "https://developer.android.com/", alt: "Android logo" },
     "android-full": { src: androidFullLogo, href: "https://developer.android.com/", alt: "Android logo" },
     "css": { src: cssLogo, href: "https://en.wikipedia.org/wiki/CSS", alt: "CSS logo" },
+    "c-sharp": { src: cSharpLogo, href: "https://learn.microsoft.com/en-us/dotnet/csharp/", alt: "C# logo" },
     "java": { src: javaLogo, href: "https://dev.java/", alt: "Java logo" },
     "java-full": { src: javaFullLogo, href: "https://dev.java/", alt: "Java logo" },
     "js": { src: javascriptLogo, href: "https://developer.mozilla.org/en-US/docs/Web/JavaScript", alt: "JavaScript logo" },
