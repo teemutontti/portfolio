@@ -15,26 +15,24 @@ export default function MenuLinks() {
     return (
         <ul className="menu-links">
             <li>
-                <a href="/#home">{t("menu.home")}</a>
+                <a href="#home">{t("menu.home")}</a>
             </li>
             <li>
-                <a href="/#skills">{t("menu.skills")}</a>
+                <a href="#skills">{t("menu.skills")}</a>
             </li>
             <li>
-                <a href="/#projects">{t("menu.projects")}</a>
+                <a href="#projects">{t("menu.projects")}</a>
             </li>
             <li>
-                {window.innerWidth >= 950 ? (
-                    <a href="/#work-experience">{t("menu.workShort")}</a>
-                ) : (
-                    <a href="/#work-experience">{t("menu.workLong")}</a>
-                )}
+                <a href="#work-experience">
+                    {window.innerWidth >= 950 ? t("menu.workShort") : t("menu.workLong")}
+                </a>
             </li>
             <li>
-                <a href="/#about">{t("menu.about")}</a>
+                <a href="#about">{t("menu.about")}</a>
             </li>
             <li>
-                <a href="/#contact" onClick={handleContactClick}>
+                <a href="#contact" onClick={handleContactClick}>
                     {t("menu.contact")}
                 </a>
             </li>
