@@ -27,14 +27,14 @@ const vectorMappingTool: ProjectType = {
     description: {
         en: [
             "Vector Mapping Tool was a project I made for a company as a software developer trainee. The company was Bertin Environics Oy and the project was met with great reviews.",
-            "The project was a tool for mapping vector data from osm (OpenStreetMap) files. The project included three different parts: tiling, hosting, and rendering. My job was to figure out how to conversion process would work most efficiently and how the data could be in the devices.",
+            "The project was a tool for mapping vector data from OSM-files (OpenStreetMap). The project included three different parts: tiling, hosting, and rendering. My job was to figure out how to conversion process would work most efficiently and how the data could be in the devices.",
             "With this project I learned a lot about mapping and how to work with vector data.",
         ],
         fi: [
-            "Vector Mapping Tool oli projekti jonka tein Bertin Environics Oy:lle ohjelmistokehittäjä harjoittelijana.",
-            "Projekti oli työkalu osm (OpenStreetMap) karttojen muuttamiseen vektoridatamuotoon. Projekti sisälsi kolme eri osaa: tiilien generointi, hostaus ja renderöinti. Minun tehtäväni oli selvittää kuinka konversioprosessi toimisi tehokkaimmin ja kuinka dataa voitaisiin käyttää laitteissa.",
+            "Vector Mapping Tool oli projekti, jonka tein Bertin Environics Oy:lle ohjelmistokehityksen harjoittelijana.",
+            "Projekti oli työkalu OSM-karttojen (OpenStreetMap) muuttamiseen vektoridatamuotoon. Projekti sisälsi kolme eri osaa: tiilien generointi, hostaus ja renderöinti. Tehtäväni oli selvittää, kuinka konversioprosessi toimisi tehokkaimmin ja kuinka dataa voitaisiin käyttää laitteissa.",
             "Tämän projektin myötä opin paljon karttatekniikoista ja kuinka vektoridataa käsitellään. Projekti sai myös hyvää palautetta ja auttoi yritystä tuotteen jatkokehityksessä.",
-        ]
+        ],
     },
     rank: 2,
 };
@@ -92,7 +92,7 @@ const modbusConverter: ProjectType = {
             "The app was made for the company's own use to help with testing and debugging their devices. This made the testing process a lot easier and faster. **The converter has also been used to demonstrate the devices to cutomers.**",
         ],
         fi: [
-            "Modbus Converter oli projekti jonka tein Bertin Environicsille. Sovelluksen tehtävä oli muuntaa laitteelta Modbus yhteyden kautta tuleva binääri- ja heksadata luettavaan muotoon.",
+            "Modbus Converter oli projekti, jonka tein Bertin Environicsille. Sovelluksen tehtävä oli muuntaa laitteelta Modbus-yhteyden kautta tuleva binääri- ja heksadata luettavaan muotoon.",
             "Sovellus tehtiin yrityksen omaan käyttöön auttamaan laitteiden testaamisessa ja debuggaamisessa. Tämä helpotti testausprosessia huomattavasti ja teki siitä nopeampaa. **Muunninta on käytetty myös laitteiden esittelyssä asiakkaille.**",
         ]
     },
