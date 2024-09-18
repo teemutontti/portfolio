@@ -1,0 +1,1 @@
+import{u as s,j as a}from"./index-CbfEhAq5.js";function u({inMenu:e=!1}){const{i18n:n}=s();return a.jsx("div",{className:e?"language-buttons menu":"language-buttons",children:n.language==="fi-FI"?a.jsx("button",{onClick:()=>n.changeLanguage("en-EN"),children:"In English"}):a.jsx("button",{onClick:()=>n.changeLanguage("fi-FI"),children:"Suomeksi"})})}export{u as L};
