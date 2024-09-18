@@ -1,5 +1,5 @@
 import { SectionType } from "../util/types";
-import "../styles/Section.css";
+import "../styles/section.css";
 
 export default function Section({ name, title, children }: SectionType) {
     return (
