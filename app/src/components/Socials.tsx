@@ -1,4 +1,4 @@
-import "../styles/menu-socials.css";
+import "../styles/socials.css";
 import linkedinLogo from "../assets/logos/linkedin-app-white-icon.webp";
 import githubLogo from "../assets/logos/github-mark-white.png";
 import { SocialsType } from "../util/types";
@@ -30,10 +30,10 @@ export default function Socials({ inMenu = false }: SocialsType) {
                 </a>
             </li>
             <li>
-                <a onClick={sendEmail}>
-                    <Icon name="mail" width="1.5rem" />
+                <button onClick={sendEmail} className="email">
+                    <Icon name="mail" width="1.9rem" />
                     {!inMenu && <p>{t("email")}</p>}
-                </a>
+                </button>
             </li>
         </ul>
     );

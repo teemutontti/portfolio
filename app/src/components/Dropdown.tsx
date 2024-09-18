@@ -20,7 +20,7 @@ export default function Dropdown({ className, list, onClick }: DropdownType) {
     return (
         <div className={className ? `dropdown-container ${className}` : "dropdown-container"}>
             <p>{selected}</p>
-            <button onClick={() => setOpen(!open)} className={open ? "dropdown-button open" : "dropdown-button"}>
+            <button onClick={() => setOpen(!open)} className={open ? "dropdown-button open" : "dropdown-button"} aria-label="Dropdown">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" className="arrow">
                     <path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z" />
                 </svg>
