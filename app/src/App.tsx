@@ -8,7 +8,6 @@ export default function App() {
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/en" element={<Home language="en-EN"/>} />
                 <Route path="*" element={<NotFound />} />
             </Routes>
         </BrowserRouter>

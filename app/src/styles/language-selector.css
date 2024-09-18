@@ -15,7 +15,7 @@ div.language-buttons.menu {
     padding: 0;
 }
 
-div.language-buttons a {
+div.language-buttons button {
     padding: 0.4rem 0.6rem;
     background: none;
     border: 0.1rem solid var(--text-tetriary);
