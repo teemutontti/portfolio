@@ -31,4 +31,4 @@ jobs:
         npm run build
     
     - name: Move build files to root for Github Pages
-      run: mv ./app/dist/* ./
+      run: mv -f ./app/dist/* ./
