@@ -5,6 +5,7 @@
     height: 300px;
     min-width: 256px;
     transition: all 0.3s;
+    overflow: hidden;
 }
 
 .logo-dumb a {
@@ -25,6 +26,8 @@
 .logo-dumb a img {
     height: 26px;
     width: 100%;
+    box-sizing: border-box;
+    object-fit: contain;
 }
 .logo-dumb .java-full img {
     height: 109px;
