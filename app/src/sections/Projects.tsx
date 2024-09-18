@@ -73,12 +73,12 @@ export default function Projects() {
                 <div className="sort-actions">
                     <Dropdown className="sort-type" list={sortTypes} onClick={(type) => setSortType(type)} />
                     {sortOrder === "desc" && (
-                        <button onClick={() => setSortOrder("asc")} className="sort-order-button">
+                        <button onClick={() => setSortOrder("asc")} className="sort-order-button" aria-label="Ascending order">
                             <Icon name="arrow-down" />
                         </button>
                     )}
                     {sortOrder === "asc" && (
-                        <button onClick={() => setSortOrder("desc")} className="sort-order-button">
+                        <button onClick={() => setSortOrder("desc")} className="sort-order-button" aria-label="Descending order">
                             <Icon name="arrow-up" />
                         </button>
                     )}

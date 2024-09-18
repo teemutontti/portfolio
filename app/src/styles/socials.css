@@ -51,7 +51,7 @@ ul.socials button {
     background: none;
 }
 
-ul.socials li, ul.socials li button {
+ul.socials li {
     gap: 0.8rem;
     text-decoration: none;
     width: 100%;
@@ -61,7 +61,7 @@ ul.socials li, ul.socials li button {
     transition: transform 0.3s ease-in-out;
 }
 
-ul.socials li a {
+ul.socials li a, ul.socials li button {
     width: 100%;
     display: flex;
     align-items: center;
@@ -76,15 +76,14 @@ ul.socials li a .logo {
     height: 2rem;
 }
 
-ul.socials li button {
-    border: none;
-    padding: 0;
-}
-
 ul.socials.menu li, ul.socials.menu li button {
     display: block;
     border: none;
     padding: 0;
+}
+
+button.email:hover {
+    transform: scale(1)
 }
 
 ul.socials p {
