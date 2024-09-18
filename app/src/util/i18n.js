@@ -88,25 +88,25 @@ i18n.use(LanguageDetector)
                         title: "Minusta",
                         text:
                             "Olen kolmannen vuoden tietojenkäsittelyn opiskelija, jolla on aito intohimo koodaukseen ja ongelmanratkaisuun.\n" +
-                            "Opintojeni aikana olen päässyt työstämään monenlaisia projekteja, joissa olen päässyt tuomaan esiin taitojani ohjelmistokehityksessä ja web-suunnittelussa. Tänne olen koonnut osan noista projekteista.\n" +
-                            "Jokainen projekti on ollut arvokas oppimiskokemus, joka on vain vahvistanut innostustani tätä alaa kohtaan.\n" +
+                            "Opintojeni aikana olen päässyt työstämään monenlaisia projekteja, jotka tuovat hyvin esiin ohjelmistokehitys- ja web-suunnittelutaitoni. Tänne olen koonnut osan noista projekteista.\n" +
+                            "Jokainen projekti on ollut arvokas oppimiskokemus, mikä on vain vahvistanut innostustani tätä alaa kohtaan.\n" +
                             "Olen aina innokas oppimaan uutta sekä front- että backend-kehityksessä.\n" +
-                            "Kiitos mielenkiinnostasi. Toivon, että löydät työni yhtä mielenkiintoisiksi kuin minä itse!",
+                            "Kiitos mielenkiinnostasi!",
                     },
                     contact:
-                        "Ota rohkeasti yhteyttä, jos sinulta löytyy lisäkysymyksiä!\n" +
-                        "Olen aina avoin keskustelemaan töistäni, uusista mahdollisuuksista ja yhteistöistä.\n" +
+                        "Ota rohkeasti yhteyttä, jos sinulla on lisäkysymyksi!\n" +
+                        "Olen aina avoin keskustelemaan töistäni, uusista mahdollisuuksista ja yhteistyöstä.\n" +
                         "Odotan innolla yhteydenottoasi!",
                     email: "Sähköposti",
                     copyright: "Kaikki oikeudet pidätetään.",
                     introduction: {
-                        start: "Hei, minun nimi on",
+                        start: "Hei, minun nimeni on",
                         text: "Tuleva ohjelmistokehittäjä, valmiina uusiin haasteisiin.",
-                        about: "Tutustu minuun!",
+                        about: "Tutustu tarkemmin!",
                         contact: "Ota yhteyttä",
                     },
                     skills: {
-                        hint: "Viemällä hiiren taitojen päälle tai klikkaamalla näet, missä olen käyttänyt kyseistä taittoa.",
+                        hint: "Viemällä hiiren taitojen päälle tai klikkaamalla näet, missä olen käyttänyt kyseistä taitoa.",
                         frontend: "Frontend",
                         backend: "Backend",
                         api: "API",
