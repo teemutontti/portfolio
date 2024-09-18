@@ -6,7 +6,11 @@ export default function LanguageSelector({ inMenu = false }: { inMenu?: boolean 
 
     return (
         <div className={inMenu ? "language-buttons menu" : "language-buttons"}>
-            {i18n.language === "fi-FI" ? <a href="/en">In English</a> : <a href="/">Suomeksi</a>}
+            {i18n.language === "fi-FI" ? (
+                <button onClick={() => i18n.changeLanguage("en-EN")}>In English</button>
+            ) : (
+                <button onClick={() => i18n.changeLanguage("fi-FI")}>Suomeksi</button>
+            )}
         </div>
     );
 }
