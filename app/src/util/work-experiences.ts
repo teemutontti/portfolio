@@ -3,7 +3,7 @@ const bertinEnvironics2024 = {
         title: "Bertin Environics Oy",
         date: "Jun 2024 - Jul 2024",
         text: [
-            "I worked as a software developer trainee at Bertin Environics Oy. My job was to create a vector mapping tool for the company. The tool's purpose was to convert osm (OpenStreetMap) files to vector data and host the data to be used by the manufactured devices.",
+            "I worked as a software developer trainee at Bertin Environics Oy. My job was to create a vector mapping tool for the company. The tool's purpose was to convert OSM-files (OpenStreetMap) to vector data and host the data to be used by the manufactured devices.",
             "This was met with great reviews and I learned a lot about map technologies and how to work with vector data. I also learned a lot about how software development works in a company.",
         ],
     },
@@ -11,8 +11,8 @@ const bertinEnvironics2024 = {
         title: "Bertin Environics Oy",
         date: "Kes 2024 - Hei 2024",
         text: [
-            "Toimin Bertin Environics Oy:ssä ohjelmistokehittäjä harjoittelijana kesällä 2024, jolloin tehtäväni oli luoda vektorikartta muunnostyökalu. Työkalun tarkoitus oli muuntaa osm (OpenStreetMap) tiedostot vektoridataksi ja hostata data valmistetuille laitteille.",
-            "Tekemäni projekti sai hyvää palautetta ja opin paljon karttateknologioista ja vektoridatan käsittelystä. Sain myös paljon kokemusta siitä kuinka ohjelmistokehitys toimii yrityksessä.",
+            "Toimin Bertin Environics Oy:ssä ohjelmistokehityksen harjoittelijana kesällä 2024, jolloin tehtäväni oli luoda vektorikarttamuunnostyökalu. Työkalun tarkoitus oli muuntaa OSM-tiedostot (OpenStreetMap) vektoridataksi ja hostata data valmistetuille laitteille.",
+            "Tekemäni projekti sai hyvää palautetta ja opin paljon karttateknologioista ja vektoridatan käsittelystä. Sain myös paljon kokemusta siitä, kuinka ohjelmistokehitys toimii yrityksessä.",
         ],
     },
 };
@@ -52,9 +52,9 @@ const ohjaamoOlkkari = {
         title: "Ohjaamo Olkkari",
         date: "Hel 2021 - Elo 2021",
         text: [
-            "Toimin Ohjaamo Olkkarin tiedottajana, jossa tehtäväni oli tiedottaa Ohjaamon palveluista ja tapahtumista nuorille. Vastuullani oli myös Ohjaamon sisäinen viestintä.",
-            "Tässä tehtävässä opin paljon kuinka toimia isossa, monen ihmisen ja alan, verkostossa. Näin myös ensimmäistä kertaa kuinka oma-aloitteisuuden tärkeyden.",
-            "Vastasin myös nettisivujen siirrosta uudelle alustalle, joka ensimmäistä kertaa herätti kiinnostukseni web- ja ohjelmistokehitykseen."
+            "Toimin Ohjaamo Olkkarin tiedottajana. Tehtäväni oli tiedottaa nuorille Ohjaamon palveluista ja tapahtumista. Vastuullani oli myös Ohjaamon sisäinen viestintä.",
+            "Tässä tehtävässä opin paljon siitä, kuinka toimia isossa monialaisessa verkostossa. Näin ensimmäistä kertaa oma-aloitteisuuden tärkeyden.",
+            "Vastasin myös nettisivujen siirrosta uudelle alustalle. Tämä herätti kiinnostukseni web- ja ohjelmistokehitykseen."
         ],
     }
 };

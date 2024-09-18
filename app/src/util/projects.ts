@@ -27,14 +27,14 @@ const vectorMappingTool: ProjectType = {
     description: {
         en: [
             "Vector Mapping Tool was a project I made for a company as a software developer trainee. The company was Bertin Environics Oy and the project was met with great reviews.",
-            "The project was a tool for mapping vector data from osm (OpenStreetMap) files. The project included three different parts: tiling, hosting, and rendering. My job was to figure out how to conversion process would work most efficiently and how the data could be in the devices.",
+            "The project was a tool for mapping vector data from OSM-files (OpenStreetMap). The project included three different parts: tiling, hosting, and rendering. My job was to figure out how to conversion process would work most efficiently and how the data could be in the devices.",
             "With this project I learned a lot about mapping and how to work with vector data.",
         ],
         fi: [
-            "Vector Mapping Tool oli projekti jonka tein Bertin Environics Oy:lle ohjelmistokehittäjä harjoittelijana.",
-            "Projekti oli työkalu osm (OpenStreetMap) karttojen muuttamiseen vektoridatamuotoon. Projekti sisälsi kolme eri osaa: tiilien generointi, hostaus ja renderöinti. Minun tehtäväni oli selvittää kuinka konversioprosessi toimisi tehokkaimmin ja kuinka dataa voitaisiin käyttää laitteissa.",
+            "Vector Mapping Tool oli projekti, jonka tein Bertin Environics Oy:lle ohjelmistokehityksen harjoittelijana.",
+            "Projekti oli työkalu OSM-karttojen (OpenStreetMap) muuttamiseen vektoridatamuotoon. Projekti sisälsi kolme eri osaa: tiilien generointi, hostaus ja renderöinti. Tehtäväni oli selvittää, kuinka konversioprosessi toimisi tehokkaimmin ja kuinka dataa voitaisiin käyttää laitteissa.",
             "Tämän projektin myötä opin paljon karttatekniikoista ja kuinka vektoridataa käsitellään. Projekti sai myös hyvää palautetta ja auttoi yritystä tuotteen jatkokehityksessä.",
-        ]
+        ],
     },
     rank: 2,
 };
@@ -53,8 +53,8 @@ const staffApp: ProjectType = {
         ],
         fi: [
             "StaffApp tehtiin asiakkaallemme, Entail Oy:lle, jonka visiona oli sovellus, jolla sote-alan työnantajat voivat löytää helposti ja nopeasti luotettavaa sijaistyövoimaa.",
-            "Olin osa viisihenkistä tiimiä, joka rakensi tämän demo sovelluksen alusta loppuun. StaffApp oli suurin projekti, jossa olen ollut mukana. Olin vastuussa projektin frontendistä ja yksi merkittävin tehtäväni oli toteuttaa sovellukseen ilmoitukset. Tämä oli minulle täysin uusi kokemus ja opin siitä paljon.",
-            "Opin myös kuinka kommunikoida ja työskennellä tiimissä ohjelmistoalalla.",
+            "Olin osa viisihenkistä tiimiä, joka rakensi tämän demosovelluksen alusta loppuun. Tämä tekikin tästä suurimman projektin, jossa olen ollut mukana. **Olin vastuussa projektin frontendistä** ja sen pohjan rakentamisesta. Myöhemmin muu tiimi siirtyi myös front-puolen tehtäviin.",
+            "Yksi merkittävin tehtäväni oli toteuttaa **sovellukseen ilmoitukset**. Tämä oli minulle täysin uusi ja opettavainen kokemus. Opin myös, kuinka kommunikoida ja työskennellä tiimissä ohjelmistoalalla.",
         ]
     },
     rank: 1,
@@ -68,12 +68,12 @@ const recipeApp: ProjectType = {
     logos: ["android", "kotlin", "spring"],
     description: {
         en: [
-            "Recipe App was a project I made for a course in my university. The project was a recipe app that included a database for recipes and a visually appealing user interface. The app used a REST API to get the recipe data from the database and had features like: searching for recipes, adding recipes to favorites, creating your own recipes and creating a shopping list.",
+            "Recipe App was a project I made for a course in my university. The project was a recipe app that included a database for recipes and a visually appealing user interface. The app used a REST API to get the recipe data from the database and had features like: searching for recipes, adding recipes to favorites, creating your own recipes and recipe recommendations once per day. After the submission I added a feature for managing a shopping list.",
             "The project was a great learning experience for me and I learned a lot about how to work with REST API's and how to create a user interface for an app on Android.",
         ],
         fi: [
-            "Recipe App oli projekti jonka tein koulun kurssia varten. Projekti oli reseptisovellus joka sisälsi tietokannan resepteille ja visuaalisesti miellyttävän käyttöliittymän. Sovellus käytti REST API:a hakeakseen reseptidataa tietokannasta ja ominaisuuksiin kuului: reseptien etsiminen, reseptien lisääminen suosikkeihin, reseptien luonti ja ostoslistan luominen.",
-            "Projekti oli minulle hyvä oppimiskokemus ja opin paljon kuinka REST API:lla työskennellään ja kuinka käyttöliittymä luodaan Android-sovellukselle.",
+            "Recipe App oli projekti, jonka tein koulukurssin lopputyönä. Projekti oli reseptisovellus, joka sisälsi tietokannan resepteille ja visuaalisesti miellyttävän käyttöliittymän. Sovellus käytti REST API:a hakeakseen reseptidataa tietokannasta ja ominaisuuksiin kuului: reseptien hakeminen, reseptien lisääminen suosikkeihin, reseptien luonti ja päivittäiset ehdotukset. Jälkeen päin lisäsin vielä ostoslistaominaisuuden.",
+            "Projekti oli minulle hyvä oppimiskokemus ja opin paljon siitä, kuinka REST API:lla työskennellään ja kuinka käyttöliittymä luodaan Android-sovellukselle.",
         ]
     },
     secondaryLink: "https://github.com/teemutontti/recipe-app",
@@ -92,7 +92,7 @@ const modbusConverter: ProjectType = {
             "The app was made for the company's own use to help with testing and debugging their devices. This made the testing process a lot easier and faster. **The converter has also been used to demonstrate the devices to cutomers.**",
         ],
         fi: [
-            "Modbus Converter oli projekti jonka tein Bertin Environicsille. Sovelluksen tehtävä oli muuntaa laitteelta Modbus yhteyden kautta tuleva binääri- ja heksadata luettavaan muotoon.",
+            "Modbus Converter oli projekti, jonka tein Bertin Environicsille. Sovelluksen tehtävä oli muuntaa laitteelta Modbus-yhteyden kautta tuleva binääri- ja heksadata luettavaan muotoon.",
             "Sovellus tehtiin yrityksen omaan käyttöön auttamaan laitteiden testaamisessa ja debuggaamisessa. Tämä helpotti testausprosessia huomattavasti ja teki siitä nopeampaa. **Muunninta on käytetty myös laitteiden esittelyssä asiakkaille.**",
         ]
     },
@@ -114,7 +114,7 @@ const pintRush: ProjectType = {
         ],
         fi: [
             "Pint Rush on mobiilipeli, jonka tein osana neljän hengen tiimiä koulukurssin aikana asiakkaalle, Narvan kyläpanimolle.",
-            "Pint Rush on 2D-peli, jossa pelaaja tarjoilee oikeita juomia koko ajan suurenevalle asiakasmäärälle. Pelin vaikeus kasvaa pelin edetessä, sillä tilausten nopeus kasvaa ja asiakkaiden kärsivällisyys vähenee.",
+            "Pint Rush on 2D-peli, jossa pelaajan täytyy tarjoilla juomia koko ajan suurenevalle asiakasmäärälle. Pelin vaikeus kasvaa pelin edetessä, sillä tilausten nopeus kasvaa ja asiakkaiden kärsivällisyys vähenee.",
             "Projekti tehtiin Unityllä ja C#:lla. Tämä oli minulle hyvä oppimiskokemus pelinkehityksestä ja ensimmäinen kosketus ketterään tiimityöskentelyyn.",
             "Pelin voi ladata Android-laitteille Google Play Storesta.",
         ],
@@ -137,16 +137,14 @@ const hairsalon: ProjectType = {
             "This project was a great challenge for me to try out different designs and layouts. Although this was a simple project for a fictional customer, it greatly shows my skills in web development.",
         ],
         fi: [
-            "Hair Salon nettisivu oli tehty kuvitteelliselle parturi-kampaamolle osana koulukurssia.",
+            "Hair Salon nettisivu on kuvitteellisen parturi-kampaamon kotisivu, joka oli tehty koulukurssin lopputyönä.",
             "Tein sivuston HTML:llä, CSS:llä ja JavaScriptillä. Sivusto sisälsi tietoa parturi-kampaamosta, palveluistaan, yhteydenottolomakkeen ja ajanvarausominaisuuden. **Tällä hetkellä ajanvarausominaisuus ei toimi, koska tietokantapalvelin on otettu pois käytöstä.**",
-            "Tämä projekti oli hyvä haaste kokeilla erilaista nettisivutyyliä. Vaikka tämä oli yksinkertainen projekti kuvitteelliselle asiakkaalle, uskon että se tuo hyvin esiin web-kehitysosaamistani.",
+            "Tämä projekti oli hyvä haaste kokeilla erilaista nettisivutyyliä. Vaikka tämä oli yksinkertainen projekti kuvitteelliselle asiakkaalle uskon, että se tuo hyvin esiin web-kehitysosaamistani.",
         ],
     },
     mainLink: "https://homepages.tuni.fi/teemu.tontti/hairsalon",
     secondaryLink: "https://github.com/teemutontti/hair-salon-website",
     rank: 6,
 };
-
-//homepages.tuni.fi/teemu.tontti/hairsalon
 
 export default [staffApp, vectorMappingTool, recipeApp, modbusConverter, pintRush, hairsalon];
