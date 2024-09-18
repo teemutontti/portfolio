@@ -1,1 +1,0 @@
-import{r as i}from"./index-l-_CyYGp.js";function w(){const[n,t]=i.useState({width:window.innerWidth,height:window.innerHeight});return i.useEffect(()=>{function e(){t({width:window.innerWidth,height:window.innerHeight})}return window.addEventListener("resize",e),()=>window.removeEventListener("resize",e)},[]),n}export{w as u};
