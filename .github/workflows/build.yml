@@ -27,10 +27,14 @@ jobs:
         cache: 'npm'
 
     - name: Install dependencies
-      run: npm install
+      run: |
+        cd app
+        npm install
 
     - name: Build project
-      run: npm run build
+      run: |
+        cd app
+        npm run build
     
     - name: Move build files to root for Github Pages
-      run: mv ./dist/* ./
+      run: mv ./app/dist/* ./
