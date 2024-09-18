@@ -29,6 +29,9 @@ jobs:
       run: |
         cd app
         npm run build
+
+    - name: Delete previous assets and fonts
+      run: rm -rf ./assets ./fonts
     
     - name: Move build files to root for Github Pages
       run: mv -f ./app/dist/* ./
