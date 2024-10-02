@@ -1,0 +1,1 @@
+import{u as t,j as s}from"./index-D8-ARaH8.js";import{L as e}from"./LanguageSelector-DEriJHAe.js";function n(){const{t:o}=t();return s.jsxs("div",{className:"footer",children:[s.jsxs("p",{children:["© 2024 Teemu Tontti. ",o("copyright")]}),s.jsx(e,{}),s.jsx("div",{className:"background"})]})}export{n as default};

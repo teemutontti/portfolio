@@ -1,0 +1,1 @@
+import{r as i}from"./index-D8-ARaH8.js";function w(){const[n,t]=i.useState({width:window.innerWidth,height:window.innerHeight});return i.useEffect(()=>{function e(){t({width:window.innerWidth,height:window.innerHeight})}return window.addEventListener("resize",e),()=>window.removeEventListener("resize",e)},[]),n}export{w as u};
