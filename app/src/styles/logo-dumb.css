@@ -12,6 +12,7 @@
     position: absolute;
     filter: grayscale(100%) opacity(50%);
     transition: all 0.15s;
+    display: inline-block;
 }
 
 .logo-dumb a:hover {
@@ -31,28 +32,77 @@
 }
 .logo-dumb .java-full img {
     height: 109px;
+    aspect-ratio: 1/1.6;
 }
 .logo-dumb .react-full img {
     height: 93px;
-}
-.logo-dumb .python img {
-    height: 56px;
+    aspect-ratio: 1/1.2;
 }
 .logo-dumb .python img,
 .logo-dumb .node-full img,
 .logo-dumb .mysql-full img {
     height: 48px;
 }
+.logo-dumb .python img {
+    aspect-ratio: 1/1;
+}
+.logo-dumb .node-full img {
+    aspect-ratio: 1.5/1;
+}
+.logo-dumb .mysql-full img {
+    aspect-ratio: 1.8/1;
+}
 .logo-dumb .html img,
 .logo-dumb .css img,
 .logo-dumb .javascript-web img {
     height: 37px;
 }
+.logo-dumb .html img {
+    aspect-ratio: 1/1;
+}
+.logo-dumb .css img {
+    aspect-ratio: 1/1;
+}
+.logo-dumb .javascript-web img {
+    aspect-ratio: 1/1;
+}
 .logo-dumb .mapbox-full img {
     height: 20px;
+    aspect-ratio: 4.2/1;
 }
 .logo-dumb .express-full img {
     height: 16px;
+    aspect-ratio: 3.6/1;
+}
+.logo-dumb .docker img {
+    aspect-ratio: 1/1;
+}
+.logo-dumb .modbus-full img {
+    aspect-ratio: 3/1;
+}
+.logo-dumb .kotlin img {
+    aspect-ratio: 1/1;
+}
+.logo-dumb .unity-full img {
+    aspect-ratio: 3/1;
+}
+.logo-dumb .git img {
+    aspect-ratio: 1/1;
+}
+.logo-dumb .js img {
+    aspect-ratio: 1/1;
+}
+.logo-dumb .ts img {
+    aspect-ratio: 1/1;
+}
+.logo-dumb .github img {
+    aspect-ratio: 1/1;
+}
+.logo-dumb .spring-full img {
+    aspect-ratio: 3.4/1;
+}
+.logo-dumb .android-full img {
+    aspect-ratio: 4.3/1;
 }
 
 /* Logo positioning */
