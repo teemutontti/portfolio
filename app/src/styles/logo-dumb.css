@@ -25,84 +25,56 @@
 
 /* Logo sizing */
 .logo-dumb a img {
-    height: 26px;
-    width: 100%;
+    height: auto;
     box-sizing: border-box;
     object-fit: contain;
 }
+.logo-dumb .docker img {
+    width: 30px;
+}
 .logo-dumb .java-full img {
-    height: 109px;
-    aspect-ratio: 1/1.6;
+    width: 60px;
 }
 .logo-dumb .react-full img {
-    height: 93px;
-    aspect-ratio: 1/1.2;
-}
-.logo-dumb .python img,
-.logo-dumb .node-full img,
-.logo-dumb .mysql-full img {
-    height: 48px;
+    width: 78px;
 }
 .logo-dumb .python img {
-    aspect-ratio: 1/1;
-}
-.logo-dumb .node-full img {
-    aspect-ratio: 1.5/1;
-}
-.logo-dumb .mysql-full img {
-    aspect-ratio: 1.8/1;
+    width: 57px;
 }
 .logo-dumb .html img,
 .logo-dumb .css img,
-.logo-dumb .javascript-web img {
-    height: 37px;
-}
-.logo-dumb .html img {
-    aspect-ratio: 1/1;
-}
-.logo-dumb .css img {
-    aspect-ratio: 1/1;
-}
-.logo-dumb .javascript-web img {
-    aspect-ratio: 1/1;
+.logo-dumb .js-web img {
+    width: 35px;
 }
 .logo-dumb .mapbox-full img {
-    height: 20px;
-    aspect-ratio: 4.2/1;
+    width: 85px;
 }
 .logo-dumb .express-full img {
-    height: 16px;
-    aspect-ratio: 3.6/1;
-}
-.logo-dumb .docker img {
-    aspect-ratio: 1/1;
-}
-.logo-dumb .modbus-full img {
-    aspect-ratio: 3/1;
-}
-.logo-dumb .kotlin img {
-    aspect-ratio: 1/1;
+    width: 50px;
 }
 .logo-dumb .unity-full img {
-    aspect-ratio: 3/1;
+    width: 75px;
 }
-.logo-dumb .git img {
-    aspect-ratio: 1/1;
+.logo-dumb .modbus-full img {
+    width: 75px;
 }
-.logo-dumb .js img {
-    aspect-ratio: 1/1;
-}
-.logo-dumb .ts img {
-    aspect-ratio: 1/1;
-}
-.logo-dumb .github img {
-    aspect-ratio: 1/1;
+.logo-dumb .node-full img {
+    width: 68px;
 }
 .logo-dumb .spring-full img {
-    aspect-ratio: 3.4/1;
+    width: 90px;
 }
 .logo-dumb .android-full img {
-    aspect-ratio: 4.3/1;
+    width: 110px;
+}
+.logo-dumb .mysql-full img {
+    width: 85px;
+}
+.logo-dumb .git img {
+    width: 30px;
+}
+.logo-dumb .js img {
+    width: 25px;
 }
 
 /* Logo positioning */
@@ -198,32 +170,52 @@
 }
 
 /* Logo sizing */
-.logo-dumb.large a img {
-    height: 32px;
+.logo-dumb.large .docker img {
+    width: 32px;
+}
+.logo-dumb.large .java-full img {
+    width: 70px;
+}
+.logo-dumb.large .react-full img {
+    width: 90px;
+}
+.logo-dumb.large .python img {
+    width: 67px;
 }
 .logo-dumb.large .html img,
 .logo-dumb.large .css img,
-.logo-dumb.large .javascript-web img {
-    height: 45px;
-}
-.logo-dumb.large .node-full img,
-.logo-dumb.large .mysql-full img {
-    height: 56px;
+.logo-dumb.large .js-web img {
+    width: 45px;
 }
 .logo-dumb.large .mapbox-full img {
-    height: 24px;
-}
-.logo-dumb.large .react-full img {
-    height: 102px;
+    width: 100px;
 }
 .logo-dumb.large .express-full img {
-    height: 21px;
+    width: 70px;
 }
-.logo-dumb.large .python img {
-    height: 67px;
+.logo-dumb.large .unity-full img {
+    width: 80px;
 }
-.logo-dumb.large .java-full img {
-    height: 118px;
+.logo-dumb.large .modbus-full img {
+    width: 88px;
+}
+.logo-dumb.large .node-full img {
+    width: 88px;
+}
+.logo-dumb.large .spring-full img {
+    width: 105px;
+}
+.logo-dumb.large .android-full img {
+    width: 125px;
+}
+.logo-dumb.large .mysql-full img {
+    width: 95px;
+}
+.logo-dumb.large .git img {
+    width: 30px;
+}
+.logo-dumb.large .js img {
+    width: 25px;
 }
 
 /* Logo positioning */
@@ -242,10 +234,10 @@
 }
 .logo-dumb.large .mapbox-full {
     top: 104px;
-    right: 15%;
+    right: 16%;
 }
 .logo-dumb.large .unity-full {
-    top: 120px;
+    top: 122px;
 }
 .logo-dumb.large .html {
     top: 140px;
@@ -276,6 +268,6 @@
     top: 246px;
 }
 .logo-dumb.large .mysql-full {
-    top: 232px;
+    top: 235px;
     right: 5%;
 }

@@ -1,10 +1,10 @@
-import { useTranslation } from "react-i18next";
 import "../styles/introduction.css";
-import useWindowSize from "../util/useWindowSize";
+import { useTranslation } from "react-i18next";
+import { BaseSyntheticEvent, useState } from "react";
 
 export default function Introduction() {
-    const { width } = useWindowSize();
     const { t } = useTranslation();
+    const [count, setCount] = useState<number>(0);
 
     const handleContactClick = () => {
         const socials = document.getElementById("socials-main");
@@ -14,15 +14,24 @@ export default function Introduction() {
         }, 3000);
     };
 
+    const appendCount = (e:  BaseSyntheticEvent) => {
+        setCount(count + 1);
+        const year = new Date().getFullYear();
+
+        if (count === year - 2000) {
+            e.target.classList.add("active");
+            setTimeout(() => {
+                e.target.classList.remove("active");
+                setCount(0);
+            }, 1500);
+        }
+    }
+
+
     return (
         <section className="introduction" id="home">
+            <div className="profile-foreground" onClick={(e) => appendCount(e)} />
             <div className="content">
-                {width >= 750 &&
-                    <div className="profile-container">
-                        <div className="profile-image"/>
-                        <div className="profile-background" />
-                    </div>
-                }
                 <div className="text">
                     <div className="heading">
                         <p>{t("introduction.start")}</p>

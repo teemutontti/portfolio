@@ -94,7 +94,7 @@ i18n.use(LanguageDetector)
                             "Kiitos mielenkiinnostasi!",
                     },
                     contact:
-                        "Ota rohkeasti yhteyttä, jos sinulla on lisäkysymyksi!\n" +
+                        "Ota rohkeasti yhteyttä, jos sinulla on lisäkysymyksiä!\n" +
                         "Olen aina avoin keskustelemaan töistäni, uusista mahdollisuuksista ja yhteistyöstä.\n" +
                         "Odotan innolla yhteydenottoasi!",
                     email: "Sähköposti",
