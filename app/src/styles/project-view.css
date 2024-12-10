@@ -202,6 +202,12 @@
     fill: var(--paper);
 }
 
+.project-view .panel .content-container .top-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
 @media screen and (min-width: 650px) {
     .project-view .panel {
         width: 85%;
@@ -224,21 +230,12 @@
 }
 
 @media screen and (min-width: 1200px) {
-    .project-view .panel .content-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        gap: 1rem 2rem;
+    .project-view .panel .content-container .top-section {
+        flex-direction: row;
     }
 
     .project-view .panel .content-container img.project-image {
         height: auto;
     }
 
-    .project-view .panel .text {
-        grid-row-start: 1;
-        grid-row-end: 3;
-        text-align: start;
-        display: block;
-    }
 }

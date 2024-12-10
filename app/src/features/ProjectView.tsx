@@ -39,82 +39,82 @@ export default function ProjectView({ project, onClose }: ProjectViewType) {
                     <p className="subtitle">{convertDate(project.date, i18n.language)}</p>
                 </div>
                 <div className="content-container">
-                    {loading ? (
-                        <LoadingEffect />
-                    ) : (
-                        <div className="image-container">
-                            <img
-                                src={project.images[selectedImage] || placeholderImage}
-                                alt="Project image"
-                                className="project-image"
-                                loading="lazy"
-                            />
-                            <div className="outer-links">
-                                {project.mainLink && (
-                                    <a href={project.mainLink} target="_blank" rel="noreferrer" className="main-link">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
-                                            <path d="m380-300 280-180-280-180v360ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
-                                        </svg>
-                                        {t("projects.livePreview")}
-                                    </a>
-                                )}
-                                {project.secondaryLink && (
-                                    <a href={project.secondaryLink} target="_blank" rel="noreferrer" className="secondary-link">
-                                        <Logo name="github" clickable={false} />
-                                    </a>
-                                )}
-                            </div>
-                            {/*
-                            <div className="image-change-buttons">
-                                <button onClick={() => handleImageChange(-1)}>
-                                    <Icon name="chevron-left" />
-                                </button>
-                                <span className="image-number">
-                                    {selectedImage + 1} / {project.images.length}
-                                </span>
-                                <button onClick={() => handleImageChange(1)}>
-                                    <Icon name="chevron-right" />
-                                </button>
-                            </div>
-                            */}
-                            <div className="image-gallery">
-                                {project.images.map((image, index) => (
-                                    <button
-                                        key={index}
-                                        className={selectedImage === index ? "img-button selected" : "img-button"}
-                                    >
-                                        <img
-                                            src={image}
-                                            alt="Project image"
-                                            key={index}
-                                            onClick={() => setSelectedImage(index)}
-                                        />
+                    <div className="top-section">
+                        {loading ? (
+                            <LoadingEffect />
+                        ) : (
+                            <div className="image-container">
+                                <img
+                                    src={project.images[selectedImage] || placeholderImage}
+                                    alt="Project image"
+                                    className="project-image"
+                                    loading="lazy"
+                                />
+                                <div className="outer-links">
+                                    {project.mainLink && (
+                                        <a href={project.mainLink} target="_blank" rel="noreferrer" className="main-link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                                                <path d="m380-300 280-180-280-180v360ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
+                                            </svg>
+                                            {t("projects.livePreview")}
+                                        </a>
+                                    )}
+                                    {project.secondaryLink && (
+                                        <a href={project.secondaryLink} target="_blank" rel="noreferrer" className="secondary-link">
+                                            <Logo name="github" clickable={false} />
+                                        </a>
+                                    )}
+                                </div>
+                                {/*
+                                <div className="image-change-buttons">
+                                    <button onClick={() => handleImageChange(-1)}>
+                                        <Icon name="chevron-left" />
                                     </button>
-                                ))}
+                                    <span className="image-number">
+                                        {selectedImage + 1} / {project.images.length}
+                                    </span>
+                                    <button onClick={() => handleImageChange(1)}>
+                                        <Icon name="chevron-right" />
+                                    </button>
+                                </div>
+                                */}
+                                <div className="image-gallery">
+                                    {project.images.map((image, index) => (
+                                        <button
+                                            key={index}
+                                            className={selectedImage === index ? "img-button selected" : "img-button"}
+                                        >
+                                            <img
+                                                src={image}
+                                                alt="Project image"
+                                                key={index}
+                                                onClick={() => setSelectedImage(index)}
+                                            />
+                                        </button>
+                                    ))}
+                                </div>
                             </div>
-                        </div>
-                    )}
-                    {project.responsibilities && (
-                        <div className="text responsibilities">
-                            <h4>{t("projects.responsibilities")}</h4>
-                            <ul className="responsibilities">
-                                {i18n.language === "fi-FI"
-                                    ? project.responsibilities.fi.map((responsibility, index) => (
-                                          <li key={index}>{responsibility}</li>
-                                      ))
-                                    : project.responsibilities.en.map((responsibility, index) => (
-                                          <li key={index}>{responsibility}</li>
-                                      ))}
-                            </ul>
-                        </div>
-                    )}
-                    <div className="text">
+                        )}
+                        {project.responsibilities && (
+                            <div className="responsibilities">
+                                <h4>{t("projects.responsibilities")}</h4>
+                                <ul className="responsibilities">
+                                    {i18n.language === "fi-FI"
+                                        ? project.responsibilities.fi.map((responsibility, index) => (
+                                                <li key={index}>{responsibility}</li>
+                                            ))
+                                        : project.responsibilities.en.map((responsibility, index) => (
+                                                <li key={index}>{responsibility}</li>
+                                            ))}
+                                </ul>
+                            </div>
+                        )}
+                    </div>
+                    <div className="description">
                         <h4>{t("projects.description")}</h4>
-                        <div className="description">
-                            {i18n.language === "fi-FI"
-                                ? renderCustomText(project.description.fi)
-                                : renderCustomText(project.description.en)}
-                        </div>
+                        {i18n.language === "fi-FI"
+                            ? renderCustomText(project.description.fi)
+                            : renderCustomText(project.description.en)}
                     </div>
                     <div>
                         <h4>{t("projects.technologies")}</h4>
