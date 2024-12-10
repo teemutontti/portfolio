@@ -21,59 +21,56 @@ type SliderSettingsType = {
     nextArrow: JSX.Element;
 }
 
+const PrevArrow = (props: ArrowType) => {
+    const { onClick } = props;
+    return (
+        <span style={{ display: "block", position: "absolute", left: "-2rem", top: "40%" }} onClick={onClick}>
+            <Icon name="chevron-left" />
+        </span>
+    );
+};
+
+const NextArrow = (props: ArrowType) => {
+    const { onClick } = props;
+    return (
+        <span style={{ display: "block", position: "absolute", right: "-2rem", top: "40%" }} onClick={onClick}>
+            <Icon name="chevron-right" />
+        </span>
+    );
+};
+
+const narrowSettings = {
+    dots: true,
+    infinite: true,
+    speed: 800,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    prevArrow: <PrevArrow />,
+    nextArrow: <NextArrow />,
+};
+
+const wideSettings = {
+    ...narrowSettings,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+};
+
+const extraWideSettings = {
+    ...narrowSettings,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+};
+
 export default function ProjectCarousel({ projects, onProjectClick }: ProjectCarouselType) {
-    const PrevArrow = (props: ArrowType) => {
-        const { onClick } = props;
-        return (
-            <span
-                style={{ display: "block", position: "absolute", left: "-2rem", top: "40%" }}
-                onClick={onClick}
-            >
-                <Icon name="chevron-left"/>
-            </span>
-        );
-    }
-
-    const NextArrow = (props: ArrowType) => {
-        const { onClick } = props;
-        return (
-            <span style={{ display: "block", position: "absolute", right: "-2rem", top: "40%" }} onClick={onClick}>
-                <Icon name="chevron-right" />
-            </span>
-        );
-    }
-
-    const narrowSettings = {
-        dots: true,
-        infinite: true,
-        speed: 800,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 5000,
-        prevArrow: <PrevArrow />,
-        nextArrow: <NextArrow />,
-    };
-
-    const wideSettings = {
-        ...narrowSettings,
-        slidesToShow: 2,
-        slidesToScroll: 1,
-    };
-
-    const extraWideSettings = {
-        ...narrowSettings,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-    };
-
     const { width } = useWindowSize();
     const [sliderSettings, setSliderSettings] = useState<SliderSettingsType>(narrowSettings);
 
     useEffect(() => {
-        if (width > 750) {
+        if (width > 900) {
             setSliderSettings(extraWideSettings);
-        } else if (width > 550) {
+        } else if (width > 650) {
             setSliderSettings(wideSettings);
         } else {
             setSliderSettings(narrowSettings);
