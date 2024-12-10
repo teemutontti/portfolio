@@ -26,9 +26,14 @@ export type ProjectType = {
         en: string[];
         fi: string[];
     };
+    responsibilities?: {
+        en: string[];
+        fi: string[];
+    };
     rank?: number;
     mainLink?: string;
     secondaryLink?: string;
+    inDevelopment?: boolean;
 }
 
 export type ProjectCardType = {

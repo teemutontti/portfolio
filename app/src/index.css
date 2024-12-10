@@ -11,6 +11,7 @@
     --primary-2: #076097;
     --secondary: #ADEBFF;
     --shadow: #010c0f77;
+    --progress: #e5b30e;
 }
 
 * {
@@ -53,7 +54,7 @@ h4 {
     line-height: 2.3rem;
 }
 
-p, span, a {
+p, span, a, li {
     font-family: "Montserrat", sans-serif;
     font-size: 1rem;
     font-weight: 400;

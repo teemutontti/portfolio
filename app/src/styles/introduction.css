@@ -158,6 +158,10 @@ button:hover {
 }
 
 @media screen and (min-width: 950px) {
+    section.introduction div.text {
+        margin-left: 2rem;
+    }
+
     section.introduction div.profile-foreground {
         right: 2vw;
         width: 36rem;
@@ -192,12 +196,12 @@ button:hover {
 }
 
 @media screen and (min-width: 1500px) {
-    div.text {
+    section.introduction div.text {
         margin-top: 2rem;
-        margin-left: 14rem;
+        margin-left: 13rem;
     }
 
     section.introduction div.profile-foreground {
-        right: 20vw;
+        right: 15vw;
     }
 }
