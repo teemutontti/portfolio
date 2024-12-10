@@ -56,9 +56,11 @@ i18n.use(LanguageDetector)
                         order: "Order:",
                         viewAll: "View All",
                         description: "Description",
+                        responsibilities: "My Responsibilities",
                         technologies: "Technologies Used",
                         checkCode: "Code",
                         livePreview: "Preview",
+                        inDevelopment: "In Development",
                     },
                     menu: {
                         home: "Home",
@@ -127,9 +129,11 @@ i18n.use(LanguageDetector)
                         order: "Järjestys:",
                         viewAll: "Näytä kaikki",
                         description: "Kuvaus",
+                        responsibilities: "Minun vastuuni",
                         technologies: "Käytetyt teknologiat",
                         checkCode: "Tarkastele koodia",
                         livePreview: "Live-esikatselu",
+                        inDevelopment: "Kehityksessä",
                     },
                     menu: {
                         home: "Aloitus",

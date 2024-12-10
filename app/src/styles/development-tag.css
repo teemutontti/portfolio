@@ -1,0 +1,6 @@
+div.development-tag {
+    background-color: var(--progress);
+    border: 1px solid var(--background);
+    border-radius: 5rem;
+    padding: 0.2rem 0.7rem;
+}

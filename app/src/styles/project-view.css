@@ -74,6 +74,24 @@
     padding: 0;
 }
 
+.project-view ul {
+    list-style-type: "👉";
+    padding-left: 1.5rem;
+}
+.project-view ul li {
+    padding-left: 0.5rem;
+}
+
+.project-view .panel .text.responsibilities {
+    gap: 0;
+}
+
+.project-view .panel .heading .title {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
 .image-container {
     display: flex;
     flex-direction: column;

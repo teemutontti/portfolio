@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import ProjectCard from "../components/ProjectCard";
 import "../styles/projects.css";
-import projectObjArray from "../util/projects";
+import { projects as projectObjArray } from "../util/data";
 import { ProjectType } from "../util/types";
 import ProjectView from "../features/ProjectView";
 import Section from "../features/Section";
@@ -41,6 +41,7 @@ export default function Projects() {
             return 0;
         });
         setProjects(sortedProjects);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [sortType, sortOrder]);
 
     const handleProjectClick = (project: ProjectType) => {

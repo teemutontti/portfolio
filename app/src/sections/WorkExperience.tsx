@@ -1,6 +1,6 @@
 import WorkExperienceCard from "../components/WorkExperienceCard";
 import Section from "../features/Section";
-import workExperiences from "../util/work-experiences";
+import { workExperiences } from "../util/data";
 import "../styles/work-experience.css";
 import { Fragment } from "react/jsx-runtime";
 import { useTranslation } from "react-i18next";

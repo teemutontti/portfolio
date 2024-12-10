@@ -8,6 +8,7 @@ import convertDate from "../util/convertDate";
 import renderCustomText from "../util/renderCustomText";
 import Icon from "../components/Icon";
 import { useTranslation } from "react-i18next";
+import DevelopmentTag from "../components/DevelopmentTag";
 
 export default function ProjectView({ project, onClose }: ProjectViewType) {
     const [loading, setLoading] = useState<boolean>(true);
@@ -17,14 +18,10 @@ export default function ProjectView({ project, onClose }: ProjectViewType) {
     useEffect(() => {
         const img = new Image();
 
-        if (!project.thumbnail) {
-            return;
-        }
+        if (!project.thumbnail) return;
 
         img.src = project.thumbnail;
-        img.onload = () => {
-            setLoading(false);
-        };
+        img.onload = () => setLoading(false);
 
     }, [project.thumbnail]);
 
@@ -34,8 +31,11 @@ export default function ProjectView({ project, onClose }: ProjectViewType) {
                 <button className="close" onClick={onClose}>
                     <Icon name="close" width="2rem" />
                 </button>
-                <div>
-                    <h3>{project.name}</h3>
+                <div className="heading">
+                    <div className="title">
+                        <h3>{project.name}</h3>
+                        {project.inDevelopment && <DevelopmentTag />}
+                    </div>
                     <p className="subtitle">{convertDate(project.date, i18n.language)}</p>
                 </div>
                 <div className="content-container">
@@ -79,7 +79,10 @@ export default function ProjectView({ project, onClose }: ProjectViewType) {
                             */}
                             <div className="image-gallery">
                                 {project.images.map((image, index) => (
-                                    <button key={index} className={selectedImage === index ? "img-button selected" : "img-button"}>
+                                    <button
+                                        key={index}
+                                        className={selectedImage === index ? "img-button selected" : "img-button"}
+                                    >
                                         <img
                                             src={image}
                                             alt="Project image"
@@ -89,6 +92,20 @@ export default function ProjectView({ project, onClose }: ProjectViewType) {
                                     </button>
                                 ))}
                             </div>
+                        </div>
+                    )}
+                    {project.responsibilities && (
+                        <div className="text responsibilities">
+                            <h4>{t("projects.responsibilities")}</h4>
+                            <ul className="responsibilities">
+                                {i18n.language === "fi-FI"
+                                    ? project.responsibilities.fi.map((responsibility, index) => (
+                                          <li key={index}>{responsibility}</li>
+                                      ))
+                                    : project.responsibilities.en.map((responsibility, index) => (
+                                          <li key={index}>{responsibility}</li>
+                                      ))}
+                            </ul>
                         </div>
                     )}
                     <div className="text">
