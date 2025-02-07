@@ -4,3 +4,9 @@ div.development-tag {
     border-radius: 5rem;
     padding: 0.2rem 0.7rem;
 }
+
+div.development-tag span {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
