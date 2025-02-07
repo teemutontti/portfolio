@@ -8,10 +8,17 @@ div.footer {
     justify-content: space-between;
 }
 
+div.footer div.inner {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
 div.footer p {
     color: var(--text-tetriary);
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     padding-left: 3rem;
+    line-height: 1rem;
 }
 
 div.footer div.language-buttons {

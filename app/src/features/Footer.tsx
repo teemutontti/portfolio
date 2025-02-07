@@ -8,8 +8,10 @@ export default function Footer() {
 
     return (
         <div className="footer">
-            <p>© 2024 Teemu Tontti. {t("copyright")}</p>
-            <VisitorCounter />
+            <div className="inner">
+                <p>© 2024 Teemu Tontti. {t("copyright")}</p>
+                <VisitorCounter />
+            </div>
             <LanguageSelector />
             <div className="background" />
         </div>

@@ -4,6 +4,7 @@ const API_URL = "https://visitor-counter-ugty.onrender.com"
 
 export default function VisitorCounter() {
     const [visitors, setVisitors] = useState(0);
+    const [since, setSince] = useState("");
 
     useEffect(() => {
         const updateVisitorCount = async () => {
@@ -22,6 +23,7 @@ export default function VisitorCounter() {
 
                 if (response.ok) {
                     setVisitors(data.count);
+                    setSince(data.started_at.split("T")[0]);
                 }
             } catch (err) {
                 console.log(err)
@@ -31,6 +33,8 @@ export default function VisitorCounter() {
     }, [])
 
     return (
-        <p>{`Visitor count: ${visitors}`}</p>
+        <p style={{ fontSize: "0.7rem" }}>
+            {`This page has had ${visitors} visitors since ${since}.`}
+        </p>
     );
 }
