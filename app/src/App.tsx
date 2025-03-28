@@ -6,7 +6,7 @@ import SplitTheGas from './pages/SplitTheGas';
 
 export default function App() {
     return (
-        <BrowserRouter>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/split-the-gas" element={<SplitTheGas />} />
